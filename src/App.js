@@ -3,15 +3,17 @@ import React, { Component } from 'react';
 import './App.css';
 
 import SortableList from './SortableList';
-import TwitterComponent from './TwitterTimelineComponent'
+import { Timeline } from 'react-twitter-widgets';
 
-var data = {
+const data = {
   items: [
     "@sacca",
     "@sia",
     "@lyft"
   ]
 };
+
+const twitterHandle = 'acluMatchHelper';
 
 class App extends Component {
   render() {
@@ -22,9 +24,16 @@ class App extends Component {
           <h2>Welcome to ACLU Matchers</h2>
         </div>
 
-        <SortableList data={data}/>
-
-        <TwitterComponent widgetId="825768427780444164"/>
+        <Timeline
+          dataSource={{
+            sourceType: 'profile',
+            screenName: twitterHandle
+          }}
+          options={{
+            username: twitterHandle,
+            height: '400'
+          }}
+        />
       </div>
     );
   }
