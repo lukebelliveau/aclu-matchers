@@ -10,7 +10,7 @@ so this is a temporary workaround.
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class TwitterTimeline extends Component {
+class TwitterTimelineComponent extends Component {
   static propTypes = {
     widgetId: PropTypes.string,
     user: PropTypes.string,
@@ -61,4 +61,4 @@ export default class TwitterTimeline extends Component {
   }
 }
 
-exports.modules = TwitterTimeline;
+export default TwitterTimelineComponent;

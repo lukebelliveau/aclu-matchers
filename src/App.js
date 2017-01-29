@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-import TwitterComponent from './twitter';
 import SortableList from './SortableList';
+import TwitterComponent from './TwitterTimelineComponent'
 
 var data = {
   items: [
@@ -24,7 +24,7 @@ class App extends Component {
 
         <SortableList data={data}/>
 
-        <TwitterComponent />
+        <TwitterComponent widgetId="825768427780444164"/>
       </div>
     );
   }
