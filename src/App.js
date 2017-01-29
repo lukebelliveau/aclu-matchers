@@ -2,16 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-import SortableList from './SortableList';
 import { Timeline } from 'react-twitter-widgets';
-
-const data = {
-  items: [
-    "@sacca",
-    "@sia",
-    "@lyft"
-  ]
-};
 
 const twitterHandle = 'acluMatchHelper';
 
