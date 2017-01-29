@@ -1,10 +1,10 @@
 import React from 'react';
 
-import TweetEmbed from 'react-tweet-embed';
+import TwitterTimeline from './TwitterTimeline';
 
 const TwitterComponent = () => (
   <div>
-    <TweetEmbed id="825769737812582401"></TweetEmbed>
+    <TwitterTimeline widgetId="825768427780444164"/>
   </div>
 );
 
