@@ -28,8 +28,8 @@ const linkStyle = {
 
 const cloudwokStyle = {
   margin: '10',
-  borderStyle: 'dotted',
-  borderColor: 'green',
+  // borderStyle: 'dotted',
+  // borderColor: 'green',
   padding: '10'
 };
 

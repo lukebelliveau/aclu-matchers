@@ -9,8 +9,8 @@ const success = {
 
 const cloudWokConfig = {
   "dropzone": {
-    "label": "Multiply your donation by 10x",
-    "button": "DRAG AND DROP OR CLICK TO UPLOAD RECEIPT"
+    "label": " ",
+    "button": "MULTIPLY DONATION BY 10"
   },
   "success": {
     "message": {
