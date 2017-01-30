@@ -1,31 +1,103 @@
 import React from 'react';
 
-const cloudwokScript = ((window, document) => {
-  const loader = () => {
-    var script = document.createElement("script"),
-    tag = document.getElementsByTagName("script")[0];
-    script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
-    tag.parentNode.insertBefore(script, tag);
-  };
+const cloudWokConfig = {
+  "dropzone": {
+    "label": "Multiply your donation by 10x",
+    "button": "DRAG AND DROP OR CLICK TO UPLOAD RECEIPT"
+  },
+  "success": {
+    "message": {
+      "title": "UPLOAD SUCCESS TITLE",
+      "subtitle": "UPLOAD SUCCESS SUBTITLE",
+      "text": "UPLOAD SUCCESS TEXT",
+      "button": "OK",
+      "noButtonOwnCW": false,
+      "dontpopup": false,
+      "dontslideup": true,
+      "dontfadeout": true
+    },
+    "redirect": ""
+  },
+  "terms": {
+    "show": true,
+    "popup": true,
+    "text": {
+      "before": "Before you upload...",
+      "agree": "Please agree to the following Terms of Service:",
+      "title": "Terms of Service",
+      "main": "ENTER TERMS OF SERVICE HERE"
+    },
+    "checkbox": {
+      "text1": "I agree with the ",
+      "text2": "Terms of Service",
+      "invalid": "Cannot start uploading. Please click on the checkbox first to agree with the Terms of Service."
+    }
+  }
+};
 
-  window.addEventListener ? window.addEventListener("load", loader, false) :
-    window.attachEvent("onload", loader);
-  })(window, document);
+const styles = {
+  dropZone: {
+    background: '#09758E !important',
+    color: '#D9E7FF !important',
+    border: 'solid 3px #425BAC !important'
+  },
 
-const Cloudwok = () => {
-  return (
-    <div>
-      <div className="cloudwok-embed" data-wokid="r3M-">
-        <div className="cloudwok-upload-files"></div>
-        <form className="cloudwok-upload">
-          <div className="cloudwok-dropzone"></div>
-        </form>
-        <div className="cloudwok-tos-checkbox"></div>
+  filePicker: {
+    background: '#09758E !important',
+    color: '#D9E7FF !important',
+    border: 'solid 3px #425BAC !important',
+    background: '#5877C1 !important',
+    color: '#D9E7FF !important',
+    border: 'solid 1px #425BAC !important'
+  },
 
-        <div className="cloudwok-download-files"></div>
+  uploadButton: {
+    background: '#09758E !important',
+    color: '#D9E7FF !important',
+    border: 'solid 3px #425BAC !important',
+    background: '#5877C1 !important',
+    color: '#D9E7FF !important',
+    border: 'solid 1px #425BAC !important',
+    background: '#186EAB !important',
+    color: '#FFFFFF !important',
+    border: 'solid 1px #135A8C !important'
+  }
+};
+
+class Cloudwok extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="cloudwok-embed" data-wokid="r3M-">
+          <div className="cloudwok-upload-files"></div>
+          <form className="cloudwok-upload">
+            <div className="cloudwok-dropzone"></div>
+          </form>
+          <div className="cloudwok-tos-checkbox"></div>
+
+          <div className="cloudwok-download-files"></div>
+        </div>
+        <script>
+          console.log('fuck you trump');
+        </script>
       </div>
-    </div>
-  )
+    )
+  }
+
+  componentDidMount() {
+    document.querySelector(".cloudwok-embed").setAttribute("data-config",
+      JSON.stringify(cloudWokConfig));
+    (function(window, document) {
+      var loader = function() {
+        var script = document.createElement("script"),
+          tag = document.getElementsByTagName("script")[0];
+        script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+        tag.parentNode.insertBefore(script, tag);
+      };
+      window.addEventListener ? window.addEventListener("load", loader, false) :
+        window.attachEvent("onload", loader);
+    })(window, document);
+  }
 
 };
 
