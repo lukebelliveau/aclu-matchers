@@ -38,7 +38,7 @@ const appStyle = {
   width: '40%'
 };
 
-const amountMatched = '8,500';
+const amountMatched = '10,000';
 
 const timeEST = '12:30am';
 
@@ -52,7 +52,7 @@ class App extends Component {
           <div className="App">
 
             <Instructions />
- 
+
             <div style={amountStyle}>
               <div>
                 Over <strong style={ { fontSize: '1.5em' } }>${amountMatched}</strong> worth of donations <br />
