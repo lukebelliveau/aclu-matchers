@@ -50,7 +50,7 @@ const Instructions = () => (
       <div style={ border }>
 
         <div>
-          <h1>Drag and drop a screenshot of your ACLU donation receipt below to multiply your donation by 10.</h1>
+          <h1>Drag and drop a screenshot of your ACLU receipt onto the red button to multiply your donation by 10.</h1>
         </div>
         <strong>NOTE: Screenshots should show confirmation code and amount donated!</strong>
       </div>
