@@ -32,7 +32,7 @@ const cloudWokConfig = {
     "redirect": ""
   },
   "terms": {
-    "show": false,
+    "show": true,
     "popup": false,
     "text": {
       "before": "Before you upload...",
