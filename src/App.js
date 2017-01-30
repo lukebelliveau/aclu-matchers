@@ -29,7 +29,8 @@ const linkStyle = {
 const cloudwokStyle = {
   margin: '10',
   borderStyle: 'dotted',
-  borderColor: 'green'
+  borderColor: 'green',
+  padding: '10'
 };
 
 const amountMatched = '7,000';
