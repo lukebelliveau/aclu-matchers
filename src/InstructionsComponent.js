@@ -19,8 +19,12 @@ const wrapper = {
   position: 'relative'
 };
 
-const instructions = {
-  marginLeft: '30%'
+const body = {
+  align: 'float left',
+  padding: 25,
+  borderTopStyle: 'solid',
+  margin: '0 auto',
+  width: '70%'
 };
 
 
@@ -31,17 +35,12 @@ const link = {
   color: 'white'
 };
 
-const cloudwokStyle = {
-  position: 'relative',
-  width: '90%'
-};
-
 const Instructions = () => (
-  <div style={ wrapper }>
+  <div className={ wrapper }>
 
-    <div style={ instructions }>
+    <div className={ body }>
 
-      <div style={ link }>
+      <div className={ link }>
         <h2>
           <a href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the <br /> American Civil Liberties Union</a>
         </h2>

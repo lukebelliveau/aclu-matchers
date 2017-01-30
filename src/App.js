@@ -52,11 +52,7 @@ class App extends Component {
           <div className="App">
 
             <Instructions />
-
-            <div style={cloudwokStyle}>
-              <Uploader />
-            </div>
-
+ 
             <div style={amountStyle}>
               <div>
                 Over <strong style={ { fontSize: '1.5em' } }>${amountMatched}</strong> worth of donations <br />
@@ -65,6 +61,8 @@ class App extends Component {
                 <div style={dateTimeStyle}><strong>*as of {timeEST} EST on {date}</strong></div>
               </div>
             </div>
+
+            <Statement />
 
             <Timeline
               dataSource={{
