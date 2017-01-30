@@ -7,7 +7,7 @@ import CloudwokComponent from './CloudwokComponent';
 
 const twitterHandle = 'ACLU_Multiplier';
 
-const divStyle = {
+const bodyStyle = {
   align: 'float left',
   padding: '25px',
   borderTopStyle: 'solid'
@@ -18,7 +18,18 @@ const signatureStyle = {
 };
 
 const amountStyle = {
-  color: 'green'
+  color: 'green',
+};
+
+const linkStyle = {
+  fontWeight: 'bold',
+  paddingTop: '10'
+};
+
+const cloudwokStyle = {
+  margin: '10',
+  borderStyle: 'dotted',
+  borderColor: 'green'
 };
 
 const amountMatched = '5,450';
@@ -32,12 +43,18 @@ class App extends Component {
           <h2>ACLU Donation Multiplier</h2>
         </div>
 
+        <div style={linkStyle}>
+          <a style={linkStyle} href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the American Civil Liberties Union</a>
+        </div>
+
         <div>
           <p>Drag and drop a screenshot of your ACLU donation receipt below to multiply your donation by 10.</p>
         </div>
         <strong>NOTE: Screenshots should show confirmation code and amount donated!</strong>
 
-        <CloudwokComponent />
+        <div style={cloudwokStyle}>
+          <CloudwokComponent />
+        </div>
 
         <div style={amountStyle}>
           <p>
@@ -45,7 +62,7 @@ class App extends Component {
           </p>
         </div>
 
-        <div style={divStyle}>
+        <div style={bodyStyle}>
           <i>
             “‘Extreme vetting’ is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.”
           </i>
