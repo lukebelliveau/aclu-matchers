@@ -9,7 +9,7 @@ const twitterHandle = 'ACLU_Multiplier';
 
 const bodyStyle = {
   align: 'float left',
-  padding: '25px',
+  padding: 25,
   borderTopStyle: 'solid'
 };
 
@@ -23,17 +23,17 @@ const amountStyle = {
 
 const linkStyle = {
   fontWeight: 'bold',
-  paddingTop: '10'
+  paddingTop: 10
 };
 
 const cloudwokStyle = {
-  margin: '10',
-  padding: '10'
+  margin: 10,
+  padding: 10
 };
 
 const dateTimeStyle = {
   fontSize: '0.6em',
-  marginTop: 10,
+  margin: 10
 };
 
 const amountMatched = '7,500';
@@ -65,12 +65,12 @@ class App extends Component {
         </div>
 
         <div style={amountStyle}>
-          <p>
+          <div>
             Over <strong style={ { fontSize: '1.5em' } }>${amountMatched}</strong> worth of donations <br />
             have been matched through this site, <br />
             all thanks to donors like you!
-            <p style={dateTimeStyle}><strong>*as of {timeEST} EST on {date}</strong></p>
-          </p>
+            <div style={dateTimeStyle}><strong>*as of {timeEST} EST on {date}</strong></div>
+          </div>
         </div>
 
         <div style={bodyStyle}>
@@ -89,9 +89,6 @@ class App extends Component {
             <br/>
             <br />
             Drag and drop your receipt above, and I will automatically tweet your receipt to at least ten matching donors. Multiply your donation by 10!
-          </p>
-          <p>
-
           </p>
         </div>
 

@@ -3,11 +3,13 @@ import React from 'react';
 const success = {
   title: 'Thank you for multiplying!',
   subtitle: 'Your donation has been multiplied by 10',
-  text: `We\'ll tweet this receipt to at least 10 people who are matching donations. Your donation just increased tenfold!
-  
-  If you found this useful, please share with your network.  The more money matched, the more money given to protect our Constitution.
-  
-  Every dollar counts!`
+  text: `We'll tweet this receipt to at least 10 people who are matching donations. Your donation just increased tenfold! 
+        <br />
+        <br />
+        If you found this useful, please share with your network.  The more money matched, the more money given to protect our Constitution. 
+        <br />
+        <br />
+        Every dollar counts!`
 };
 
 
@@ -43,35 +45,6 @@ const cloudWokConfig = {
       "text2": "Terms of Service",
       "invalid": "Cannot start uploading. Please click on the checkbox first to agree with the Terms of Service."
     }
-  }
-};
-
-const styles = {
-  dropZone: {
-    background: '#09758E !important',
-    color: '#D9E7FF !important',
-    border: 'solid 3px #425BAC !important'
-  },
-
-  filePicker: {
-    background: '#09758E !important',
-    color: '#D9E7FF !important',
-    border: 'solid 3px #425BAC !important',
-    background: '#5877C1 !important',
-    color: '#D9E7FF !important',
-    border: 'solid 1px #425BAC !important'
-  },
-
-  uploadButton: {
-    background: '#09758E !important',
-    color: '#D9E7FF !important',
-    border: 'solid 3px #425BAC !important',
-    background: '#5877C1 !important',
-    color: '#D9E7FF !important',
-    border: 'solid 1px #425BAC !important',
-    background: '#186EAB !important',
-    color: '#FFFFFF !important',
-    border: 'solid 1px #135A8C !important'
   }
 };
 
