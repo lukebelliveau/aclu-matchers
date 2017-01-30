@@ -17,6 +17,12 @@ const signatureStyle = {
   fontSize: '0.8em'
 };
 
+const amountStyle = {
+  color: 'green'
+};
+
+const amountMatched = '5,450';
+
 class App extends Component {
   render() {
     return (
@@ -33,9 +39,9 @@ class App extends Component {
 
         <CloudwokComponent />
 
-        <div>
+        <div style={amountStyle}>
           <p>
-            $5,450 matched as of 10:15pm CST, January 29
+            <strong>${amountMatched}</strong> matched as of 11:15pm EST, January 29
           </p>
         </div>
 
