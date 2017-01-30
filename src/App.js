@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
 
         <div className="App-header">
-          <h2>Welcome to ACLU Matchers</h2>
+          <h2>Welcome to ACLU Donation Multiplier</h2>
         </div>
 
         <CloudwokComponent />

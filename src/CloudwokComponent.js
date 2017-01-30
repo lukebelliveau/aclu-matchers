@@ -77,9 +77,6 @@ class Cloudwok extends React.Component {
 
           <div className="cloudwok-download-files"></div>
         </div>
-        <script>
-          console.log('fuck you trump');
-        </script>
       </div>
     )
   }
