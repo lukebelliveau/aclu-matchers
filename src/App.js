@@ -3,31 +3,11 @@ import React, { Component } from 'react';
 import { Timeline } from 'react-twitter-widgets';
 
 import './App.css';
-import Uploader from './Cloudwok';
-import Header from './HeaderComponent';
 import Instructions from './InstructionsComponent'
 import Statement from './StatementComponent';
+import TotalMatched from './TotalMatchedComponent';
 
 const twitterHandle = 'ACLU_Multiplier';
-
-const amountStyle = {
-  color: 'green'
-};
-
-const linkStyle = {
-  fontWeight: 'bold',
-  paddingTop: 10
-};
-
-const cloudwokStyle = {
-  margin: 10,
-  padding: 10
-};
-
-const dateTimeStyle = {
-  fontSize: '0.6em',
-  margin: 10
-};
 
 const wrapper = {
   width: '800',
@@ -38,42 +18,35 @@ const appStyle = {
   width: '40%'
 };
 
-const amountMatched = '12,000';
+const twitterFeed = {
+  dataSource: {
+    sourceType: 'profile',
+    screenName: twitterHandle
+  },
 
-const timeEST = '11:00am';
-
-const date = 'January 30, 2017';
+  options: {
+    username: twitterHandle,
+    height: '400',
+    width: '70%'
+  }
+};
 
 class App extends Component {
   render() {
     return (
       <div className={ wrapper }>
-        <div className ={ appStyle } >
+        <div className={ appStyle } >
           <div className="App">
 
             <Instructions />
 
-            <div style={amountStyle}>
-              <div>
-                Over <strong style={ { fontSize: '1.5em' } }>${amountMatched}</strong> worth of donations <br />
-                have been matched through this site, <br />
-                all thanks to donors like you!
-                <div style={dateTimeStyle}><strong>*as of {timeEST} EST on {date}</strong></div>
-              </div>
-            </div>
+            <TotalMatched />
 
             <Statement />
 
             <Timeline
-              dataSource={{
-                sourceType: 'profile',
-                screenName: twitterHandle
-              }}
-              options={{
-                username: twitterHandle,
-                height: '400',
-                width: '70%',
-              }}
+              dataSource={twitterFeed.dataSource}
+              options={twitterFeed.options}
             />
             </div>
         </div>
