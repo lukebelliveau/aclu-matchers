@@ -25,6 +25,10 @@ class App extends Component {
           <h2>ACLU Donation Multiplier</h2>
         </div>
 
+        <div>
+          <p>Drag and drop a screenshot of your receipt below to multiply your donation by 10.</p>
+        </div>
+
         <CloudwokComponent />
 
         <div style={divStyle}>
