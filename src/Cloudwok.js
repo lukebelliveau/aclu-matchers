@@ -68,6 +68,11 @@ const style = `.cloudwok-embed .dropzone {
                   background: red !important;
                   color: #D9E7FF !important;
                   border: solid 3px #dddddd !important;
+                  
+                  width: 70%;
+                  margin: 0 auto;
+                  height: auto;
+                  position: relative;
                 }
               .cloudwok-embed .dropzone .filepicker {
                 background: white !important;
