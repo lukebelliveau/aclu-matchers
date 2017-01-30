@@ -72,14 +72,14 @@ const styles = {
 };
 
 const style = `.cloudwok-embed .dropzone {
-                  background: blue !important;
+                  background: red !important;
                   color: #D9E7FF !important;
-                  border: solid 3px #425BAC !important;
+                  border: solid 3px blue !important;
                 }
               .cloudwok-embed .dropzone .filepicker {
                 background: white !important;
-                color: red !important;
-                border: solid 1px #425BAC !important;
+                color: black !important;
+                border: solid 1px black !important;
                 font: strong
               }
               .cloudwok-embed .btn-start-upload {
