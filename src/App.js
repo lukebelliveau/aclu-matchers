@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import './App.css';
-
 import { Timeline } from 'react-twitter-widgets';
-import CloudwokComponent from './CloudwokComponent';
+
+import './App.css';
+import CloudwokComponent from './Cloudwok';
 
 const twitterHandle = 'ACLU_Multiplier';
 
@@ -18,7 +18,7 @@ const signatureStyle = {
 };
 
 const amountStyle = {
-  color: 'green',
+  color: 'green'
 };
 
 const linkStyle = {
