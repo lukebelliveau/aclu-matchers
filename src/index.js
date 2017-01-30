@@ -12,8 +12,10 @@ GoogleAnalytics.initialize('UA-91151405-1');
 
 function logPageView() {
   GoogleAnalytics.set({ page: window.location.pathname })
-  GoogleAnalytics.pageView(window.location.pathname);
+  GoogleAnalytics.pageview(window.location.pathname);
 }
+
+logPageView();
 
 ReactDOM.render(
   <App />,
