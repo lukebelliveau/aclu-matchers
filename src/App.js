@@ -33,9 +33,9 @@ const cloudwokStyle = {
   padding: '10'
 };
 
-const amountMatched = '7,000';
+const amountMatched = '7,500';
 
-const timeEST = '12:00am';
+const timeEST = '12:30am';
 
 const date = 'January 30, 2017';
 
