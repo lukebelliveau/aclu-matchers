@@ -8,10 +8,8 @@ import CloudwokComponent from './CloudwokComponent';
 const twitterHandle = 'ACLU_Multiplier';
 
 const divStyle = {
-  // width: 500,
   align: 'float left',
-  borderColor: 'red',
-  borderStyle: 'solid',
+  padding: '50px'
 };
 
 class App extends Component {
@@ -20,7 +18,7 @@ class App extends Component {
       <div className="App">
 
         <div className="App-header">
-          <h2>Welcome to ACLU Matchers</h2>
+          <h2>Welcome to ACLU Donation Multiplier</h2>
         </div>
 
         <div style={divStyle}>
