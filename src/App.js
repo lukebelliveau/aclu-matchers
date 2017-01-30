@@ -22,7 +22,7 @@ class App extends Component {
       <div className="App">
 
         <div className="App-header">
-          <h2>Welcome to ACLU Donation Multiplier</h2>
+          <h2>ACLU Donation Multiplier</h2>
         </div>
 
         <CloudwokComponent />
@@ -48,8 +48,6 @@ class App extends Component {
 
           </p>
         </div>
-
-
 
         <Timeline
           dataSource={{
