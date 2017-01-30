@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import './App.css';
-
 import { Timeline } from 'react-twitter-widgets';
+
+import './App.css';
+import CloudwokComponent from './CloudwokComponent';
 
 const twitterHandle = 'acluMatchHelper';
 
@@ -15,6 +16,8 @@ class App extends Component {
           <h2>Welcome to ACLU Matchers</h2>
         </div>
 
+        <CloudwokComponent />
+
         <Timeline
           dataSource={{
             sourceType: 'profile',
@@ -22,7 +25,8 @@ class App extends Component {
           }}
           options={{
             username: twitterHandle,
-            height: '400'
+            height: '600',
+            width: '400'
           }}
         />
       </div>
