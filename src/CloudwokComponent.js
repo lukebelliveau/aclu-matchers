@@ -71,10 +71,32 @@ const styles = {
   }
 };
 
+const style = `.cloudwok-embed .dropzone {
+                  background: blue !important;
+                  color: #D9E7FF !important;
+                  border: solid 3px #425BAC !important;
+                }
+              .cloudwok-embed .dropzone .filepicker {
+                background: white !important;
+                color: red !important;
+                border: solid 1px #425BAC !important;
+                font: strong
+              }
+              .cloudwok-embed .btn-start-upload {
+                background: #186EAB !important;
+                color: #FFFFFF !important;
+                border: solid 1px #135A8C !important;
+              }`;
+
+
+
 class Cloudwok extends React.Component {
   render() {
     return (
       <div>
+        <style>
+          {style}
+        </style>
         <div className="cloudwok-embed" data-wokid="r3M-">
           <div className="cloudwok-upload-files"></div>
           <form className="cloudwok-upload">
