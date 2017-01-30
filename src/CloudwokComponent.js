@@ -1,5 +1,12 @@
 import React from 'react';
 
+const success = {
+  title: 'Thank you for multiplying!',
+  subtitle: 'Your donation has been multiplied by 10',
+  text: 'We\'ll tweet this receipt to at least 10 people who are matching donations. Your donation just increased tenfold!'
+};
+
+
 const cloudWokConfig = {
   "dropzone": {
     "label": "Multiply your donation by 10x",
@@ -7,9 +14,9 @@ const cloudWokConfig = {
   },
   "success": {
     "message": {
-      "title": "UPLOAD SUCCESS TITLE",
-      "subtitle": "UPLOAD SUCCESS SUBTITLE",
-      "text": "UPLOAD SUCCESS TEXT",
+      "title": success.title,
+      "subtitle": success.subtitle,
+      "text": success.text,
       "button": "OK",
       "noButtonOwnCW": false,
       "dontpopup": false,
