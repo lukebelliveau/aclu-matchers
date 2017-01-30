@@ -9,7 +9,11 @@ const twitterHandle = 'ACLU_Multiplier';
 
 const divStyle = {
   align: 'float left',
-  padding: '50px'
+  padding: '25px'
+};
+
+const signatureStyle = {
+  fontSize: '0.8em'
 };
 
 class App extends Component {
@@ -25,6 +29,10 @@ class App extends Component {
           <i>
             “‘Extreme vetting’ is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.”
           </i>
+
+          <p style={signatureStyle}>
+            - Anthony D. Romero, Executive Director, American Civil Liberties Union
+          </p>
           <p>
             The above is a statement from the Executive Director of the ACLU, a statement that I wholeheartedly agree with - and I'm not alone.
             <br/>
