@@ -16,12 +16,12 @@ const timeEST = '11:00am';
 const date = 'January 30, 2017';
 
 const TotalMatchedComponent = () => (
-  <div style={amountStyle}>
+  <div style={ amountStyle }>
     <div>
-      Over <strong style={ { fontSize: '1.5em' } }>${amountMatched}</strong> worth of donations <br />
+      Over <strong style={ { fontSize: '1.5em' } }>${ amountMatched }</strong> worth of donations <br />
       have been matched through this site, <br />
       all thanks to donors like you!
-      <div style={dateTimeStyle}><strong>*as of {timeEST} EST on {date}</strong></div>
+      <div style={ dateTimeStyle }><strong>*as of { timeEST } EST on { date }</strong></div>
     </div>
   </div>
 );
