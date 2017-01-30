@@ -8,6 +8,7 @@ const body = {
   align: 'float left',
   padding: 25,
   borderTopStyle: 'solid',
+  borderBottomStyle: 'solid',
   margin: '0 auto',
   width: '70%'
 };
