@@ -25,6 +25,8 @@ class App extends Component {
           <h2>Welcome to ACLU Donation Multiplier</h2>
         </div>
 
+        <CloudwokComponent />
+
         <div style={divStyle}>
           <i>
             “‘Extreme vetting’ is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.”
@@ -47,7 +49,7 @@ class App extends Component {
           </p>
         </div>
 
-        <CloudwokComponent />
+
 
         <Timeline
           dataSource={{
