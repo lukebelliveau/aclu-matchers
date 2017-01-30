@@ -26,8 +26,8 @@ const cloudWokConfig = {
     "redirect": ""
   },
   "terms": {
-    "show": true,
-    "popup": true,
+    "show": false,
+    "popup": false,
     "text": {
       "before": "Before you upload...",
       "agree": "Please agree to the following Terms of Service:",
