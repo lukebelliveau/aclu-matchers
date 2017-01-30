@@ -36,7 +36,7 @@ const dateTimeStyle = {
   margin: 10
 };
 
-const amountMatched = '7,500';
+const amountMatched = '8,500';
 
 const timeEST = '12:30am';
 
