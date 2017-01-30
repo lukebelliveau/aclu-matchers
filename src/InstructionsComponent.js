@@ -1,52 +1,63 @@
 import React from 'react';
+import Cloudwok from './Cloudwok';
 
 const border = {
   borderRadius: 25,
-  // border: '2px solid black',
   padding: 50,
   backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
-  //
-  // leftMargin: '100px'
 
   width: '70%',
   margin: '0 auto',
   height: 'auto',
   position: 'relative',
-  color: 'white'
+  color: 'white',
+  align: 'float right'
 };
 
-const container = {
+const wrapper = {
   width: '800',
-  height: 'auto',
-  margin: '0 auto;background-color: #ccc',
-  padding: '10px',
-  paddingLeft: '15%',
-  paddingRight: '15%',
   position: 'relative'
+};
+
+const instructions = {
+  marginLeft: '30%'
 };
 
 
 const link = {
   fontWeight: 'bold',
-  paddingTop: 10,
+  paddingBottom: 10,
+  position: 'relative',
+  color: 'white'
+};
+
+const cloudwokStyle = {
+  position: 'relative',
+  width: '90%'
 };
 
 const Instructions = () => (
-  <div style={ container }>
+  <div style={ wrapper }>
 
-    <div style={ border }>
+    <div style={ instructions }>
 
-
-      <div>
-        <h2>Drag and drop a screenshot of your ACLU donation receipt below to multiply your donation by 10.</h2>
+      <div style={ link }>
+        <h2>
+          <a href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the <br /> American Civil Liberties Union</a>
+        </h2>
       </div>
-      <strong>NOTE: Screenshots should show confirmation code and amount donated!</strong>
-    </div>
 
-    <div style={ link }>
-      <a href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the American Civil Liberties Union</a>
-    </div>
+      <div style={ border }>
 
+        <div>
+          <h1>Drag and drop a screenshot of your ACLU donation receipt below to multiply your donation by 10.</h1>
+        </div>
+        <strong>NOTE: Screenshots should show confirmation code and amount donated!</strong>
+      </div>
+
+      <Cloudwok />
+
+    </div>
   </div>
 );
 

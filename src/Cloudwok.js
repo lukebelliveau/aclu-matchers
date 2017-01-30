@@ -64,15 +64,23 @@ export const startCloudwok = () => {
 };
 
 
-const style = `.cloudwok-embed .dropzone {
+const style = `
+
+              .cloudwok-embed {
+                width: 70%;
+                borderRadius: 25;
+                
+                margin: 0 auto;
+                height: auto;
+                position: relative;
+                align: float right;
+              }     
+
+              .cloudwok-embed .dropzone {
                   background: red !important;
                   color: #D9E7FF !important;
                   border: solid 3px #dddddd !important;
-                  
-                  width: 70%;
-                  margin: 0 auto;
-                  height: auto;
-                  position: relative;
+                  ion: relative;
                 }
               .cloudwok-embed .dropzone .filepicker {
                 background: white !important;

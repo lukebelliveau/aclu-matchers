@@ -6,18 +6,9 @@ import './App.css';
 import Uploader from './Cloudwok';
 import Header from './HeaderComponent';
 import Instructions from './InstructionsComponent'
+import Statement from './StatementComponent';
 
 const twitterHandle = 'ACLU_Multiplier';
-
-const bodyStyle = {
-  align: 'float left',
-  padding: 25,
-  borderTopStyle: 'solid'
-};
-
-const signatureStyle = {
-  fontSize: '0.8em'
-};
 
 const amountStyle = {
   color: 'green'
@@ -39,8 +30,6 @@ const dateTimeStyle = {
 };
 
 const wrapper = {
-  paddingLeft: '50%',
-  paddingRight: '15%',
   width: '800',
   position: 'relative'
 };
@@ -62,8 +51,6 @@ class App extends Component {
         <div className ={ appStyle } >
           <div className="App">
 
-            <Header />
-
             <Instructions />
 
             <div style={cloudwokStyle}>
@@ -79,24 +66,7 @@ class App extends Component {
               </div>
             </div>
 
-            <div style={bodyStyle}>
-              <i>
-                “‘Extreme vetting’ is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.”
-              </i>
-
-              <p style={signatureStyle}>
-                - Anthony D. Romero, Executive Director, American Civil Liberties Union
-              </p>
-              <p>
-                The above is a statement from the Executive Director of the ACLU, a statement that I wholeheartedly agree with - and I'm not alone.
-                <br/>
-                <br />
-                People around the nation have offered to match our donations to the ACLU; all they need from us is a tweet with the donation receipt.
-                <br/>
-                <br />
-                Drag and drop your receipt above, and I will automatically tweet your receipt to at least ten matching donors. Multiply your donation by 10!
-              </p>
-            </div>
+            <Statement />
 
             <Timeline
               dataSource={{
