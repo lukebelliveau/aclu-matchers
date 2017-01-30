@@ -66,20 +66,18 @@ class App extends Component {
               </div>
             </div>
 
-            <Statement />
-
             <Timeline
               dataSource={{
-              sourceType: 'profile',
-              screenName: twitterHandle
-            }}
+                sourceType: 'profile',
+                screenName: twitterHandle
+              }}
               options={{
-              username: twitterHandle,
-              height: '400',
-              width: '300'
-            }}
+                username: twitterHandle,
+                height: '400',
+                width: '70%',
+              }}
             />
-          </div>
+            </div>
         </div>
       </div>
     );
