@@ -32,7 +32,7 @@ const cloudwokStyle = {
   borderColor: 'green'
 };
 
-const amountMatched = '5,450';
+const amountMatched = '6,500';
 
 class App extends Component {
   render() {
