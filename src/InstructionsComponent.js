@@ -27,7 +27,6 @@ const body = {
   width: '70%'
 };
 
-
 const link = {
   fontWeight: 'bold',
   paddingBottom: 10,

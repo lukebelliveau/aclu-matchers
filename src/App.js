@@ -48,7 +48,8 @@ class App extends Component {
               dataSource={twitterFeed.dataSource}
               options={twitterFeed.options}
             />
-            </div>
+            
+          </div>
         </div>
       </div>
     );

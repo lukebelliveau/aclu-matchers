@@ -65,7 +65,6 @@ export const startCloudwok = () => {
 
 
 const style = `
-
               .cloudwok-embed {
                 width: 70%;
                 borderRadius: 25;
