@@ -9,7 +9,8 @@ const twitterHandle = 'ACLU_Multiplier';
 
 const divStyle = {
   align: 'float left',
-  padding: '25px'
+  padding: '25px',
+  borderTopStyle: 'solid'
 };
 
 const signatureStyle = {
@@ -26,7 +27,7 @@ class App extends Component {
         </div>
 
         <div>
-          <p>Drag and drop a screenshot of your receipt below to multiply your donation by 10.</p>
+          <p>Drag and drop a screenshot of your ACLU donation receipt below to multiply your donation by 10.</p>
         </div>
 
         <CloudwokComponent />
