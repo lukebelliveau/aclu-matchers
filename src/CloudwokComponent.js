@@ -74,7 +74,7 @@ const styles = {
 const style = `.cloudwok-embed .dropzone {
                   background: red !important;
                   color: #D9E7FF !important;
-                  border: solid 3px blue !important;
+                  border: solid 3px #dddddd !important;
                 }
               .cloudwok-embed .dropzone .filepicker {
                 background: white !important;
