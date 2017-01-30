@@ -34,6 +34,10 @@ const cloudwokStyle = {
 
 const amountMatched = '7,000';
 
+const timeEST = '12:00am';
+
+const date = 'January 30, 2017';
+
 class App extends Component {
   render() {
     return (
@@ -58,7 +62,7 @@ class App extends Component {
 
         <div style={amountStyle}>
           <p>
-            <strong>${amountMatched}</strong> matched as of 11:15pm EST, January 29
+            <strong>${amountMatched}</strong> matched as of {timeEST} EST, {date}
           </p>
         </div>
 
