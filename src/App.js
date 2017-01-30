@@ -85,7 +85,7 @@ class App extends Component {
             The above is a statement from the Executive Director of the ACLU, a statement that I wholeheartedly agree with - and I'm not alone.
             <br/>
             <br />
-            People around the nation have volunteered to match our donations to the ACLU; all they need from us is a tweet with the donation receipt.
+            People around the nation have offered to match our donations to the ACLU; all they need from us is a tweet with the donation receipt.
             <br/>
             <br />
             Drag and drop your receipt above, and I will automatically tweet your receipt to at least ten matching donors. Multiply your donation by 10!
