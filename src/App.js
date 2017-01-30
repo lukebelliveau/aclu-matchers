@@ -29,8 +29,15 @@ class App extends Component {
         <div>
           <p>Drag and drop a screenshot of your ACLU donation receipt below to multiply your donation by 10.</p>
         </div>
+        <strong>NOTE: Screenshots should show confirmation code and amount donated!</strong>
 
         <CloudwokComponent />
+
+        <div>
+          <p>
+            $5,450 matched as of 10:15pm CST, January 29
+          </p>
+        </div>
 
         <div style={divStyle}>
           <i>
