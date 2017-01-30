@@ -38,7 +38,7 @@ const appStyle = {
   width: '40%'
 };
 
-const amountMatched = '10,000';
+const amountMatched = '12,000';
 
 const timeEST = '10:30am';
 
