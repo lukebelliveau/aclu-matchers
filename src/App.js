@@ -40,7 +40,7 @@ const appStyle = {
 
 const amountMatched = '10,000';
 
-const timeEST = '12:30am';
+const timeEST = '10:30am';
 
 const date = 'January 30, 2017';
 
