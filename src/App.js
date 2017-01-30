@@ -28,9 +28,12 @@ const linkStyle = {
 
 const cloudwokStyle = {
   margin: '10',
-  // borderStyle: 'dotted',
-  // borderColor: 'green',
   padding: '10'
+};
+
+const dateTimeStyle = {
+  fontSize: '0.8em',
+  marginTop: 3
 };
 
 const amountMatched = '7,500';
@@ -63,7 +66,10 @@ class App extends Component {
 
         <div style={amountStyle}>
           <p>
-            <strong>${amountMatched}</strong> matched as of {timeEST} EST, {date}
+            Over <strong style={ { fontSize: '1.5em' } }>${amountMatched}</strong> worth of donations <br />
+            have been matched through this site, <br />
+            all thanks to donors like you!
+            <p style={dateTimeStyle}>*as of {timeEST} EST on {date}</p>
           </p>
         </div>
 
