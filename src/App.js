@@ -9,33 +9,33 @@ import TotalMatched from './TotalMatchedComponent';
 
 const twitterHandle = 'ACLU_Multiplier';
 
-const wrapper = {
-  width: '800',
-  position: 'relative'
-};
-
-const appStyle = {
-  width: '40%'
-};
+const styles = {
+  wrapper: {
+    width: '800',
+    position: 'relative'
+  },
+  app: {
+    width: '40%'
+  }
+}
 
 const twitterFeed = {
   dataSource: {
     sourceType: 'profile',
     screenName: twitterHandle
   },
-
   options: {
     username: twitterHandle,
     height: '400',
     width: '70%'
   }
-};
+}
 
 class App extends Component {
   render() {
     return (
-      <div className={ wrapper }>
-        <div className={ appStyle } >
+      <div className={ styles.wrapper }>
+        <div className={ styles.app } >
           <div className="App">
 
             <Instructions />
