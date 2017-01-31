@@ -11,7 +11,7 @@ const dateTimeStyle = {
 
 const amountMatched = '140,000';
 
-const timeEST = '8:30pm';
+const timeEST = '9:00pm';
 
 const date = 'January 30, 2017';
 
