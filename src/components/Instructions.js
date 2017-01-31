@@ -1,8 +1,13 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
 import Cloudwok from './Cloudwok';
+import {colors} from '../styles/shared';
 
 const styles = {
+  container: {
+    maxWidth: '1024px', 
+    margin: '0 auto',
+  },
   hero: {
     padding: '1rem',
     backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
@@ -14,7 +19,7 @@ const styles = {
   a: {
     color: '#40B2F6',
     textDecoration: 'none'
-  }  
+  },
 }
 
 const s = StyleSheet.create(styles)
@@ -22,10 +27,12 @@ const s = StyleSheet.create(styles)
 const Instructions = () => (
   <div>
     <div className={css(s.hero)}>
-      <h2>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h2>
-      <h3>This will multiply your donation by 10.</h3>
-      <h3><strong>Absolutely no personal information is required.</strong></h3>
-      <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
+      <div className={css(s.container)}>
+        <h2>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h2>
+        <h3>This will multiply your donation by 10.</h3>
+        <h3><strong>Absolutely no personal information is required.</strong></h3>
+        <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
+      </div>      
     </div>
     
     <Cloudwok />
