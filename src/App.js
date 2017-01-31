@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import { Timeline } from 'react-twitter-widgets';
 
 import './styles/app.css';
-import Instructions from './components/InstructionsComponent'
-import Statement from './components/StatementComponent';
-import TotalMatched from './components/TotalMatchedComponent';
+import Instructions from './components/Instructions'
+import Statement from './components/Statement';
+import TotalMatched from './components/TotalMatched';
 
 const twitterHandle = 'ACLU_Multiplier';
 

@@ -15,7 +15,7 @@ const timeEST = '2:30pm';
 
 const date = 'January 31, 2017';
 
-const TotalMatchedComponent = () => (
+const TotalMatched = () => (
   <div style={ amountStyle }>
     <div>
       Over <strong style={ { fontSize: '1.5em' } }>${ amountMatched }</strong> worth of donations <br />
@@ -26,4 +26,4 @@ const TotalMatchedComponent = () => (
   </div>
 );
 
-export default TotalMatchedComponent;
+export default TotalMatched;
