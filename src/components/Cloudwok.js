@@ -60,7 +60,6 @@ export const startCloudwok = () => {
   })(window, document);
 };
 
-
 const style = `
               .cloudwok-embed {
                 width: 70%;
@@ -89,8 +88,6 @@ const style = `
                 color: #FFFFFF !important;
                 border: solid 1px #135A8C !important;
               }`;
-
-
 
 class Cloudwok extends React.Component {
   render() {

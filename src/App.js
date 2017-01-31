@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 import { Timeline } from 'react-twitter-widgets';
 
 import './styles/app.css';
-import Instructions from './InstructionsComponent'
-import Statement from './StatementComponent';
-import TotalMatched from './TotalMatchedComponent';
+import Instructions from './components/InstructionsComponent'
+import Statement from './components/StatementComponent';
+import TotalMatched from './components/TotalMatchedComponent';
 
 const twitterHandle = 'ACLU_Multiplier';
 
 const styles = {
   wrapper: {
-    maxWidth: '1028',
+    maxWidth: '1028px',
     position: 'relative',
     margin: '0 auto'
   }
