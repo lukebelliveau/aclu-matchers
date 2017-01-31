@@ -11,7 +11,7 @@ const twitterHandle = 'ACLU_Multiplier';
 const s = StyleSheet.create({
   wrapper: {width: '100%'},
   app: {textAlign: 'center'},
-})
+});
 
 const twitterFeed = {
   dataSource: {
@@ -23,7 +23,7 @@ const twitterFeed = {
     height: '400',
     width: '70%'
   }
-}
+};
 
 class App extends Component {
   render() {
@@ -45,6 +45,6 @@ class App extends Component {
       </div>
     );
   }
-}
+};
 
 export default App;

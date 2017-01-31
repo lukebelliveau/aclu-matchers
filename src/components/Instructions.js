@@ -4,14 +4,15 @@ import Cloudwok from './Cloudwok';
 const styles = {
   border: {
     borderRadius: 25,
-    padding: 50,
+    padding: 20,
     backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
     width: '70%',
     margin: '0 auto',
     height: 'auto',
     position: 'relative',
     color: 'white',
-    align: 'float right'
+    align: 'float right',
+    marginTop: 10
   },
   link: {
     fontWeight: 'bold',
