@@ -71,7 +71,7 @@ const style = `
               }     
 
               .cloudwok-embed .dropzone {
-                  background: #E0162B !important;
+                  background: #237ACB !important;
                   color: #D9E7FF !important;
                   border: solid 3px #dddddd !important;
                   ion: relative;
