@@ -1,19 +1,43 @@
 {
   "colors": {
     "darkRed": {
-      "backgroundColor": "#941324"
+      "color": "#941324"
     },
     "red": {
-      "backgroundColor": "#DC2039"
+      "color": "#DC2039"
     },
     "white": {
-      "backgroundColor": "#F5F6FA"
+      "color": "#F5F6FA"
     },
     "blue": {
-      "backgroundColor": "#2A53C1"
+      "color": "#2A53C1"
     },
     "darkBlue": {
+      "color": "#202A5D"
+    },
+    "bgDarkRed": {
+      "backgroundColor": "#941324"
+    },
+    "bgRed": {
+      "backgroundColor": "#DC2039"
+    },
+    "bgWhite": {
+      "backgroundColor": "#F5F6FA"
+    },
+    "bgBlue": {
+      "backgroundColor": "#2A53C1"
+    },
+    "bgDarkBlue": {
       "backgroundColor": "#202A5D"
+    }
+  },
+  "whitespace": {
+    "margins": {
+      "m0":  {"margin": 0 },
+      "mt0": {"marginTop": 0 },
+      "mr0": {"marginRight": 0 },
+      "mb0": {"marginBottom": 0 },
+      "ml0": {"marginLeft": 0 }
     }
   }
 }
