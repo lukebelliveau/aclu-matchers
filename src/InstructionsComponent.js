@@ -48,7 +48,8 @@ const Instructions = () => (
         <div>
           <h1>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h1>
         </div>
-        <h2>Absolutely no personal information is required.</h2>
+        <h2>This will multiply your donation by 10.</h2>
+        <h2><strong>Absolutely no personal information is required.</strong></h2>
         <strong>Just make sure your screenshot shows your confirmation number and amount donated.</strong>
       </div>
 
