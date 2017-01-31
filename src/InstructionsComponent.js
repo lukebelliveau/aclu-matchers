@@ -61,7 +61,7 @@ const Instructions = () => (
           <a style={a} href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the <br /> American Civil Liberties Union</a>
         </h2>
       </div>
-      <h2>...then drop your receipt on the red box to multiply it!</h2>
+      <h2>...then drop your receipt on the blue box to multiply it!</h2>
 
     </div>
   </div>
