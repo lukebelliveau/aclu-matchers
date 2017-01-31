@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import GoogleAnalytics from 'react-ga';
 
 import App from './App';
-import './index.css';
+import './styles/index.css';
 
 import { startCloudwok } from './Cloudwok'
 

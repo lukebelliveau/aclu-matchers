@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Timeline } from 'react-twitter-widgets';
 
-import './App.css';
+import './styles/app.css';
 import Instructions from './InstructionsComponent'
 import Statement from './StatementComponent';
 import TotalMatched from './TotalMatchedComponent';
