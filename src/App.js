@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {StyleSheet, css} from 'aphrodite';
 import { Timeline } from 'react-twitter-widgets';
 
 import Instructions from './components/Instructions'
@@ -8,16 +8,10 @@ import TotalMatched from './components/TotalMatched';
 
 const twitterHandle = 'ACLU_Multiplier';
 
-const styles = {
-  wrapper: {
-    maxWidth: '1028px',
-    position: 'relative',
-    margin: '0 auto',
-  },
-  app: {
-    textAlign: 'center',
-  },
-}
+const s = StyleSheet.create({
+  wrapper: {width: '100%'},
+  app: {textAlign: 'center'},
+})
 
 const twitterFeed = {
   dataSource: {
@@ -34,8 +28,8 @@ const twitterFeed = {
 class App extends Component {
   render() {
     return (
-      <div style={ styles.wrapper }>
-        <div style={ styles.app }>
+      <div className={css(s.wrapper)}>
+        <div className={css(s.app)}>
 
           <Instructions />
 
