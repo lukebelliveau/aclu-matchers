@@ -11,11 +11,9 @@ const twitterHandle = 'ACLU_Multiplier';
 
 const styles = {
   wrapper: {
-    width: '800',
-    position: 'relative'
-  },
-  app: {
-    width: '40%'
+    maxWidth: '1028',
+    position: 'relative',
+    margin: '0 auto'
   }
 }
 
@@ -34,22 +32,19 @@ const twitterFeed = {
 class App extends Component {
   render() {
     return (
-      <div className={ styles.wrapper }>
-        <div className={ styles.app } >
-          <div className="app">
+      <div style={ styles.wrapper }>
+        <div className="app">
 
-            <Instructions />
+          <Instructions />
 
-            <TotalMatched />
+          <TotalMatched />
 
-            <Statement />
+          <Statement />
 
-            <Timeline
-              dataSource={twitterFeed.dataSource}
-              options={twitterFeed.options}
-            />
-            
-          </div>
+          <Timeline
+            dataSource={twitterFeed.dataSource}
+            options={twitterFeed.options}
+          />          
         </div>
       </div>
     );
