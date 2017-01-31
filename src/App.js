@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <div className={ styles.wrapper }>
         <div className={ styles.app } >
-          <div className="App">
+          <div className="app">
 
             <Instructions />
 
