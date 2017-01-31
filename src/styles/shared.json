@@ -1,0 +1,19 @@
+{
+  "colors": {
+    "darkRed": {
+      "backgroundColor": "#941324"
+    },
+    "red": {
+      "backgroundColor": "#DC2039"
+    },
+    "white": {
+      "backgroundColor": "#F5F6FA"
+    },
+    "blue": {
+      "backgroundColor": "#2A53C1"
+    },
+    "darkBlue": {
+      "backgroundColor": "#202A5D"
+    }
+  }
+}

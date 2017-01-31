@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 import {StyleSheet, css} from 'aphrodite';
 import { Timeline } from 'react-twitter-widgets';
 
-import Instructions from './components/Instructions'
+import Header from './components/Header';
+import Instructions from './components/Instructions';
 import Statement from './components/Statement';
 import TotalMatched from './components/TotalMatched';
 
 const twitterHandle = 'ACLU_Multiplier';
 
 const s = StyleSheet.create({
-  wrapper: {width: '100%'},
-  app: {
+  wrapper: {
     textAlign: 'center',
-    margin: '0 auto',
-    maxWidth: '1024px',
   },
 })
 
@@ -33,19 +31,11 @@ class App extends Component {
   render() {
     return (
       <div className={css(s.wrapper)}>
-        <div className={css(s.app)}>
-
-          <Instructions />
-
-          <TotalMatched />
-
-          <Statement />
-
-          <Timeline
-            dataSource={twitterFeed.dataSource}
-            options={twitterFeed.options}
-          />          
-        </div>
+        <Header />
+        <Instructions />
+        <TotalMatched />
+        <Statement />
+        <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
       </div>
     );
   }

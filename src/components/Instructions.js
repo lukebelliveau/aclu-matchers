@@ -3,16 +3,9 @@ import Cloudwok from './Cloudwok';
 
 const styles = {
   border: {
-    borderRadius: 25,
-    padding: 20,
+    padding: '1rem',
     backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
-    width: '70%',
-    margin: '0 auto',
-    height: 'auto',
-    position: 'relative',
     color: 'white',
-    align: 'float right',
-    marginTop: 10
   },
   link: {
     fontWeight: 'bold',
@@ -29,11 +22,9 @@ const Instructions = () => (
   <div >
 
     <div style={ styles.border }>
-      <div>
-        <h1>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h1>
-      </div>
-      <h2>This will multiply your donation by 10.</h2>
-      <h2><strong>Absolutely no personal information is required.</strong></h2>
+      <h2>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h2>
+      <h3>This will multiply your donation by 10.</h3>
+      <h3><strong>Absolutely no personal information is required.</strong></h3>
       <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
     </div>
     
