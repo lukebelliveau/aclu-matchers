@@ -9,7 +9,7 @@ const dateTimeStyle = {
   margin: 10
 };
 
-const amountMatched = '135,000';
+const amountMatched = '140,000';
 
 const timeEST = '8:30pm';
 
