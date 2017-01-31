@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import { Timeline } from 'react-twitter-widgets';
 
-import './styles/app.css';
 import Instructions from './components/Instructions'
 import Statement from './components/Statement';
 import TotalMatched from './components/TotalMatched';
@@ -13,8 +12,11 @@ const styles = {
   wrapper: {
     maxWidth: '1028px',
     position: 'relative',
-    margin: '0 auto'
-  }
+    margin: '0 auto',
+  },
+  app: {
+    textAlign: 'center',
+  },
 }
 
 const twitterFeed = {
@@ -33,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div style={ styles.wrapper }>
-        <div className="app">
+        <div style={ styles.app }>
 
           <Instructions />
 
