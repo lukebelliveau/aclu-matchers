@@ -39,7 +39,7 @@ const a = {
 };
 
 const Instructions = () => (
-  <div className={ wrapper }>
+  <div className={ wrapper } style={ { marginTop: 10 } }>
 
     <div className={ body }>
 
