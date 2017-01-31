@@ -33,7 +33,9 @@ const cloudWokConfig = {
       "before": "Before you upload...",
       "agree": "Please agree to the following Terms of Service:",
       "title": "Terms of Service",
-      "main": "ENTER TERMS OF SERVICE HERE"
+      "main": `Your receipt will be uploaded to cloud storage and AUTOMATICALLY tweeted to donation matchers. No personal information is required.
+               Once something is uploaded, the process of tweeting to matchers is AUTOMATIC, and I cannot guarantee that I can prevent an accidental
+               submission from being shared on the public internet.`
     },
     "checkbox": {
       "text1": "I agree with the ",
