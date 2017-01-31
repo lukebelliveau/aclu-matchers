@@ -10,8 +10,12 @@ const twitterHandle = 'ACLU_Multiplier';
 
 const s = StyleSheet.create({
   wrapper: {width: '100%'},
-  app: {textAlign: 'center'},
-});
+  app: {
+    textAlign: 'center',
+    margin: '0 auto',
+    maxWidth: '1024px',
+  },
+})
 
 const twitterFeed = {
   dataSource: {

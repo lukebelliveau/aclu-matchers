@@ -34,7 +34,7 @@ const Instructions = () => (
       </div>
       <h2>This will multiply your donation by 10.</h2>
       <h2><strong>Absolutely no personal information is required.</strong></h2>
-      <strong>Just make sure your screenshot shows your confirmation number and amount donated.</strong>
+      <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
     </div>
     
     <Cloudwok />
