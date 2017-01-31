@@ -11,7 +11,7 @@ const success = {
 const cloudWokConfig = {
   "dropzone": {
     "label": " ",
-    "button": "MULTIPLY DONATION BY 10"
+    "button": "DROP RECEIPT HERE"
   },
   "success": {
     "message": {

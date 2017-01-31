@@ -30,8 +30,12 @@ const body = {
 const link = {
   fontWeight: 'bold',
   paddingBottom: 10,
-  position: 'relative',
-  color: 'white'
+  position: 'relative'
+};
+
+const a = {
+  color: '#40B2F6',
+  textDecoration: 'none'
 };
 
 const Instructions = () => (
@@ -39,21 +43,24 @@ const Instructions = () => (
 
     <div className={ body }>
 
-      <div className={ link }>
-        <h2>
-          <a href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the <br /> American Civil Liberties Union</a>
-        </h2>
-      </div>
-
       <div style={ border }>
 
         <div>
-          <h1>Drag and drop a screenshot of your ACLU receipt onto the red button to multiply your donation by 10.</h1>
+          <h1>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h1>
         </div>
-        <strong>NOTE: Screenshots should show confirmation code and amount donated!</strong>
+        <h2>Absolutely no personal information is required.</h2>
+        <strong>Just make sure your screenshot shows your confirmation number and amount donated.</strong>
       </div>
 
       <Cloudwok />
+
+      <h2>and if you haven't donated yet...</h2>
+      <div className={ link }>
+        <h2>
+          <a style={a} href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the <br /> American Civil Liberties Union</a>
+        </h2>
+      </div>
+      <h2>...then drop your receipt on the red box to multiply it!</h2>
 
     </div>
   </div>
