@@ -9,11 +9,11 @@ const dateTimeStyle = {
   margin: 10
 };
 
-const amountMatched = '150,000';
+const amountMatched = '165,000';
 
-const timeEST = '11:00pm';
+const timeEST = '1:00am';
 
-const date = 'January 30, 2017';
+const date = 'January 31, 2017';
 
 const TotalMatchedComponent = () => (
   <div style={ amountStyle }>
