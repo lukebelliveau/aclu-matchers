@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
 import Cloudwok from './Cloudwok';
-import {colors} from '../styles/shared';
+import {background, whitespace} from '../styles/shared';
 
 const styles = {
   container: {
@@ -9,7 +9,7 @@ const styles = {
     margin: '0 auto',
   },
   hero: {
-    padding: '1rem',
+    padding: '2rem',
     backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
     color: 'white',
   },
@@ -20,15 +20,17 @@ const styles = {
     color: '#40B2F6',
     textDecoration: 'none'
   },
+  cover: background.size.cover,
+  mt0: whitespace.margins.mt0,
 }
 
 const s = StyleSheet.create(styles)
 
 const Instructions = () => (
   <div>
-    <div className={css(s.hero)}>
+    <div className={css(s.hero, s.cover)}>
       <div className={css(s.container)}>
-        <h2>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h2>
+        <h2 className={css(s.mt0)}>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h2>
         <h3>This will multiply your donation by 10.</h3>
         <h3><strong>Absolutely no personal information is required.</strong></h3>
         <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
