@@ -12,8 +12,10 @@ const twitterHandle = 'ACLU_Multiplier';
 const s = StyleSheet.create({
   wrapper: {
     textAlign: 'center',
+    paddingRight: '3rem',
+    paddingLeft: '3rem',
   },
-})
+});
 
 const twitterFeed = {
   dataSource: {
@@ -32,10 +34,9 @@ class App extends Component {
     return (
       <div className={css(s.wrapper)}>
         <Header />
-        <Instructions />
-        <TotalMatched />
-        <Statement />
-        <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
+         <Instructions />
+         <Statement />
+         <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
       </div>
     );
   }

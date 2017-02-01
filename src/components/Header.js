@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
 import {colors, whitespace} from '../styles/shared';
+import TotalMatched from './TotalMatched';
 
 const s = StyleSheet.create({
   white: colors.white,
@@ -8,16 +9,24 @@ const s = StyleSheet.create({
   mb0: whitespace.margins.mb0,
   header: {
     padding: '.8rem',
-    boxShadow: `0 1px 0 ${colors.offWhite.color} inset, 0 -1px 0 ${colors.offWhite.color} inset`,
+    marginTop: '0.7rem',
   },
-  titleShadow: {
-    textShadow: '1px 1px 1px black'
+  hr: {
+    marginTop: '1.3rem',
   },
-})
+  titleHeight: {
+    fontSize: '2rem',
+  },
+  titleMargin: {
+    marginBottom: '0.6rem'
+  }
+});
 
 const Header = () => (
-  <div className={css(s.header, s.bgRed)}>
-    <h1 className={css(s.white, s.titleShadow, s.mb0)}>ACLU DONATION MULTIPLIER</h1>
+  <div className={css(s.header, s.black)}>
+    <h1 className={css(s.black, s.mb0, s.titleHeight, s.titleMargin)}>ACLU Donation Multiplier</h1>
+    <TotalMatched />
+    <hr className={css(s.hr)} />
   </div>
 );
 
