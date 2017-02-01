@@ -26,15 +26,11 @@ const Statement = () => (
         - Anthony D. Romero, Executive Director, American Civil Liberties Union
       </p>
 
-      <p>
+      <p>  
         The above is a statement from the Executive Director of the ACLU, a statement that I wholeheartedly agree with - and I'm not alone.
-      </p>
-      
-      <p>
+        <br />
         People around the nation have offered to match our donations to the ACLU; all they need from us is a tweet with the donation receipt.
-      </p>
-      
-      <p>
+        <br />
         Drag and drop your receipt above, and I will automatically tweet your receipt to at least ten matching donors. Multiply your donation by 10!
       </p>
     </div>
