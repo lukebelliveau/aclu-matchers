@@ -8,7 +8,6 @@ const signature = {
 const body = {
   align: 'float left',
   margin: '0 auto',
-  marginTop: '3rem',
   marginBottom: '3rem',
   width: '90%',
   textAlign: 'left'
@@ -21,6 +20,7 @@ const wrapper = {
 
 const hr = {
     marginTop: '1.3rem',
+    marginBottom: '3rem',
 }
 
 const Statement = () => (
