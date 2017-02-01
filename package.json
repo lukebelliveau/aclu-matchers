@@ -6,7 +6,7 @@
     "gh-pages": "^0.12.0",
     "react-scripts": "0.8.5"
   },
-  "homepage": "https://lukebelliveau.github.io",
+  "homepage": "https://lukebelliveau.github.io/aclu-matchers",
   "dependencies": {
     "aphrodite": "^1.1.0",
     "react": "^15.4.2",
