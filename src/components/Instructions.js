@@ -27,7 +27,7 @@ const Instructions = () => (
   <div>
     <div className={css(s.hero, s.pb8, s.cover, s.textShadowTwo)}>
       <div className={css(s.container)}>
-        <h2 className={css(s.mt0)}>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h2>
+        <h2 className={css(s.mt0)}>Drag and drop your receipt onto this page, and I will automatically tweet your receipt to at least ten matching donors.</h2>
         <h3>This will multiply your donation by 10.</h3>
         <h3><strong>Absolutely no personal information is required.</strong></h3>
         <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
