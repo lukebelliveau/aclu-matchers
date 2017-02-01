@@ -5,7 +5,6 @@ To my knowledge, there is no tool to track those who are actively matching and m
 This application will allow you to drag-and-drop your receipt, which will automatically be shared with at least ten people who
 are matching donations.
 
-Yes, this app is ugly. The code is ugly. I wanted to get this out as fast as possible while a bunch of people were still
-offering to match.  I will continue to work on the UX and code quality as long as people continue to match donations.
+Yep - the page is ugly. The code is ugly. You should've seen them on day 1 :).  I wanted to get this out as fast as possible while a bunch of people were still offering to match.  I will continue to work on the UX and code quality as long as people continue to match donations.
 
 Bootstrapped with [create-react-app](https://github.com/facebookincubator/create-react-app/), hosted on Github Pages [here](https://lukebelliveau.github.io/aclu-matchers/).
