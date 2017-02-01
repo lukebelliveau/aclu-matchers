@@ -21,7 +21,7 @@ const styles = {
   },
 }
 
-const s = StyleSheet.create(styles)
+const s = StyleSheet.create(styles);
 
 const Instructions = () => (
   <div>
