@@ -5,7 +5,7 @@ import { Timeline } from 'react-twitter-widgets';
 import Header from './components/Header';
 import Instructions from './components/Instructions';
 import Statement from './components/Statement';
-import TotalMatched from './components/TotalMatched';
+
 
 const twitterHandle = 'ACLU_Multiplier';
 
@@ -34,9 +34,9 @@ class App extends Component {
     return (
       <div className={css(s.wrapper)}>
         <Header />
-         <Instructions />
-         <Statement />
-         <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
+        <Instructions />
+        <Statement />
+        <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
       </div>
     );
   }

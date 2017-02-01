@@ -3,7 +3,7 @@ import {colors} from '../styles/shared';
 
 const amountStyle = {
   color: colors.green.color,
-  fontSize: '2rem',
+  fontSize: '2.5rem',
   lineHeight: '1.2'
 };
 
