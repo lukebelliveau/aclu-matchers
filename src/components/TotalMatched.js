@@ -9,8 +9,8 @@ const dateTimeStyle = {
   margin: 10
 };
 
-const amountMatched = '240,000';
-const timeEST = '2:30pm';
+const amountMatched = '330,000';
+const timeEST = '7:30pm';
 const date = 'January 31, 2017';
 
 const TotalMatched = () => (
