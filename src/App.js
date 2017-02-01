@@ -14,6 +14,9 @@ const s = StyleSheet.create({
     textAlign: 'center',
     paddingRight: '3rem',
     paddingLeft: '3rem',
+    width: '100vw',
+    boxSizing: 'border-box',
+    position: 'relative',
   },
 });
 
