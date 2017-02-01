@@ -11,7 +11,8 @@ const styles = {
   hero: {
     padding: '2rem',
     backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
-    color: 'white',
+    color: '#fff',
+    textShadow: '2px 2px 1px #000',
   },
   link: {
     fontWeight: 'bold',
