@@ -61,49 +61,71 @@ export const startCloudwok = () => {
 };
 
 const style = `
+              .cloudwok-wrapper {
+                  flex: 1;
+                  display: flex;
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+              }
+
               .cloudwok-embed {
-                width: 70%;
-                borderRadius: 25;
-                
-                margin: 0 auto;
-                height: auto;
+                flex: 1;
+                height: 100%;
                 position: relative;
-                align: float right;
-              }     
+              }
 
               .cloudwok-embed .dropzone {
-                  background: #237ACB !important;
-                  color: #D9E7FF !important;
-                  border: solid 3px #dddddd !important;
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  background: rgba(0, 0, 0, 0) !important;
+                  color: rgba(0, 0, 0, 0) !important;
                   ion: relative;
                 }
+
               .cloudwok-embed .dropzone .filepicker {
-                background: white !important;
-                color: black !important;
-                border: solid 1px black !important;
-                font: strong
+                background: rgba(0, 0, 0, 0) !important;
+                color: rgba(0, 0, 0, 0) !important;
+                font: strong;
               }
               .cloudwok-embed .btn-start-upload {
                 background: #186EAB !important;
                 color: #FFFFFF !important;
                 border: solid 1px #135A8C !important;
-              }`;
+              }
+              
+              .fa-spin, .cloudwok-embed a, .cloudwok-embed a:hover, .text-instructions {
+                color: rgba(0, 0, 0, 0);
+              }
+
+              .btn.btn-success.filepicker {
+                border-color: rgba(0, 0, 0, 0);
+              }
+              
+              .row.row-upload-completed.row-clearfix.success {
+                background-color: #2f9e00;
+                border-top: 4px solid #1D6100;
+                border-bottom: 4px solid #1D6100;
+              }
+              
+              `;
 
 class Cloudwok extends React.Component {
   render() {
     return (
-      <div>
+      <span className='cloudwok-wrapper'>
         <style>
           {style}
         </style>
-        <div className="cloudwok-embed" data-wokid="r3M-">
-          <div className="cloudwok-upload-files"></div>
+        <span className="cloudwok-embed" data-wokid="r3M-">
+          <span className="cloudwok-upload-files"></span>
           <form className="cloudwok-upload">
-            <div className="cloudwok-dropzone"></div>
+            <span className="cloudwok-dropzone"></span>
           </form>
-          <div className="cloudwok-tos-checkbox"></div>
-        </div>
-      </div>
+          <span className="cloudwok-tos-checkbox"></span>
+        </span>
+      </span>
     )
   }
 };

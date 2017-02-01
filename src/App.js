@@ -5,15 +5,20 @@ import { Timeline } from 'react-twitter-widgets';
 import Header from './components/Header';
 import Instructions from './components/Instructions';
 import Statement from './components/Statement';
-import TotalMatched from './components/TotalMatched';
+
 
 const twitterHandle = 'ACLU_Multiplier';
 
 const s = StyleSheet.create({
   wrapper: {
     textAlign: 'center',
+    paddingRight: '3rem',
+    paddingLeft: '3rem',
+    width: '100vw',
+    boxSizing: 'border-box',
+    position: 'relative',
   },
-})
+});
 
 const twitterFeed = {
   dataSource: {
@@ -22,8 +27,8 @@ const twitterFeed = {
   },
   options: {
     username: twitterHandle,
-    height: '400',
-    width: '70%'
+    height: '600',
+    width: '90%'
   }
 };
 
@@ -33,7 +38,6 @@ class App extends Component {
       <div className={css(s.wrapper)}>
         <Header />
         <Instructions />
-        <TotalMatched />
         <Statement />
         <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
       </div>

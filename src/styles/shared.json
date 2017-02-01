@@ -3,6 +3,9 @@
     "white": {
       "color": "#fff"
     },
+    "black": {
+      "color": "#000"
+    },
     "darkRed": {
       "color": "#941324"
     },
@@ -14,6 +17,9 @@
     },
     "blue": {
       "color": "#2A53C1"
+    },
+    "green": {
+      "color": "#2f9e00"
     },
     "darkBlue": {
       "color": "#202A5D"
