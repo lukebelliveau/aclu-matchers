@@ -26,7 +26,7 @@ const TotalMatched = () => (
   <div>
     <div style={ textStyle }>
     <span style={ amountStyle }>${ amountMatched }</span><br/>
-      Donations matched, thanks to donors like you!
+      Worth of donations matched, thanks to donors like you!
       <div style={ dateTimeStyle }>*as of { timeEST } EST on { date }</div>
     </div>
   </div>
