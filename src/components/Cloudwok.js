@@ -74,6 +74,11 @@ const style = `
   border-style: dashed !important;
   border-radius: 5px;
 }
+@media(max-width: 640px) {
+  .cloudwok-embed .dropzone span.filepicker {
+    font-size: 1rem;
+  }
+}
 a[href="https://www.cloudwok.com"] {
   position: absolute;
   bottom: 5px;
