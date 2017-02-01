@@ -1,5 +1,4 @@
 import React from 'react';
-import {colors} from '../styles/shared';
 
 const success = {
   title: 'Thank you for multiplying!',
@@ -62,48 +61,41 @@ export const startCloudwok = () => {
 };
 
 const style = `
-.cloudwok-embed .dropzone {
-  position: relative;
-  height: 50vh;
-  border-radius: 0 !important;
-  background: ${colors.offWhite.color} !important;
-  color: #D9E7FF !important;
-}
-.cloudwok-embed .dropzone span.filepicker {
-  font-size: 2rem;
-  border-style: dashed !important;
-  border-radius: 5px;
-}
-@media(max-width: 640px) {
-  .cloudwok-embed .dropzone span.filepicker {
-    font-size: 1rem;
-  }
-}
-a[href="https://www.cloudwok.com"] {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-}
-.cloudwok-embed .dropzone .filepicker {
-  background: ${colors.white.color} !important;
-  color: #000 !important;
-  border: solid 1px #000 !important;
-  font-weight: strong
-}
-.cloudwok-embed .btn-start-upload {
-  background: #186EAB !important;
-  color: #fff !important;
-  border: solid 1px #135A8C !important;
-}
-.cloudwok-embed .spacer-10 {
-  height: 0;
-}`;
+              .cloudwok-embed {
+                width: 70%;
+                borderRadius: 25;
+                
+                margin: 0 auto;
+                height: auto;
+                position: relative;
+                align: float right;
+              }     
+
+              .cloudwok-embed .dropzone {
+                  background: #237ACB !important;
+                  color: #D9E7FF !important;
+                  border: solid 3px #dddddd !important;
+                  ion: relative;
+                }
+              .cloudwok-embed .dropzone .filepicker {
+                background: white !important;
+                color: black !important;
+                border: solid 1px black !important;
+                font: strong
+              }
+              .cloudwok-embed .btn-start-upload {
+                background: #186EAB !important;
+                color: #FFFFFF !important;
+                border: solid 1px #135A8C !important;
+              }`;
 
 class Cloudwok extends React.Component {
   render() {
     return (
       <div>
-        <style>{style}</style>
+        <style>
+          {style}
+        </style>
         <div className="cloudwok-embed" data-wokid="r3M-">
           <div className="cloudwok-upload-files"></div>
           <form className="cloudwok-upload">
