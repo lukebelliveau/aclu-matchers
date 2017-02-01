@@ -1,31 +1,28 @@
 import React from 'react';
+import {StyleSheet, css} from 'aphrodite';
+import {container, colors, font, text, whitespace} from '../styles/shared';
 
-const signature = {
-  fontSize: '0.8em'
-};
-
-const body = {
-  align: 'float left',
-  padding: 25,
-  borderTopStyle: 'solid',
-  borderBottomStyle: 'solid',
-  margin: '0 auto',
-  width: '70%'
-};
-
-const wrapper = {
-  width: '800',
-  position: 'relative'
-};
+const s = StyleSheet.create({
+  italic: font.style.italic,
+  xlarge: text.size.xlarge,
+  serif: font.family.serif,
+  bgDarkBlue: colors.bgDarkBlue,
+  offWhite: colors.white,
+  p8: whitespace.paddings.p8,
+  container,
+  right: text.align.right,
+  large: text.size.large,
+  textShadow: text.shadow.one,
+})
 
 const Statement = () => (
-  <div className={ wrapper }>
-    <div style={ body }>
-      <blockquote>
+  <div className={css(s.bgDarkBlue, s.offWhite, s.p8, s.textShadow)}>
+    <div className={css(s.container)}>
+      <blockquote className={css(s.italic, s.xlarge, s.serif)}>
         “‘Extreme vetting’ is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.”
       </blockquote>
 
-      <p style={signature}>
+      <p className={css(s.right, s.large)}>
         - Anthony D. Romero, Executive Director, American Civil Liberties Union
       </p>
 
