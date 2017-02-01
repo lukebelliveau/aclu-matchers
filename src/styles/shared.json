@@ -119,7 +119,7 @@
     },
     "family": {
       "serif": {
-        "fontFamily": "font-family: Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif"
+        "fontFamily": "Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif"
       },
       "sansSerif": {
         "fontFamily": "Calibri, Arial, sans-serif"
