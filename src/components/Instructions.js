@@ -1,49 +1,72 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
 import Cloudwok from './ACLUCloudwok';
-import {font, background, whitespace, text, container} from '../styles/shared';
+import {font, background, whitespace, text, container, colors} from '../styles/shared';
 
 const styles = {
   container,
-  textShadowTwo: text.shadow.one,
   cover: background.size.cover,
   mt0: whitespace.margins.mt0,
-  pb8: whitespace.paddings.pb8,
   bold: font.weight.bold,
+  bgBlue: colors.bgBlue,
   hero: {
-    padding: '2rem',
-    backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
-    color: '#fff',
+    padding: '50px',
+    color: '#373e44',
+  },
+  li: {
+    listStyle: 'none',
+    fontSize: '22px',
+    paddingBottom: '20px',
+    fontWeight: 500,
+    display: 'inline-block',
+    width: '31%',
+    margin: '1%',
+    verticalAlign: 'top'
+  },
+  logo: {
+    fontSize: '60px',
+    display: 'block',
+    marginBottom: '10px'
   },
   a: {
-    color: '#40B2F6',
-    textDecoration: 'none'
+    color: 'white',
+    textDecoration: 'none',
+    borderRadius: '7px',
+    padding: '15px 30px',
+    background: '#ff8a00',
+    fontSize: '22px',
+    marginBottom: '15px',
+    display: 'inline-block'
   },
+  strong: {
+    marginTop: '10px',
+    fontStyle: 'italic',
+    fontWeight: 500
+  }
 }
 
-const s = StyleSheet.create(styles);
+const style = StyleSheet.create(styles)
 
 const Instructions = () => (
   <div>
-    <div className={css(s.hero, s.pb8, s.cover, s.textShadowTwo)}>
-      <div className={css(s.container)}>
-        <h2 className={css(s.mt0)}>Drag and drop your receipt onto this page, and I will automatically tweet your receipt to at least ten matching donors.</h2>
-        <h3>This will multiply your donation by 10.</h3>
-        <h3><strong>Absolutely no personal information is required.</strong></h3>
-        <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
-      </div>      
+    <div className={css(style.hero, style.cover, style.bgBlue)}>
+      <div className={css(style.container)}>
+        <h2 className={css(style.mt0)}>How it works?</h2>
+        <ul>
+          <li className={css(style.li)}><i className={`fa fa-upload ${css(style.logo)}`}></i> Drag and drop your receipt below</li>
+          <li className={css(style.li)}><i className={`fa fa-twitter ${css(style.logo)}`}></i> Your receipt will be tweeted to 10 donors</li>
+          <li className={css(style.li)}><i className={`fa fa-usd ${css(style.logo)}`}></i> This will multiply your donation by 10</li>
+        </ul>
+        <strong className={css(style.strong)}>Absolutely no personal information is required.<br />Just make sure your receipt shows your confirmation number and amount donated.</strong>
+      </div>
     </div>
-    
     <Cloudwok />
-
-    <h2>and if you haven't donated yet...</h2>
-    <div className={css(s.bold)}>
+    <h2>Haven't donated yet?</h2>
+    <div className={css(style.bold)}>
       <h2>
-        <a className={css(s.a)} href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the <br /> American Civil Liberties Union</a>
+        <a className={css(style.a)} href="https://action.aclu.org/secure/donate-to-aclu">Donate to the American Civil Liberties Union</a>
       </h2>
     </div>
-    <h2>...then drop your receipt on the blue box to multiply it!</h2>
-
   </div>
 );
 

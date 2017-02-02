@@ -1,25 +1,23 @@
 import React from 'react';
 
 const signature = {
-  fontSize: '0.8em'
+  fontSize: '1em'
 };
 
 const body = {
-  align: 'float left',
   padding: 25,
-  borderTopStyle: 'solid',
-  borderBottomStyle: 'solid',
   margin: '0 auto',
   width: '70%'
 };
 
 const wrapper = {
-  width: '800',
-  position: 'relative'
+  background: '#8ddbff',
+  padding: '50px',
+  marginBottom: '30px'
 };
 
 const Statement = () => (
-  <div className={ wrapper }>
+  <div style={ wrapper }>
     <div style={ body }>
       <i>
         “‘Extreme vetting’ is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.”

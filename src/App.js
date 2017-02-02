@@ -27,8 +27,7 @@ const twitterFeed = {
   },
   options: {
     username: twitterHandle,
-    height: '400',
-    width: '70%'
+    width: '60%'
   }
 };
 
