@@ -6,7 +6,6 @@ import Cloudwok from './ACLUCloudwok';
 const styles = {
   boxWrapper: {
     marginTop: '2rem',
-    marginBottom: '2rem',
     display: 'flex',
     flexWrap: 'wrap',
     width: '100%',
@@ -29,7 +28,17 @@ const styles = {
   },
   boxPadding: {
     flex: 1,
-  }
+  },
+  tcTitle: {
+    fontWeight: 'bold',
+    fontSize: '0.8rem'
+  },
+  tcBody: {
+    fontSize: '0.7rem',
+    fontWeight: 'lighter',
+    width: '50%',
+    margin: '0 auto'
+  },
 }
 
 const box = {
@@ -93,31 +102,16 @@ const Instructions = () => (
         <div className={css(s.boxPadding)}></div>
     </div>
 
+    <div>
+      <div className={css(s.tcTitle)}>Terms of Service</div>
+      <div className={css(s.tcBody)}>
+        When you upload your receipt, I will tweet your receipt to at least ten matching donors. No personal information is required.
+        Once something is uploaded, the process of tweeting to matchers is AUTOMATIC, and I cannot guarantee that I can prevent an accidental
+        submission from being shared on the public internet.
+      </div>
+    </div>
   </div>
 );
 
-// const Instructions = () => (
-//   <div>
-//     <div className={css(s.hero, s.pb8, s.cover, s.textShadowTwo)}>
-//       <div className={css(s.container)}>
-//         <h2 className={css(s.mt0)}>Drag and drop your receipt below, and I will automatically tweet your receipt to at least ten matching donors.</h2>
-//         <h3>This will multiply your donation by 10.</h3>
-//         <h3><strong>Absolutely no personal information is required.</strong></h3>
-//         <p>Just make sure your screenshot shows your confirmation number and amount donated.</p>
-//       </div>      
-//     </div>
-    
-//     <Cloudwok />
-
-//     <h2>and if you haven't donated yet...</h2>
-//     <div className={css(s.bold)}>
-//       <h2>
-//         <a className={css(s.a)} href="https://action.aclu.org/secure/donate-to-aclu">Click here to donate to the <br /> American Civil Liberties Union</a>
-//       </h2>
-//     </div>
-//     <h2>...then drop your receipt on the blue box to multiply it!</h2>
-
-//   </div>
-// );
 
 export default Instructions;
