@@ -1,22 +1,30 @@
 import React from 'react';
+import {StyleSheet, css} from 'aphrodite';
 
-const amountStyle = {
-  color: 'white',
-  background: '#095D96',
-  padding: '50px'
-};
+const styles = {
+  amountStyle: {
+    color: 'white',
+    background: '#095D96',
+    padding: '50px',
+    '@media (max-width: 425px)': {
+      padding: '15px',
+     }
+  }
+}
 
 const dateTimeStyle = {
   fontSize: '0.9em',
   margin: 10
 };
 
+const style = StyleSheet.create(styles)
+
 const amountMatched = '370,000';
 const timeEST = '6:00pm';
 const date = 'January 31, 2017';
 
 const TotalMatched = () => (
-  <div style={ amountStyle }>
+  <div className={css(style.amountStyle)}>
     <div>
       <strong style={ { fontSize: '2em', color: '#FAB022' } }>
         <i className="fa fa-usd"></i>{ amountMatched }

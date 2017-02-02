@@ -62,7 +62,7 @@ export const startCloudwok = () => {
 
 const style = `
   .cloudwok-embed {
-    width: 70%;
+    width: 80%;
     borderRadius: 25;
     margin: 0 auto;
     height: auto;
@@ -81,12 +81,12 @@ const style = `
   .cloudwok-embed .dropzone .filepicker {
     background: #095d96;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 10px;
     border: none;
     border-radius: 7px;
     font-family: 'OpenSans';
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .text-right {

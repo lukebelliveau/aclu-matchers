@@ -12,6 +12,9 @@ const styles = {
   hero: {
     padding: '50px',
     color: '#373e44',
+    '@media (max-width: 425px)': {
+      padding: '20px',
+     }
   },
   li: {
     listStyle: 'none',
@@ -21,12 +24,18 @@ const styles = {
     display: 'inline-block',
     width: '31%',
     margin: '1%',
-    verticalAlign: 'top'
+    verticalAlign: 'top',
+    '@media (max-width: 425px)': {
+      width: '100%',
+     }
   },
   logo: {
     fontSize: '60px',
     display: 'block',
     marginBottom: '10px'
+  },
+  ul: {
+    padding: 0
   },
   a: {
     color: 'white',
@@ -36,7 +45,10 @@ const styles = {
     background: '#ff8a00',
     fontSize: '22px',
     marginBottom: '15px',
-    display: 'inline-block'
+    display: 'inline-block',
+    '@media (max-width: 425px)': {
+      margin: '10px 15px',
+     }
   },
   strong: {
     marginTop: '10px',
@@ -52,7 +64,7 @@ const Instructions = () => (
     <div className={css(style.hero, style.cover, style.bgBlue)}>
       <div className={css(style.container)}>
         <h2 className={css(style.mt0)}>How it works?</h2>
-        <ul>
+        <ul className={css(style.ul)}>
           <li className={css(style.li)}><i className={`fa fa-upload ${css(style.logo)}`}></i> Drag and drop your receipt below</li>
           <li className={css(style.li)}><i className={`fa fa-twitter ${css(style.logo)}`}></i> Your receipt will be tweeted to 10 donors</li>
           <li className={css(style.li)}><i className={`fa fa-usd ${css(style.logo)}`}></i> This will multiply your donation by 10</li>
