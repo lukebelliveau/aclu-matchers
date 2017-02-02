@@ -7,7 +7,7 @@ const style = StyleSheet.create({
   mb0: whitespace.margins.mb0,
   header: {
     padding: '20px',
-    background: `url('/banner-bg.jpg')`,
+    background: `url('//i.imgur.com/sAxC5zT.jpg')`,
     backgroundSize: '100%'
   }
 })
