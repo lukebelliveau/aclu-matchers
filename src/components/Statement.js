@@ -25,11 +25,11 @@ const hr = {
 
 const Statement = () => (
   
-  <div className={ wrapper }>
+  <div style={ wrapper }>
 
     <hr style={ hr } />
 
-    <div style={ body }>
+    <div id='statement-wrapper' style={ body }>
       <h2>Why donate?</h2>
 
       <span style={{ fontSize: '1.3rem'}}>

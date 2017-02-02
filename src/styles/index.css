@@ -1,5 +1,26 @@
 html {font-size: 16px;}
 
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px !important;
+  }
+
+  #statement-wrapper {
+    width: 100% !important;
+  }
+
+  .instructions-box {
+    margin-left: 0 !important;
+    margin-bottom: 1rem !important;
+    min-height: 200px !important;
+  }
+
+  .instructions-box.box-content {
+    padding: 2rem !important;
+  }
+
+}
+
 body {
   margin: 0;
   padding: 0;

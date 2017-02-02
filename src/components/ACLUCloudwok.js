@@ -97,6 +97,7 @@ const style = `
               
               .fa-spin, .cloudwok-embed a, .cloudwok-embed a:hover, .text-instructions {
                 color: rgba(0, 0, 0, 0);
+
               }
 
               .btn.btn-success.filepicker {
