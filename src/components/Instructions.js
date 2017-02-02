@@ -33,13 +33,14 @@ const styles = {
     fontWeight: 'bold',
     fontSize: '0.8rem'
   },
-  tcBody: {
+}
+
+const tcBody = {
     fontSize: '0.7rem',
     fontWeight: 'lighter',
     width: '50%',
     margin: '0 auto'
-  },
-}
+};
 
 const box = {
     backgroundImage: `url('http://i.imgur.com/sAxC5zT.jpg')`,
@@ -87,7 +88,7 @@ const Instructions = () => (
     <div style={ box } className='instructions-box'>
         <div className={css(s.step)}>STEP 2</div>
         <div style={ cloudwokStretch } className={css(s.boxContent)}>
-          <div style={{ marginTop: '3.5rem', marginBottom: '1rem' }}>Drop your receipt here</div>
+          <div style={{ marginTop: '2.5rem', marginBottom: '1rem' }}>Drop your receipt here</div>
           <div style={{ fontStyle: 'italic', fontSize: '1rem' }} >Or click to upload a file</div>
           <Cloudwok />
         </div>
@@ -104,7 +105,7 @@ const Instructions = () => (
 
     <div>
       <div className={css(s.tcTitle)}>Terms of Service</div>
-      <div className={css(s.tcBody)}>
+      <div style={tcBody} className={ 'tcBody' }>
         When you upload your receipt, I will tweet your receipt to at least ten matching donors. No personal information is required.
         Once something is uploaded, the process of tweeting to matchers is AUTOMATIC, and I cannot guarantee that I can prevent an accidental
         submission from being shared on the public internet.
