@@ -29,7 +29,7 @@ const TotalMatched = () => (
       <strong style={ { fontSize: '2em', color: '#FAB022' } }>
         <i className="fa fa-usd"></i>{ amountMatched }
       </strong><br />
-      worth of donations matches have been shared through this site, all thanks to donors like you!
+      worth of donation matches have been shared through this site, all thanks to donors like you!
         <div style={ dateTimeStyle }>
           <strong>*as of { timeEST } EST on { date }</strong>
       </div>
