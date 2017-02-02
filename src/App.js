@@ -41,7 +41,7 @@ class App extends Component {
         <TotalMatched />
         <Statement />
         <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
-        <a className={css(s.a)} href="https://docs.google.com/document/d/1esGL2ywiMzuQHAM4zUEQt_pcVtc-MU6OxNKhULaimKk/edit?usp=sharing">about matchUS.us</a>
+        <a className={css(s.a)} href="https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing" target="_blank">about matchUS.us</a>
       </div>
     );
   }
