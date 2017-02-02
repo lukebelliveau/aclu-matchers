@@ -6,7 +6,6 @@ const signature = {
 };
 
 const body = {
-  align: 'float left',
   margin: '0 auto',
   marginBottom: '3rem',
   width: '90%',
@@ -15,7 +14,6 @@ const body = {
 
 const wrapper = {
   width: '100%',
-  position: 'relative'
 };
 
 const hr = {
@@ -25,7 +23,7 @@ const hr = {
 
 const Statement = () => (
   
-  <div className={ wrapper }>
+  <div style={ wrapper }>
 
     <hr style={ hr } />
 
@@ -45,7 +43,7 @@ const Statement = () => (
       </p>
     </div>
 
-      <hr style={ hr } />
+    <hr style={ hr } />
   </div>
 );
 

@@ -123,7 +123,6 @@ class Cloudwok extends React.Component {
           <form className="cloudwok-upload">
             <span className="cloudwok-dropzone"></span>
           </form>
-          <span className="cloudwok-tos-checkbox"></span>
         </span>
       </span>
     )
