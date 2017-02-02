@@ -1,35 +1,26 @@
 import React from 'react';
-import {StyleSheet, css} from 'aphrodite';
 
 const signature = {
-  fontSize: '1em'
+  fontSize: '0.8em'
 };
 
-const styles = {
-  wrapperStyle: {
-    background: '#8ddbff',
-    padding: '50px',
-    marginBottom: '30px',
-    '@media (max-width: 425px)': {
-      padding: '0px',
-     }
-  },
-  body: {
-    padding: 25,
-    margin: '0 auto',
-    width: '70%',
-    '@media (max-width: 425px)': {
-      padding: '15px',
-      width: '90%'
-     }
-  }
-}
+const body = {
+  align: 'float left',
+  padding: 25,
+  borderTopStyle: 'solid',
+  borderBottomStyle: 'solid',
+  margin: '0 auto',
+  width: '70%'
+};
 
-const style = StyleSheet.create(styles)
+const wrapper = {
+  width: '800',
+  position: 'relative'
+};
 
 const Statement = () => (
-  <div className={css(style.wrapperStyle)}>
-    <div className={css(style.body)}>
+  <div className={ wrapper }>
+    <div style={ body }>
       <i>
         “‘Extreme vetting’ is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.”
       </i>

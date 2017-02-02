@@ -1,38 +1,25 @@
 import React from 'react';
-import {StyleSheet, css} from 'aphrodite';
 
-const styles = {
-  amountStyle: {
-    color: 'white',
-    background: '#095D96',
-    padding: '50px',
-    '@media (max-width: 425px)': {
-      padding: '15px',
-     }
-  }
-}
-
-const dateTimeStyle = {
-  fontSize: '0.9em',
-  margin: 10
+const amountStyle = {
+  color: 'green'
 };
 
-const style = StyleSheet.create(styles)
+const dateTimeStyle = {
+  fontSize: '0.6em',
+  margin: 10
+};
 
 const amountMatched = '370,000';
 const timeEST = '6:00pm';
 const date = 'January 31, 2017';
 
 const TotalMatched = () => (
-  <div className={css(style.amountStyle)}>
+  <div style={ amountStyle }>
     <div>
-      <strong style={ { fontSize: '2em', color: '#FAB022' } }>
-        <i className="fa fa-usd"></i>{ amountMatched }
-      </strong><br />
-      worth of donations matches have been shared through this site, all thanks to donors like you!
-        <div style={ dateTimeStyle }>
-          <strong>*as of { timeEST } EST on { date }</strong>
-      </div>
+      Over <strong style={ { fontSize: '1.5em' } }>${ amountMatched }</strong> worth of donation matches <br />
+      have been shared through this site, <br />
+      all thanks to donors like you!
+      <div style={ dateTimeStyle }><strong>*as of { timeEST } EST on { date }</strong></div>
     </div>
   </div>
 );
