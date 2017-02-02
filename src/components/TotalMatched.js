@@ -17,11 +17,11 @@ const dateTimeStyle = {
   margin: 10
 };
 
-const style = StyleSheet.create(styles)
+const style = StyleSheet.create(styles);
 
-const amountMatched = '370,000';
-const timeEST = '6:00pm';
-const date = 'January 31, 2017';
+const amountMatched = '390,000';
+const timeEST = '1:00pm';
+const date = 'February 2, 2017';
 
 const TotalMatched = () => (
   <div className={css(style.amountStyle)}>
