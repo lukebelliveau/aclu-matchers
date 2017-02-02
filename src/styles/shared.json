@@ -31,7 +31,7 @@
       "backgroundColor": "#F5F6FA"
     },
     "bgBlue": {
-      "backgroundColor": "#2A53C1"
+      "backgroundColor": "#8ddbff"
     },
     "bgDarkBlue": {
       "backgroundColor": "#202A5D"
@@ -94,7 +94,7 @@
         "textAlign": "left"
       },
       "right": {
-        "textAlign": "right"        
+        "textAlign": "right"
       }
     },
     "shadow": {
@@ -127,7 +127,7 @@
     }
   },
   "container": {
-    "maxWidth": "1024px", 
+    "maxWidth": "1024px",
     "margin": "0 auto"
   }
 }

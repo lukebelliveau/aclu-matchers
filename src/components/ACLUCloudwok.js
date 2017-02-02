@@ -3,8 +3,8 @@ import React from 'react';
 const success = {
   title: 'Thank you for multiplying!',
   subtitle: 'Your donation has been multiplied by 10',
-  text: `We'll tweet this receipt to at least 10 people who are matching donations. Your donation just increased tenfold! 
-        If you found this useful, please share with your network.  The more money matched, the more money given to protect our Constitution. 
+  text: `We'll tweet this receipt to at least 10 people who are matching donations. Your donation just increased tenfold!
+        If you found this useful, please share with your network.  The more money matched, the more money given to protect our Constitution.
         Every dollar counts!`
 };
 
@@ -61,33 +61,43 @@ export const startCloudwok = () => {
 };
 
 const style = `
-              .cloudwok-embed {
-                width: 70%;
-                borderRadius: 25;
-                
-                margin: 0 auto;
-                height: auto;
-                position: relative;
-                align: float right;
-              }     
+  .cloudwok-embed {
+    width: 80%;
+    borderRadius: 25;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+  }
 
-              .cloudwok-embed .dropzone {
-                  background: #237ACB !important;
-                  color: #D9E7FF !important;
-                  border: solid 3px #dddddd !important;
-                  ion: relative;
-                }
-              .cloudwok-embed .dropzone .filepicker {
-                background: white !important;
-                color: black !important;
-                border: solid 1px black !important;
-                font: strong
-              }
-              .cloudwok-embed .btn-start-upload {
-                background: #186EAB !important;
-                color: #FFFFFF !important;
-                border: solid 1px #135A8C !important;
-              }`;
+  .cloudwok-embed .dropzone {
+      background: white;
+      height: 200px;
+      color: #D9E7FF;
+      border: dotted 5px #095d96;
+      position: relative;
+      margin-top: 30px;
+    }
+
+  .cloudwok-embed .dropzone .filepicker {
+    background: #095d96;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'OpenSans';
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .text-right {
+    display: none;
+  }
+
+  .cloudwok-embed .btn-start-upload {
+    background: #186EAB;
+    color: #FFFFFF;
+    border: solid 1px #135A8C;
+  }`;
 
 class Cloudwok extends React.Component {
   render() {
