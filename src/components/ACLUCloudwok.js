@@ -2,8 +2,8 @@ import React from 'react';
 
 const success = {
   title: 'Thank you for multiplying!',
-  subtitle: 'Your donation has been multiplied by 10',
-  text: `We'll tweet this receipt to at least 10 people who are matching donations. Your donation just increased tenfold!
+  subtitle: 'Your donation has been multiplied!',
+  text: `We'll tweet this receipt to all of our people who are matching donations.
         If you found this useful, please share with your network.  The more money matched, the more money given to protect our Constitution.
         Every dollar counts!`
 };
