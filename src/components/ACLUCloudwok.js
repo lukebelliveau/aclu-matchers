@@ -99,6 +99,8 @@ const style = `
     border: solid 1px #135A8C;
   }`;
 
+const cloudWokId = process.env.NODE_ENV === 'production' ? 'r3M-' : 'GEKm';
+
 class Cloudwok extends React.Component {
   render() {
     return (
@@ -106,7 +108,7 @@ class Cloudwok extends React.Component {
         <style>
           {style}
         </style>
-        <div className="cloudwok-embed" data-wokid="r3M-">
+        <div className="cloudwok-embed" data-wokid={ cloudWokId }>
           <div className="cloudwok-upload-files"></div>
           <form className="cloudwok-upload">
             <div className="cloudwok-dropzone"></div>
