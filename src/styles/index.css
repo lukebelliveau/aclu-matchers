@@ -117,3 +117,8 @@ p {
 strong {
   font-family: "open_sansbold";
 }
+
+number {
+  display: inline-block;
+  font-family: "open_sansbold";
+}
