@@ -1,4 +1,6 @@
 import React from 'react';
+import $ from 'jquery';
+import validateReceipt from '../validators/OCRValidator';
 
 const success = {
   title: 'Thank you for multiplying!',
@@ -54,6 +56,9 @@ export const startCloudwok = () => {
         tag = document.getElementsByTagName("script")[0];
       script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
       tag.parentNode.insertBefore(script, tag);
+      $('form').on('change', function(event) {
+        return validateReceipt(event.target.files[0]);
+      });
     };
     window.addEventListener ? window.addEventListener("load", loader, false) :
       window.attachEvent("onload", loader);
