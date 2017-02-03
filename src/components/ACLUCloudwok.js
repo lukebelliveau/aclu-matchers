@@ -70,22 +70,26 @@ const style = `
   }
 
   .cloudwok-embed .dropzone {
-      background: white;
+      background: #fff;
       height: 200px;
       color: #D9E7FF;
-      border: dotted 5px #095d96;
+      border: dashed 3px #095d96;
       position: relative;
     }
 
   .cloudwok-embed .dropzone .filepicker {
-    background: #095d96;
-    color: white;
+    background: transparent;
+    color: #095d96;
     padding: 10px 10px;
     border: none;
     border-radius: 7px;
     font-family: 'OpenSans';
     margin-top: 15px;
     font-size: 18px;
+  }
+
+  .btn.filepicker:active {
+    box-shadow: 0 0 0 transparent;
   }
 
   .text-right {
