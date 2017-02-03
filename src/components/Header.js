@@ -5,25 +5,22 @@ import TotalMatched from './TotalMatched';
 
 
 const style = StyleSheet.create({
-  white: colors.white,
   mb0: whitespace.margins.mb0,
   header: {
-    background: `url('./american_flag.jpg')`,
-    paddingTop: '1rem',
     backgroundSize: '100%'
   },
   title: {
-    marginBottom: '1rem',
+    margin: '20px 0',
     '@media (max-width: 425px)': {
-      marginRight: '3rem',
-      marginLeft: '3rem'
+      margin: 10,
+      fontSize: 30
      }
   }
 });
 
 const Header = () => (
   <div className={css(style.header, style.bgBlue)}>
-    <h1 className={css(style.white, style.mb0, style.title)}>ACLU Donation Multiplier</h1>
+    <h1 className={css(style.mb0, style.title)}>ACLU Donation Multiplier</h1>
     <TotalMatched />
   </div>
 );

@@ -1,22 +1,56 @@
+@font-face {
+  font-family: "open_sansbold";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"),
+  url("../fonts/opensans-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "open_sansregular";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+  url("../fonts/opensans-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "libre_baskervilleitalic";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../fonts/librebaskerville-italic-webfont.woff2") format("woff2"),
+  url("../fonts/librebaskerville-italic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "libre_baskervilleregular";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../fonts/librebaskerville-regular-webfont.woff2") format("woff2"),
+  url("../fonts/librebaskerville-regular-webfont.woff") format("woff");
+}
+
 html {
   font-size: 16px;
 }
 
 @media (max-width: 425px) {
-      html {
-        font-size: 10px;
-      }
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "libre_baskervilleregular", serif;
   line-height: 1.45;
   color: #373e44;
 }
-
 
 p {
   margin-bottom: 1.3em;
@@ -27,8 +61,7 @@ h2,
 h3,
 h4 {
   margin: 1.414em 0 0.5em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-family: "open_sansbold", sans-serif;
   line-height: 1.2;
 }
 
@@ -48,4 +81,39 @@ h3 {
 small,
 .font_small {
   font-size: 0.707em;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #373e44;
+}
+
+blockquote p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.7em;
+  text-align: left;
+}
+
+@media (max-width: 425px) {
+  blockquote p {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+
+blockquote footer {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  text-align: left;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+strong {
+  font-family: "open_sansbold";
 }
