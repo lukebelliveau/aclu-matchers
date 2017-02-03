@@ -12,11 +12,13 @@
   "homepage": "https://lukebelliveau.github.io/aclu-matchers",
   "dependencies": {
     "aphrodite": "^1.1.0",
+    "jquery": "^3.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-ga": "^2.1.2",
     "react-sortable": "^1.2.0",
-    "react-twitter-widgets": "^1.2.0"
+    "react-twitter-widgets": "^1.2.0",
+    "tesseract.js": "^1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
