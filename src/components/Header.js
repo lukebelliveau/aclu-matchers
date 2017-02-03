@@ -7,14 +7,13 @@ import TotalMatched from './TotalMatched';
 const style = StyleSheet.create({
   mb0: whitespace.margins.mb0,
   header: {
-    paddingTop: '1rem',
     backgroundSize: '100%'
   },
   title: {
-    marginBottom: '1rem',
+    margin: '20px 0',
     '@media (max-width: 425px)': {
-      marginRight: '3rem',
-      marginLeft: '3rem'
+      margin: 10,
+      fontSize: 30
      }
   }
 });

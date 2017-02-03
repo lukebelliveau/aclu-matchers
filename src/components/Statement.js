@@ -20,7 +20,7 @@ const styles = {
     paddingBottom: 60,
     margin: '0 auto',
     marginTop: 40,
-    width: '70%',
+    maxWidth: 1024,
     '@media (max-width: 425px)': {
       padding: '15px',
       width: '90%'

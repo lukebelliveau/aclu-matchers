@@ -53,7 +53,6 @@ const styles = {
   },
   strong: {
     marginTop: '10px',
-    fontStyle: 'italic',
     fontWeight: 500
   }
 }
