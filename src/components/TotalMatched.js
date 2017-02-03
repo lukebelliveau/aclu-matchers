@@ -27,7 +27,7 @@ const TotalMatched = () => (
   <div className={css(style.amountStyle)}>
     <div>
       <strong style={ { fontSize: '2em', color: '#FAB022' } }>
-        <i className="fa fa-usd"></i>{ amountMatched }
+        ${ amountMatched }
       </strong><br />
       worth of donation matches have been shared through this site, all thanks to donors like you!
         <div style={ dateTimeStyle }>
