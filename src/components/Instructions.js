@@ -48,7 +48,7 @@ const styles = {
     borderRadius: '50%',
     padding: '10px 20px',
     marginBottom: '30px',
-    color: '#fab022',
+    color: 'white',
     '@media (max-width: 425px)': {
       padding: '5px 11px',
       marginBottom: '10px'
