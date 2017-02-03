@@ -31,7 +31,7 @@ const TotalMatched = () => (
       </strong><br />
       worth of donation matches have been shared through this site, all thanks to donors like you!
         <div style={ dateTimeStyle }>
-          <strong>*as of { timeEST } EST on { date }</strong>
+          <i>*as of { timeEST } EST on { date }</i>
       </div>
     </div>
   </div>
