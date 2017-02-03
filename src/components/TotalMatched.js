@@ -5,15 +5,15 @@ const styles = {
   amountStyle: {
     color: 'white',
     background: '#095D96',
-    padding: '50px',
+    padding: '2rem',
     '@media (max-width: 425px)': {
-      padding: '15px',
+      padding: '1rem 2.5rem',
      }
   }
 }
 
 const dateTimeStyle = {
-  fontSize: '0.9em',
+  fontSize: '0.9rem',
   margin: 10
 };
 
@@ -27,11 +27,11 @@ const TotalMatched = () => (
   <div className={css(style.amountStyle)}>
     <div>
       <strong style={ { fontSize: '2em', color: '#FAB022' } }>
-        <i className="fa fa-usd"></i>{ amountMatched }
+        ${ amountMatched }
       </strong><br />
       worth of donation matches have been shared through this site, all thanks to donors like you!
         <div style={ dateTimeStyle }>
-          <strong>*as of { timeEST } EST on { date }</strong>
+          <i>*as of { timeEST } EST on { date }</i>
       </div>
     </div>
   </div>
