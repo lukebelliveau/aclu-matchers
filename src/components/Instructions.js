@@ -84,7 +84,7 @@ const Instructions = () => (
             This will multiply your donation by 10
           </li>
         </ul>
-        <strong className={css(style.strong)}>Absolutely no personal information is required.<br />Just make sure your receipt shows your confirmation number and amount donated.</strong>
+        <strong className={css(style.strong)}>Absolutely no personal information is required.</strong>
       </div>
     </div>
     <Cloudwok />
