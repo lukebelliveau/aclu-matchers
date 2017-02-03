@@ -63,7 +63,7 @@ const Instructions = () => (
   <div>
     <div className={css(style.hero, style.cover, style.bgBlue)}>
       <div className={css(style.container)}>
-        <h2 className={css(style.mt0)}>How it works?</h2>
+        <h2 className={css(style.mt0)}>How it works</h2>
         <ul className={css(style.ul)}>
           <li className={css(style.li)}><i className={`fa fa-upload ${css(style.logo)}`}></i> Drag and drop your receipt below</li>
           <li className={css(style.li)}><i className={`fa fa-twitter ${css(style.logo)}`}></i> Your receipt will be tweeted to 10 donors</li>
