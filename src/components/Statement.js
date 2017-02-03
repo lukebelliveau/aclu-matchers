@@ -15,9 +15,11 @@ const styles = {
   },
   body: {
     borderBottom: '2px solid #eee',
-    padding: 25,
+    borderTop: '2px solid #eee',
+    paddingTop: 25,
     paddingBottom: 60,
     margin: '0 auto',
+    marginTop: 40,
     width: '70%',
     '@media (max-width: 425px)': {
       padding: '15px',
@@ -36,7 +38,11 @@ const styles = {
   strong: {
     textAlign: 'left',
     display: 'block',
-    marginTop: 30
+    marginTop: 30,
+    fontSize: 18,
+    '@media (max-width: 425px)': {
+      fontSize: 14,
+     }
   }
 }
 

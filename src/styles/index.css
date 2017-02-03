@@ -39,9 +39,9 @@ html {
 }
 
 @media (max-width: 425px) {
-      html {
-        font-size: 10px;
-      }
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -51,7 +51,6 @@ body {
   line-height: 1.45;
   color: #373e44;
 }
-
 
 p {
   margin-bottom: 1.3em;
@@ -87,7 +86,6 @@ small,
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  font-size: 18px;
   border-left: 5px solid #373e44;
 }
 
@@ -96,6 +94,13 @@ blockquote p {
   font-size: 18px;
   line-height: 1.7em;
   text-align: left;
+}
+
+@media (max-width: 425px) {
+  blockquote p {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
 }
 
 blockquote footer {
