@@ -126,7 +126,7 @@ class Cloudwok extends React.Component {
           <form className="cloudwok-upload">
             <div className="cloudwok-dropzone"></div>
           </form>
-          <strong className="warning-message">Attention: We only support .jpg, jpeg, .png and .gif files</strong>
+          <strong className="warning-message">Attention: We only support image file upload at this time <br /> (.jpg, jpeg, .img, .png, .gif, etc)</strong>
           <div className="cloudwok-tos-checkbox"></div>
         </div>
       </div>
