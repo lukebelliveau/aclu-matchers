@@ -8,12 +8,16 @@ const style = StyleSheet.create({
   white: colors.white,
   mb0: whitespace.margins.mb0,
   header: {
-    paddingTop: '20px',
+    paddingTop: '1rem',
     background: `url('//i.imgur.com/sAxC5zT.jpg')`,
     backgroundSize: '100%'
   },
   title: {
-    marginBottom: '20px'
+    marginBottom: '1rem',
+    '@media (max-width: 425px)': {
+      marginRight: '3rem',
+      marginLeft: '3rem'
+     }
   }
 });
 

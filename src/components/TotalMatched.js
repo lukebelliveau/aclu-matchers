@@ -5,15 +5,15 @@ const styles = {
   amountStyle: {
     color: 'white',
     background: '#095D96',
-    padding: '50px',
+    padding: '2rem',
     '@media (max-width: 425px)': {
-      padding: '15px',
+      padding: '1rem 2.5rem',
      }
   }
 }
 
 const dateTimeStyle = {
-  fontSize: '0.9em',
+  fontSize: '0.9rem',
   margin: 10
 };
 
