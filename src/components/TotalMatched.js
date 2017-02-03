@@ -19,8 +19,8 @@ const dateTimeStyle = {
 
 const style = StyleSheet.create(styles);
 
-const amountMatched = '390,000';
-const timeEST = '1:00pm';
+const amountMatched = '399,000';
+const timeEST = '8:00pm';
 const date = 'February 2, 2017';
 
 const TotalMatched = () => (
