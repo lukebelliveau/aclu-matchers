@@ -75,7 +75,6 @@ const style = `
       color: #D9E7FF;
       border: dotted 5px #095d96;
       position: relative;
-      margin-top: 30px;
     }
 
   .cloudwok-embed .dropzone .filepicker {
@@ -91,6 +90,19 @@ const style = `
 
   .text-right {
     display: none;
+  }
+
+  .warning-message {
+    margin: 15px 0;
+    display: block;
+    font-size: 20px;
+    color: #D50000;
+  }
+
+  @media (max-width: 425px) {
+    .warning-message {
+      font-size: 14px;
+    }
   }
 
   .cloudwok-embed .btn-start-upload {
@@ -110,9 +122,11 @@ class Cloudwok extends React.Component {
         </style>
         <div className="cloudwok-embed" data-wokid={ cloudWokId }>
           <div className="cloudwok-upload-files"></div>
+          <strong className="warning-message">Confirmation number & amount must be visible</strong>
           <form className="cloudwok-upload">
             <div className="cloudwok-dropzone"></div>
           </form>
+          <strong className="warning-message">Attention: We only support .jpg, jpeg, .png and .gif files</strong>
           <div className="cloudwok-tos-checkbox"></div>
         </div>
       </div>
