@@ -82,10 +82,6 @@ const style = `
       position: relative;
     }
 
-  @media (max-width: 425px): {
-      height: 200px;
-  }
-
   .cloudwok-embed .dropzone .filepicker {
     background: transparent;
     color: #0B0C0E;
