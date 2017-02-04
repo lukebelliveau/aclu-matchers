@@ -72,7 +72,7 @@ const style = `
     padding-top: 4rem;
     font-family: 'open_sansregular', sans-serif !important;
     font-size: 1.5em;
-    height: 200px;
+    height: 300px;
   }
 
   .cloudwok-embed .dropzone {
@@ -90,6 +90,15 @@ const style = `
     margin-top: 15px;
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  @media (max-width: 425px) {
+    .cloudwok-embed .dropzone .filepicker {
+      font-size: 1.5rem;
+    }
+    .cloudwok-embed .dropzone, .cloudwok-loading-screen {
+      height: 250px;
+    }
   }
 
   .dropzone {
