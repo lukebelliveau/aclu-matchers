@@ -7,7 +7,7 @@ import Instructions from './components/Instructions';
 import Statement from './components/Statement';
 import Footer from './components/Footer';
 
-const twitterHandle = 'ACLU_Multiplier';
+const twitterHandle = 'match__US';
 
 const s = StyleSheet.create({
   wrapper: {

@@ -39,7 +39,7 @@ const styles = {
 
 const style = StyleSheet.create(styles)
 
-const twitterMessage = 'www.matchUS.us just helped my donation catch fire. Drag, drop and multiply your contribution, too! #lightamatch #aclumatch #NoBanNoWall';
+const twitterMessage = 'https://matchus.us/aclu-matchers/ just helped my donation catch fire. Drag, drop and multiply your contribution, too! #lightamatch #aclumatch';
 
 const TwitterShare = () => {
     return (
