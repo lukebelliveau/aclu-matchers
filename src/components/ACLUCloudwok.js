@@ -10,7 +10,7 @@ const success = {
 
 const cloudWokConfig = {
   "dropzone": {
-    "label": " ",
+    "label": "Image files only - no PDFs please. Confirmation number & amount must be clearly visible.",
     "button": "DROP RECEIPT HERE"
   },
   "success": {
@@ -62,15 +62,21 @@ export const startCloudwok = () => {
 
 const style = `
   .cloudwok-embed {
-    width: 80%;
-    borderRadius: 25;
     margin: 0 auto;
     height: auto;
     position: relative;
+    overflow: hidden;
+  }
+
+  .cloudwok-loading-screen {
+    padding-top: 4rem;
+    font-family: 'open_sansregular', sans-serif !important;
+    font-size: 1.5em;
+    height: 200px;
   }
 
   .cloudwok-embed .dropzone {
-      background: #186EAB;
+      background: #095D96;
       height: 200px;
       color: #D9E7FF;
       position: relative;
@@ -81,31 +87,39 @@ const style = `
     color: #fff;
     padding: 20px 10px;
     border: none;
-    border-radius: 7px;
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
+  }
+
+  .dropzone {
+    border-radius: 0 !important;
   }
 
   .btn.filepicker:active {
     box-shadow: 0 0 0 transparent;
   }
 
+  .btn.btn-success.filepicker {
+    padding: 20px 0 !important;
+  }
+
+  .text-instruction, .btn.btn-success.filepicker {
+    display: block !important;
+  }
+
+  .text-instruction strong {
+    font-weight: lighter !important;
+    font-family: 'libre_baskervilleregular' !important;
+    font-size: 1rem !important;
+  }
+
   .text-right {
     display: none;
   }
 
-  .warning-message {
-    margin: 15px 0;
-    display: block;
-    font-size: 20px;
-    color: #D50000;
-  }
-
-  @media (max-width: 425px) {
-    .warning-message {
-      font-size: 14px;
-    }
+  .fa-asterisk {
+    display: none !important;
   }
 
   .cloudwok-embed .btn-start-upload {
@@ -125,11 +139,11 @@ class Cloudwok extends React.Component {
         </style>
         <div className="cloudwok-embed" data-wokid={ cloudWokId }>
           <div className="cloudwok-upload-files"></div>
-          <strong className="warning-message">Confirmation number & amount must be visible</strong>
           <form className="cloudwok-upload">
-            <div className="cloudwok-dropzone"></div>
+            <div className="cloudwok-dropzone">
+              <div className="cloudwok-loading-screen">Loading, please wait...</div>
+            </div>
           </form>
-          <strong className="warning-message">Attention: We only support image file upload at this time <br /> (.jpg, jpeg, .img, .png, .gif, etc)</strong>
           <div className="cloudwok-tos-checkbox"></div>
         </div>
       </div>
