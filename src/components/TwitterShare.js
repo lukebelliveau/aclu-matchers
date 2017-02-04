@@ -17,11 +17,10 @@ const styles = {
         display: 'block',
         margin: '0 auto',
         fontFamily: 'open_sansregular',
-        fontWeight: '500'
     },
     instructions: {
         margin: '0 auto',
-        marginTop: '15px',
+        marginTop: '2rem',
         maxWidth: '90%',
     },
     icon: {

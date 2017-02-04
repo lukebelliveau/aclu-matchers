@@ -13,9 +13,6 @@ const styles = {
     padding: '50px',
     paddingBottom: 0,
     color: '#373e44',
-    '@media (max-width: 425px)': {
-      padding: '20px',
-     }
   },
   li: {
     listStyle: 'none',
@@ -65,10 +62,11 @@ const styles = {
     marginBottom: '5px',
     display: 'inline-block',
     '@media (max-width: 425px)': {
-      margin: '10px 15px',
+      margin: '0 15px 1rem 15px',
       width: 'auto'
      },
-    width: '35%'
+    width: '35%',
+    fontFamily: 'open_sansregular',
   },
   strong: {
     marginTop: '10px',
@@ -81,6 +79,12 @@ const styles = {
     padding: '0.5em 0',
     fontFamily: 'open_sansregular',
     cursor: 'pointer',
+  },
+  haventDonated: {
+    '@media (max-width: 425px)': {
+      marginTop: '2rem',
+      marginBottom: '0'
+     },
   }
 };
 
@@ -145,7 +149,7 @@ class Instructions extends React.Component {
         
         <Cloudwok />
         
-        <h2>Haven't donated yet?</h2>
+        <h2 className={css(style.haventDonated)}>Haven't donated yet?</h2>
         <div className={css(style.bold)}>
           <h2>
             <a className={css(style.a)} href="https://action.aclu.org/secure/donate-to-aclu" target="_blank">Donate to the American Civil Liberties Union</a>
