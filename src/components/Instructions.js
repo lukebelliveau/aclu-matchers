@@ -77,11 +77,10 @@ const styles = {
   accordionToggle: {
     background: '#ff8a00',
     color: 'white',
-    fontSize: '14px',
+    fontSize: '16px',
     padding: '0.5em 0',
     fontFamily: 'open_sansregular',
-    fontStyle: 'italic',
-    cursor: 'pointer'
+    cursor: 'pointer',
   }
 };
 
