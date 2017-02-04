@@ -83,7 +83,7 @@ const styles = {
     fontStyle: 'italic',
     cursor: 'pointer'
   }
-}
+};
 
 const style = StyleSheet.create(styles);
 const isOnMobile = document.documentElement.clientWidth <= 425;
@@ -117,7 +117,7 @@ class Instructions extends React.Component {
     return (
       <div>
 
-        { this.state.showAccordionToggle && <div className={ css(style.accordionToggle) } onClick={this.toggleMobile}>Click to toggle Instructions</div> }
+        { this.state.showAccordionToggle && <div className={ css(style.accordionToggle) } onClick={this.toggleMobile}>Tap for Instructions</div> }
 
         { this.state.showHowItWorks && (
           <div className={css(style.hero, style.cover, style.bgBlue)}>
