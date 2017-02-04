@@ -76,19 +76,19 @@ const style = `
   }
 
   .cloudwok-embed .dropzone {
-      background: #095D96;
-      height: 200px;
-      color: #D9E7FF;
+      background: #EAEAEA;
+      height: 300px;
+      color: #0B0C0E;
       position: relative;
     }
 
   .cloudwok-embed .dropzone .filepicker {
     background: transparent;
-    color: #fff;
+    color: #0B0C0E;
     padding: 20px 10px;
     border: none;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: bold;
   }
 

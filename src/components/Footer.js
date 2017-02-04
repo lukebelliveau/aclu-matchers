@@ -3,12 +3,12 @@ import {StyleSheet, css} from 'aphrodite';
 
 const s = StyleSheet.create({
   footer: {
-    background: '#095D96',
+    background: '#EAEAEA',
     padding: '2rem',
   },
   a: {
     fontFamily: 'open_sansregular',
-    color: 'white',
+    color: '#33373A',
     textDecoration: 'none',
   },
   about: {

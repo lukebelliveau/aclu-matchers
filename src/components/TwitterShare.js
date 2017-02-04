@@ -7,7 +7,7 @@ const styles = {
         textDecoration: 'none',
         borderRadius: '7px',
         padding: '10px 30px',
-        background: '#ff8a00',
+        background: '#175F7A',
         fontSize: '22px',
         '@media (max-width: 425px)': {
             margin: '10px 15px',
