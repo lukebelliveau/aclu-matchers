@@ -70,22 +70,25 @@ const style = `
   }
 
   .cloudwok-embed .dropzone {
-      background: white;
+      background: #186EAB;
       height: 200px;
       color: #D9E7FF;
-      border: dotted 5px #095d96;
       position: relative;
     }
 
   .cloudwok-embed .dropzone .filepicker {
-    background: #095d96;
-    color: white;
-    padding: 10px 10px;
+    background: transparent;
+    color: #fff;
+    padding: 20px 10px;
     border: none;
     border-radius: 7px;
-    font-family: 'OpenSans';
     margin-top: 15px;
     font-size: 18px;
+    font-weight: bold;
+  }
+
+  .btn.filepicker:active {
+    box-shadow: 0 0 0 transparent;
   }
 
   .text-right {
@@ -106,8 +109,8 @@ const style = `
   }
 
   .cloudwok-embed .btn-start-upload {
-    background: #186EAB;
-    color: #FFFFFF;
+    background: #fff;
+    color: #186EAB;
     border: solid 1px #135A8C;
   }`;
 
