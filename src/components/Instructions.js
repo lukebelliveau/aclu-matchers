@@ -103,7 +103,7 @@ const Instructions = () => (
     <h2>Haven't donated yet?</h2>
     <div className={css(style.bold)}>
       <h2>
-        <a className={css(style.a)} href="https://action.aclu.org/secure/donate-to-aclu">Donate to the American Civil Liberties Union</a>
+        <a className={css(style.a)} href="https://action.aclu.org/secure/donate-to-aclu" target="_blank">Donate to the American Civil Liberties Union</a>
       </h2>
     </div>
   </div>
