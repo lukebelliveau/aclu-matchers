@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
-import {colors, whitespace} from '../styles/shared';
+import {whitespace} from '../styles/shared';
 import TotalMatched from './TotalMatched';
 
 

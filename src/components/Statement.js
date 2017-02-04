@@ -1,10 +1,6 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
 
-const signature = {
-  fontSize: '1em'
-};
-
 const styles = {
   wrapperStyle: {
     padding: '50px',
