@@ -26,7 +26,7 @@ const date = 'February 3, 2017';
 const TotalMatched = () => (
   <div className={css(style.amountStyle)}>
     <div>
-      <strong style={ { fontSize: '2em', color: '#FAB022' } }>
+      <strong style={ { fontSize: '2.7em', color: '#FAB022' } }>
         ${ amountMatched }
       </strong><br />
       worth of donation matches have been shared through this site, all thanks to donors like you!
