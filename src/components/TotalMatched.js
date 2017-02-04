@@ -19,9 +19,9 @@ const dateTimeStyle = {
 
 const style = StyleSheet.create(styles);
 
-const amountMatched = '495,000';
-const timeEST = '11:00pm';
-const date = 'February 3, 2017';
+const amountMatched = '525,000';
+const timeEST = '9:00am';
+const date = 'February 4, 2017';
 
 const TotalMatched = () => (
   <div className={css(style.amountStyle)}>
