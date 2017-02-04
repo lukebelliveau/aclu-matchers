@@ -77,7 +77,7 @@ const styles = {
   accordionToggle: {
     background: '#ff8a00',
     color: 'white',
-    fontSize: '16px',
+    fontSize: '24px',
     padding: '0.5em 0',
     fontFamily: 'open_sansregular',
     cursor: 'pointer',

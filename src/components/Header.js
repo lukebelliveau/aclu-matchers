@@ -20,7 +20,8 @@ const style = StyleSheet.create({
 
 const Header = () => (
   <div className={css(style.header, style.bgBlue)}>
-    <h1 className={css(style.mb0, style.title)}>ACLU Donation Multiplier</h1>
+    <h1 className={css(style.mb0, style.title)}>matchUS</h1>
+    <h1 className={css(style.mb0, style.title)}>matchUS</h1>
     <TotalMatched />
   </div>
 );
