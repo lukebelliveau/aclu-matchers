@@ -10,7 +10,7 @@ const success = {
 
 const cloudWokConfig = {
   "dropzone": {
-    "label": "Image files only - no PDFs please. Confirmation number & amount must be clearly visible.",
+    "label": " ",
     "button": "DROP RECEIPT HERE"
   },
   "success": {
@@ -93,6 +93,7 @@ const style = `
     margin-top: 15px;
     font-size: 3rem;
     font-weight: bold;
+    margin-top: 3.5rem;
   }
 
   .dropzone {
@@ -104,11 +105,12 @@ const style = `
   @media (max-width: 425px) {
     .cloudwok-embed .dropzone .filepicker {
       font-size: 1.5rem;
+      margin-top: 1rem;
     }
     .cloudwok-embed .dropzone, .cloudwok-loading-screen {
       height: 250px;
     }
-    .text-instruction strong {
+    .dropzone-text {
       font-size: 1rem !important;
     }
   }
@@ -129,13 +131,13 @@ const style = `
     display: block !important;
   }
 
-  .text-instruction strong {
+  .dropzone-text {
     font-weight: lighter !important;
     font-family: 'paragraph_regular' !important;
     font-size: 1.5rem !important;
   }
 
-  .text-right, .fa-fw {
+  .text-right, .fa-fw, .text-instruction strong, .spacer-50 {
     display: none;
   }
 
