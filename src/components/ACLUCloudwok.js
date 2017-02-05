@@ -51,7 +51,7 @@ export const startCloudwok = () => {
   (function(window, document) {
     var loader = function() {
       var script = document.createElement("script"),
-        tag = document.getElementsByTagName("script")[0];
+      tag = document.getElementsByTagName("script")[0];
       script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
       tag.parentNode.insertBefore(script, tag);
     };
@@ -66,6 +66,8 @@ const style = `
     height: auto;
     position: relative;
     overflow: hidden;
+    background: #EAEAEA;
+    padding: 1.5rem 0rem;
   }
 
   .cloudwok-loading-screen {
@@ -78,7 +80,8 @@ const style = `
   .cloudwok-embed .dropzone {
       background: #EAEAEA;
       height: 300px;
-      color: #0B0C0E;
+      font-size: 1.5rem !important;
+      color: #F43D00;
       position: relative;
     }
 
@@ -88,8 +91,14 @@ const style = `
     padding: 20px 10px;
     border: none;
     margin-top: 15px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
+  }
+
+  .dropzone {
+    width: 80% !important;
+    margin: 0 auto !important;
+    background: white !important;
   }
 
   @media (max-width: 425px) {
@@ -98,6 +107,9 @@ const style = `
     }
     .cloudwok-embed .dropzone, .cloudwok-loading-screen {
       height: 250px;
+    }
+    .text-instruction strong {
+      font-size: 1rem !important;
     }
   }
 
@@ -120,10 +132,10 @@ const style = `
   .text-instruction strong {
     font-weight: lighter !important;
     font-family: 'paragraph_regular' !important;
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
 
-  .text-right {
+  .text-right, .fa-fw {
     display: none;
   }
 
