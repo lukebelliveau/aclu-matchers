@@ -1,7 +1,5 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
-import Cloudwok from './ACLUCloudwok';
-import TwitterShare from './TwitterShare';
 import {font, background, container} from '../styles/shared';
 
 const styles = {
@@ -40,22 +38,6 @@ const styles = {
   ul: {
     padding: 0
   },
-  a: {
-    color: 'white',
-    textDecoration: 'none',
-    borderRadius: '7px',
-    padding: '15px 30px',
-    background: '#175F7A',
-    fontSize: '22px',
-    marginBottom: '5px',
-    display: 'inline-block',
-    '@media (max-width: 425px)': {
-      margin: '0 15px 1rem 15px',
-      width: 'auto'
-     },
-    width: '35%',
-    fontFamily: 'heading_regular',
-  },
   strong: {
     marginTop: '10px',
     fontWeight: 500
@@ -68,12 +50,6 @@ const styles = {
     fontFamily: 'heading_regular',
     cursor: 'pointer',
   },
-  haventDonated: {
-    '@media (max-width: 425px)': {
-      marginTop: '2rem',
-      marginBottom: '0'
-     },
-  }
 };
 
 const style = StyleSheet.create(styles);
@@ -130,16 +106,7 @@ class Instructions extends React.Component {
             </div>
           </div>
         )}
-        
-        <Cloudwok />
-        
-        <h2 className={css(style.haventDonated)}>Haven't donated yet?</h2>
-        <div className={css(style.bold)}>
-          <h2>
-            <a className={css(style.a)} href="https://action.aclu.org/secure/donate-to-aclu" target="_blank">Donate to the American Civil Liberties Union</a>
-          </h2>
-          <TwitterShare />
-        </div>
+
       </div>
   )};
 };
