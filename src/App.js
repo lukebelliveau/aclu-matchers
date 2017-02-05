@@ -4,6 +4,8 @@ import { Timeline } from 'react-twitter-widgets';
 
 import Header from './components/Header';
 import Instructions from './components/Instructions';
+import Cloudwok from './components/ACLUCloudwok';
+import ActionButtons from './components/ActionButtons';
 import Statement from './components/Statement';
 import Footer from './components/Footer';
 
@@ -33,6 +35,8 @@ class App extends Component {
       <div className={css(s.wrapper)}>
         <Header />
         <Instructions />
+        <Cloudwok />
+        <ActionButtons />
         <Statement />
         <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
         <Footer />

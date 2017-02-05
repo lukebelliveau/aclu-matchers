@@ -10,7 +10,7 @@ const success = {
 
 const cloudWokConfig = {
   "dropzone": {
-    "label": "Image files only - no PDFs please. Confirmation number & amount must be clearly visible.",
+    "label": " ",
     "button": "DROP RECEIPT HERE"
   },
   "success": {
@@ -51,7 +51,7 @@ export const startCloudwok = () => {
   (function(window, document) {
     var loader = function() {
       var script = document.createElement("script"),
-        tag = document.getElementsByTagName("script")[0];
+      tag = document.getElementsByTagName("script")[0];
       script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
       tag.parentNode.insertBefore(script, tag);
     };
@@ -66,11 +66,13 @@ const style = `
     height: auto;
     position: relative;
     overflow: hidden;
+    background: #EAEAEA;
+    padding: 1.5rem 0rem;
   }
 
   .cloudwok-loading-screen {
     padding-top: 4rem;
-    font-family: 'open_sansregular', sans-serif !important;
+    font-family: 'heading_regular', sans-serif !important;
     font-size: 1.5em;
     height: 300px;
   }
@@ -78,7 +80,8 @@ const style = `
   .cloudwok-embed .dropzone {
       background: #EAEAEA;
       height: 300px;
-      color: #0B0C0E;
+      font-size: 1.5rem !important;
+      color: #F43D00;
       position: relative;
     }
 
@@ -88,16 +91,27 @@ const style = `
     padding: 20px 10px;
     border: none;
     margin-top: 15px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
+    margin-top: 3.5rem;
+  }
+
+  .dropzone {
+    width: 80% !important;
+    margin: 0 auto !important;
+    background: white !important;
   }
 
   @media (max-width: 425px) {
     .cloudwok-embed .dropzone .filepicker {
       font-size: 1.5rem;
+      margin-top: 1rem;
     }
     .cloudwok-embed .dropzone, .cloudwok-loading-screen {
       height: 250px;
+    }
+    .dropzone-text {
+      font-size: 1rem !important;
     }
   }
 
@@ -117,13 +131,13 @@ const style = `
     display: block !important;
   }
 
-  .text-instruction strong {
+  .dropzone-text {
     font-weight: lighter !important;
-    font-family: 'libre_baskervilleregular' !important;
-    font-size: 1rem !important;
+    font-family: 'paragraph_regular' !important;
+    font-size: 1.5rem !important;
   }
 
-  .text-right {
+  .text-right, .fa-fw, .text-instruction strong, .spacer-50 {
     display: none;
   }
 
