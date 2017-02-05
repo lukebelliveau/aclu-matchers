@@ -7,8 +7,7 @@ const styles = {
   cover: background.size.cover,
   bold: font.weight.bold,
   hero: {
-    padding: '50px',
-    paddingBottom: 0,
+    padding: '25px 50px',
     color: '#373e44',
   },
   li: {
@@ -22,7 +21,9 @@ const styles = {
     verticalAlign: 'top',
     '@media (max-width: 425px)': {
       width: '100%',
-      fontSize: '14px'
+      fontSize: '14px',
+      paddingTop: '15px',
+      paddingBottom: '15px'
      }
   },
   icon: {
@@ -32,7 +33,7 @@ const styles = {
     position: 'relative',
     marginBottom: '10px',
     '@media (max-width: 425px)': {
-      height: '40px',
+      height: '50px',
      }
   },
   ul: {
@@ -95,8 +96,8 @@ class Instructions extends React.Component {
                   Donate to the ACLU
                 </li>
                 <li className={css(style.li)}>
-                  <svg className={css(style.icon)} viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1344 1472q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm256 0q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm128-224v320q0 40-28 68t-68 28h-1472q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h427q21 56 70.5 92t110.5 36h256q61 0 110.5-36t70.5-92h427q40 0 68 28t28 68zm-325-648q-17 40-59 40h-256v448q0 26-19 45t-45 19h-256q-26 0-45-19t-19-45v-448h-256q-42 0-59-40-17-39 14-69l448-448q18-19 45-19t45 19l448 448q31 30 14 69z" fill="#0B0C0E"/></svg>
-                  Drag &amp; drop your receipt below
+                  <svg className={css(style.icon)} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 1l-15 15h9v16h12v-16h9z" fill="#0B0C0E"/></svg>
+                  Upload your receipt below
                 </li>
                 <li className={css(style.li)}>
                   <svg className={css(style.icon)} viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" fill="#0B0C0E"/></svg>
