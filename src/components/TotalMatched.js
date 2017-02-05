@@ -22,9 +22,9 @@ const styles = {
 
 const style = StyleSheet.create(styles);
 
-const amountMatched = '570,000';
-const timeEST = '11:00pm';
-const date = 'February 4, 2017';
+const amountMatched = '610,000';
+const timeEST = '4:00pm';
+const date = 'February 5, 2017';
 
 const TotalMatched = () => (
   <div className={css(style.wrapper)}>
