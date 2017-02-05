@@ -18,7 +18,7 @@ const styles = {
     fontSize: '22px',
     paddingBottom: '20px',
     display: 'inline-block',
-    fontFamily: 'open_sansregular',
+    fontFamily: 'heading_regular',
     width: '31%',
     margin: '1%',
     verticalAlign: 'top',
@@ -54,7 +54,7 @@ const styles = {
       width: 'auto'
      },
     width: '35%',
-    fontFamily: 'open_sansregular',
+    fontFamily: 'heading_regular',
   },
   strong: {
     marginTop: '10px',
@@ -65,7 +65,7 @@ const styles = {
     color: 'white',
     fontSize: '24px',
     padding: '0.5em 0',
-    fontFamily: 'open_sansregular',
+    fontFamily: 'heading_regular',
     cursor: 'pointer',
   },
   haventDonated: {

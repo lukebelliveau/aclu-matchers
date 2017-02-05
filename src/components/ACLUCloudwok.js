@@ -70,7 +70,7 @@ const style = `
 
   .cloudwok-loading-screen {
     padding-top: 4rem;
-    font-family: 'open_sansregular', sans-serif !important;
+    font-family: 'heading_regular', sans-serif !important;
     font-size: 1.5em;
     height: 300px;
   }
@@ -119,7 +119,7 @@ const style = `
 
   .text-instruction strong {
     font-weight: lighter !important;
-    font-family: 'libre_baskervilleregular' !important;
+    font-family: 'paragraph_regular' !important;
     font-size: 1rem !important;
   }
 

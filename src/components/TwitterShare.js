@@ -16,7 +16,7 @@ const styles = {
         width: '35%',
         display: 'block',
         margin: '0 auto',
-        fontFamily: 'open_sansregular',
+        fontFamily: 'heading_regular',
     },
     instructions: {
         margin: '0 auto',

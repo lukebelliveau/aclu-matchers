@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "open_sansbold";
+  font-family: "heading_bold";
   font-style: normal;
   font-weight: normal;
 
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "open_sansregular";
+  font-family: "heading_regular";
   font-style: normal;
   font-weight: normal;
 
@@ -17,21 +17,35 @@
 }
 
 @font-face {
-  font-family: "libre_baskervilleitalic";
+  font-family: "paragraph_regular";
   font-style: normal;
   font-weight: normal;
 
-  src: url("../fonts/librebaskerville-italic-webfont.woff2") format("woff2"),
-  url("../fonts/librebaskerville-italic-webfont.woff") format("woff");
+  src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "libre_baskervilleregular";
+  font-family: "paragraph_bold";
   font-style: normal;
   font-weight: normal;
 
-  src: url("../fonts/librebaskerville-regular-webfont.woff2") format("woff2"),
-  url("../fonts/librebaskerville-regular-webfont.woff") format("woff");
+  src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "paragraph_thin";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../fonts/RobotoSlab-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "paragraph_light";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../fonts/RobotoSlab-Light.ttf") format("truetype");
 }
 
 html {
@@ -47,7 +61,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "libre_baskervilleregular", serif;
+  font-family: "paragraph_regular", serif;
   line-height: 1.45;
   color: #373e44;
 }
@@ -61,7 +75,7 @@ h2,
 h3,
 h4 {
   margin: 1.414em 0 0.5em;
-  font-family: "open_sansbold", sans-serif;
+  font-family: "heading_bold", sans-serif;
   line-height: 1.2;
 }
 
@@ -115,10 +129,10 @@ p {
 }
 
 strong {
-  font-family: "open_sansbold";
+  font-family: "heading_bold";
 }
 
 number {
   display: inline-block;
-  font-family: "open_sansbold";
+  font-family: "heading_bold";
 }

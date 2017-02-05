@@ -7,7 +7,7 @@ const s = StyleSheet.create({
     padding: '2rem',
   },
   a: {
-    fontFamily: 'open_sansregular',
+    fontFamily: 'heading_regular',
     color: '#33373A',
     textDecoration: 'none',
   },
