@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     },
     caption: {
         fontSize: '1.5rem',
+        color: '#33373A'
     },
     label: {
         '@media (max-width: 425px)': {

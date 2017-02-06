@@ -63,7 +63,7 @@ body {
   margin: 0;
   font-family: "paragraph_regular", serif;
   line-height: 1.45;
-  color: #373e44;
+  color: #33373A;
 }
 
 p {
@@ -100,7 +100,6 @@ small,
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #373e44;
 }
 
 blockquote p {

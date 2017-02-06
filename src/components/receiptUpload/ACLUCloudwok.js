@@ -87,7 +87,7 @@ const style = `
 
   .cloudwok-embed .dropzone .filepicker {
     background: transparent;
-    color: #0B0C0E;
+    color: #33373A;
     padding: 20px 10px;
     border: none;
     margin-top: 15px;

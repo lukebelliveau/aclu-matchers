@@ -8,6 +8,7 @@ const style = StyleSheet.create({
     backgroundSize: '100%'
   },
   title: {
+    color: '#33373A',
     margin: '0.8rem 0',
     fontSize: '1.5rem',
     textAlign: 'left',

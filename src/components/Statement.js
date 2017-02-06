@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
      }
   },
   quote: {
-    borderColor: '#96989B'
+    borderLeft: '5px solid #96989B'
   }
 });
 

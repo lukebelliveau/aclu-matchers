@@ -4,7 +4,7 @@ import { StyleSheet, css } from 'aphrodite';
 const styles = StyleSheet.create({
   wrapper: {
     color: '#EAEAEA',
-    background: '#0B0C0E',
+    background: '#33373A',
     padding: '2rem',
     '@media (max-width: 425px)': {
       padding: '1rem 2.5rem',
