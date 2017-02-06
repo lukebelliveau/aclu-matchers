@@ -52,6 +52,15 @@ const styles = StyleSheet.create({
     fontFamily: 'heading_regular',
     cursor: 'pointer',
   },
+  noPersonalInfo: {
+    fontSize: '1.5rem',
+    fontFamily: 'heading_regular',
+    '@media (max-width: 425px)': {
+        marginTop: '3rem',
+        marginBottom: '1.5rem',
+        fontSize: '1rem',
+    }
+  }
 });
 
 const isOnMobile = document.documentElement.clientWidth <= 425;
@@ -103,6 +112,9 @@ class Instructions extends React.Component {
                   We'll find matchers to multiply your donation!
                 </li>
               </ul>
+            </div>
+            <div className={css(styles.noPersonalInfo)}>
+              Absolutely no personal information required.
             </div>
           </div>
         )}
