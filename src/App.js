@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import {StyleSheet, css} from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite';
 
 import Header from './components/Header';
+import TotalMatched from './components/TotalMatched'
 import ReceiptUpload from './components/receiptUpload/ReceiptUpload';
 import OtherCallsToAction from './components/otherCallsToAction/OtherCallsToAction';
 import Statement from './components/Statement';
 import Footer from './components/footer/Footer';
 
-const s = StyleSheet.create({
+const styles = StyleSheet.create({
   wrapper: {
     textAlign: 'center',
   },
@@ -16,8 +17,9 @@ const s = StyleSheet.create({
 class App extends Component {
   render() {
     return (
-      <div className={css(s.wrapper)}>
+      <div className={css(styles.wrapper)}>
         <Header />
+        <TotalMatched />
         <ReceiptUpload />
         <OtherCallsToAction />
         <Statement />

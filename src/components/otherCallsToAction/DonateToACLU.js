@@ -43,13 +43,11 @@ const styles = StyleSheet.create({
     }
 });
 
-
-
-
-export default () => 
+export default () => (
   <div className={ css(styles.buttonWrapper)}>
       <h2 className={css(styles.caption)}>Haven't donated yet?</h2>
       <a className={ css(styles.button) } href="https://action.aclu.org/secure/donate-to-aclu" target="_blank">
           <div className={ css(styles.label) }>Donate to the American Civil Liberties Union</div>
       </a>
   </div>
+);

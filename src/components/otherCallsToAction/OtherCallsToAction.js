@@ -25,20 +25,16 @@ const styles = StyleSheet.create({
     }
 });
 
-const OtherCallsToAction = () => {
-    return (
-        <div>
-            <div className={ css(styles.buttonsWrapper)}>
-                <DonateToACLU />
-                <SpreadTheWord />
-            </div>
-            <div className={ css(styles.callToAction) }>
-                <div>You can make a big difference by encouraging others to use this site.</div>
-                <div>Please help us spread this spark!</div>
-                <img className={ css(styles.lightAMatch) } src='./lightamatch.png' />
-            </div>
+export default () => (
+    <div>
+        <div className={ css(styles.buttonsWrapper)}>
+            <DonateToACLU />
+            <SpreadTheWord />
         </div>
-    );
-};
-
-export default OtherCallsToAction;
+        <div className={ css(styles.callToAction) }>
+            <div>You can make a big difference by encouraging others to use this site.</div>
+            <div>Please help us spread this spark!</div>
+            <img className={ css(styles.lightAMatch) } src='./lightamatch.png' />
+        </div>
+    </div>
+);

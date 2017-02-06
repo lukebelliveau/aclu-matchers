@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet, css} from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite';
 import TwitterWidget from './TwitterWidget';
 
-const s = StyleSheet.create({
+const styles = StyleSheet.create({
   footer: {
     background: '#EAEAEA',
     padding: '2rem',
@@ -24,14 +24,14 @@ const s = StyleSheet.create({
   }
 });
 
-
-export default () => 
+export default () => (
   <div>
     <TwitterWidget />
-    <div className={css(s.footer)}>
-        <a className={css(s.a)} href="https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing" target="_blank">
-          <div className={css(s.about)}>About</div>
-          <img className={css(s.logo)} alt='matchus logo' src='./logo.png' />
+    <div className={css(styles.footer)}>
+        <a className={css(styles.a)} href="https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing" target="_blank">
+          <div className={css(styles.about)}>About</div>
+          <img className={css(styles.logo)} alt='matchus logo' src='./logo.png' />
         </a>
     </div>
   </div>
+);

@@ -2,8 +2,9 @@ import React from 'react';
 import ACLUCloudWok from './ACLUCloudwok';
 import Instructions from './Instructions';
 
-export default () => 
+export default () => (
   <div> 
     <Instructions/>
     <ACLUCloudWok />
   </div>
+);

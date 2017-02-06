@@ -1,7 +1,6 @@
 import React from 'react';
-import {StyleSheet, css} from 'aphrodite';
-import {whitespace} from '../styles/shared';
-import TotalMatched from './TotalMatched';
+import { StyleSheet, css } from 'aphrodite';
+import { whitespace } from '../styles/shared';
 
 const style = StyleSheet.create({
   mb0: whitespace.margins.mb0,
@@ -38,12 +37,9 @@ const style = StyleSheet.create({
   }
 });
 
-const Header = () => (
+export default () => (
   <div className={css(style.header, style.bgBlue)}>
     <img className={css(style.logo)} alt='matchus logo' src='./logo.png' />
     <h1 className={css(style.mb0, style.title)}><div className={ css(style.break) }>Match Your&nbsp;</div><div className={ css(style.break) }>ACLU Donations</div></h1>
-    <TotalMatched />
   </div>
 );
-
-export default Header;
