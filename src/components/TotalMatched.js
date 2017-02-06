@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
   }
 });
 
-const amountMatched = '625,000';
-const timeEST = '9:00am';
+const amountMatched = '675,000';
+const timeEST = '7:00pm';
 const date = 'February 6, 2017';
 
 export default () => (
