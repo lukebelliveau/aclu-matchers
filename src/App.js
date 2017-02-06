@@ -4,7 +4,7 @@ import {StyleSheet, css} from 'aphrodite';
 import Header from './components/Header';
 import Instructions from './components/Instructions';
 import Cloudwok from './components/ACLUCloudwok';
-import ActionButtons from './components/callsToAction/ActionButtons';
+import OtherCallsToAction from './components/otherCallsToAction/OtherCallsToAction';
 import TwitterWidget from './components/TwitterWidget';
 import Statement from './components/Statement';
 import Footer from './components/Footer';
@@ -22,7 +22,7 @@ class App extends Component {
         <Header />
         <Instructions />
         <Cloudwok />
-        <ActionButtons />
+        <OtherCallsToAction />
         <Statement />
         <TwitterWidget />
         <Footer />

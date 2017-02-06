@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     }
 });
 
-const ActionButtons = () => {
+const OtherCallsToAction = () => {
     return (
         <div>
             <div className={ css(styles.buttonsWrapper)}>
@@ -41,4 +41,4 @@ const ActionButtons = () => {
     );
 };
 
-export default ActionButtons;
+export default OtherCallsToAction;
