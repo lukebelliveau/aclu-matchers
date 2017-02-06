@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
+import DonateToACLU from './DonateToACLU';
+
 const styles = StyleSheet.create({
     buttonsWrapper: {
         marginTop: '2rem',
@@ -77,13 +79,7 @@ const ActionButtons = () => {
     return (
         <div>
             <div className={ css(styles.buttonsWrapper)}>
-                <div className={ css(styles.buttonWrapper)}>
-                    <h2 className={css(styles.caption)}>Haven't donated yet?</h2>
-                    <a className={ css(styles.button) } href="https://action.aclu.org/secure/donate-to-aclu" target="_blank">
-                        <div className={ css(styles.label) }>Donate to the American Civil Liberties Union</div>
-                    </a>
-                </div>
-                
+                <DonateToACLU />
                 <div className={ css(styles.buttonWrapper)}>
                     <h2 className={css(styles.caption)}>Dropped your receipt?</h2>
                     <a className={ css(styles.button) } href={`https://twitter.com/intent/tweet?text=${twitterMessage}`}>
