@@ -40,6 +40,9 @@ const style = StyleSheet.create({
 export default () => (
   <div className={css(style.header, style.bgBlue)}>
     <img className={css(style.logo)} alt='matchus logo' src='./logo.png' />
-    <h1 className={css(style.mb0, style.title)}><div className={ css(style.break) }>Match Your&nbsp;</div><div className={ css(style.break) }>ACLU Donations</div></h1>
+    <h1 className={css(style.mb0, style.title)}>
+      <div className={css(style.break)}>Match Your&nbsp;</div>
+      <div className={css(style.break)}>ACLU Donations</div>
+    </h1>
   </div>
 );

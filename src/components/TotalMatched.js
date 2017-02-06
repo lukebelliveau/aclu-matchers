@@ -27,11 +27,11 @@ const date = 'February 5, 2017';
 export default () => (
   <div className={css(styles.wrapper)}>
     <div>
-      <strong className={ css(styles.amount) }>
+      <strong className={css(styles.amount)}>
         ${ amountMatched }
       </strong><br />
       worth of donation matches have been shared through this site, all thanks to donors like you!
-        <div className={ css(styles.dateTime) }>
+        <div className={css(styles.dateTime)}>
         <div>Last updated { timeEST } EST on { date }</div>
       </div>
     </div>

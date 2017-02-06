@@ -15,4 +15,6 @@ const twitterFeed = {
   }
 };
 
-export default () => <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
+export default () => (
+  <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
+);

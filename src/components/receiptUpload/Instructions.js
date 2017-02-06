@@ -83,8 +83,7 @@ class Instructions extends React.Component {
   render() {
     return (
       <div>
-
-        { this.state.showAccordionToggle && <div className={ css(styles.accordionToggle) } onClick={this.toggleMobile}>Tap for Instructions</div> }
+        { this.state.showAccordionToggle && <div className={css(styles.accordionToggle)} onClick={this.toggleMobile}>Tap for Instructions</div> }
 
         { this.state.showHowItWorks && (
           <div className={css(styles.hero, styles.cover, styles.bgBlue)}>
@@ -106,7 +105,6 @@ class Instructions extends React.Component {
             </div>
           </div>
         )}
-
       </div>
   )};
 };

@@ -27,14 +27,14 @@ const styles = StyleSheet.create({
 
 export default () => (
     <div>
-        <div className={ css(styles.buttonsWrapper)}>
+        <div className={css(styles.buttonsWrapper)}>
             <DonateToACLU />
             <SpreadTheWord />
         </div>
-        <div className={ css(styles.callToAction) }>
+        <div className={css(styles.callToAction)}>
             <div>You can make a big difference by encouraging others to use this site.</div>
             <div>Please help us spread this spark!</div>
-            <img className={ css(styles.lightAMatch) } src='./lightamatch.png' />
+            <img className={css(styles.lightAMatch)} src='./lightamatch.png' />
         </div>
     </div>
 );
