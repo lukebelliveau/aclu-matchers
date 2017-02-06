@@ -3,7 +3,6 @@ import {StyleSheet, css} from 'aphrodite';
 import {whitespace} from '../styles/shared';
 import TotalMatched from './TotalMatched';
 
-
 const style = StyleSheet.create({
   mb0: whitespace.margins.mb0,
   header: {

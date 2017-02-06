@@ -4,9 +4,8 @@ import {StyleSheet, css} from 'aphrodite';
 import Header from './components/Header';
 import ReceiptUpload from './components/receiptUpload/ReceiptUpload';
 import OtherCallsToAction from './components/otherCallsToAction/OtherCallsToAction';
-import TwitterWidget from './components/TwitterWidget';
 import Statement from './components/Statement';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 
 const s = StyleSheet.create({
   wrapper: {
@@ -22,7 +21,6 @@ class App extends Component {
         <ReceiptUpload />
         <OtherCallsToAction />
         <Statement />
-        <TwitterWidget />
         <Footer />
       </div>
     );
