@@ -1,44 +1,28 @@
 import React, { Component } from 'react';
-import {StyleSheet, css} from 'aphrodite';
-import { Timeline } from 'react-twitter-widgets';
+import { StyleSheet, css } from 'aphrodite';
 
 import Header from './components/Header';
-import Instructions from './components/Instructions';
-import Cloudwok from './components/ACLUCloudwok';
-import ActionButtons from './components/ActionButtons';
+import TotalMatched from './components/TotalMatched'
+import ReceiptUpload from './components/receiptUpload/ReceiptUpload';
+import OtherCallsToAction from './components/otherCallsToAction/OtherCallsToAction';
 import Statement from './components/Statement';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 
-const twitterHandle = 'match__US';
-
-const s = StyleSheet.create({
+const styles = StyleSheet.create({
   wrapper: {
     textAlign: 'center',
   },
 });
 
-const twitterFeed = {
-  dataSource: {
-    sourceType: 'profile',
-    screenName: twitterHandle
-  },
-  options: {
-    username: twitterHandle,
-    height: 700,
-    width: '70%'
-  }
-};
-
 class App extends Component {
   render() {
     return (
-      <div className={css(s.wrapper)}>
+      <div className={css(styles.wrapper)}>
         <Header />
-        <Instructions />
-        <Cloudwok />
-        <ActionButtons />
+        <TotalMatched />
+        <ReceiptUpload />
+        <OtherCallsToAction />
         <Statement />
-        <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
         <Footer />
       </div>
     );

@@ -6,7 +6,7 @@
     "gh-pages": "^0.12.0",
     "react-scripts": "0.8.5"
   },
-  "homepage": "https://lukebelliveau.github.io/aclu-matchers",
+  "homepage": "https://aclu-matchers.github.io/",
   "dependencies": {
     "aphrodite": "^1.1.0",
     "react": "^15.4.2",
@@ -18,9 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
   }
 }
