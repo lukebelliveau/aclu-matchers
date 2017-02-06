@@ -4,19 +4,17 @@ import { Timeline } from 'react-twitter-widgets';
 
 import Header from './components/Header';
 import Instructions from './components/Instructions';
+import Cloudwok from './components/ACLUCloudwok';
+import ActionButtons from './components/ActionButtons';
 import Statement from './components/Statement';
+import Footer from './components/Footer';
 
-const twitterHandle = 'ACLU_Multiplier';
+const twitterHandle = 'match__US';
 
 const s = StyleSheet.create({
   wrapper: {
     textAlign: 'center',
   },
-  a: {
-    color: '#40B2F6',
-    textDecoration: 'none',
-    paddingBottom: 10
-  }
 });
 
 const twitterFeed = {
@@ -37,9 +35,11 @@ class App extends Component {
       <div className={css(s.wrapper)}>
         <Header />
         <Instructions />
+        <Cloudwok />
+        <ActionButtons />
         <Statement />
         <Timeline dataSource={twitterFeed.dataSource} options={twitterFeed.options} />
-        <a className={css(s.a)} href="https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing" target="_blank">about matchUS.us</a>
+        <Footer />
       </div>
     );
   }

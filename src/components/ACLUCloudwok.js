@@ -79,7 +79,7 @@ export const startCloudwok = () => {
   (function(window, document) {
     var loader = function() {
       var script = document.createElement("script"),
-        tag = document.getElementsByTagName("script")[0];
+      tag = document.getElementsByTagName("script")[0];
       script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
       tag.parentNode.insertBefore(script, tag);
       if(process.env.NODE_ENV !== 'production') insertValidationOnForm();
@@ -91,17 +91,26 @@ export const startCloudwok = () => {
 
 const style = `
   .cloudwok-embed {
-    width: 80%;
-    borderRadius: 25;
     margin: 0 auto;
     height: auto;
     position: relative;
+    overflow: hidden;
+    background: #EAEAEA;
+    padding: 1.5rem 0rem;
+  }
+
+  .cloudwok-loading-screen {
+    padding-top: 4rem;
+    font-family: 'heading_regular', sans-serif !important;
+    font-size: 1.5em;
+    height: 300px;
   }
 
   .cloudwok-embed .dropzone {
-      background: #186EAB;
-      height: 200px;
-      color: #D9E7FF;
+      background: #EAEAEA;
+      height: 300px;
+      font-size: 1.5rem !important;
+      color: #F43D00;
       position: relative;
     }
 
@@ -111,13 +120,36 @@ const style = `
 
   .cloudwok-embed .dropzone .filepicker {
     background: transparent;
-    color: #fff;
+    color: #0B0C0E;
     padding: 20px 10px;
     border: none;
-    border-radius: 7px;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 3rem;
     font-weight: bold;
+    margin-top: 3.5rem;
+  }
+
+  .dropzone {
+    width: 80% !important;
+    margin: 0 auto !important;
+    background: white !important;
+  }
+
+  @media (max-width: 425px) {
+    .cloudwok-embed .dropzone .filepicker {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .cloudwok-embed .dropzone, .cloudwok-loading-screen {
+      height: 250px;
+    }
+    .dropzone-text {
+      font-size: 1rem !important;
+    }
+  }
+
+  .dropzone {
+    border-radius: 0 !important;
   }
 
   .btn.filepicker:active {
@@ -128,17 +160,26 @@ const style = `
     display: none;
   }
 
-  .warning-message {
-    margin: 15px 0;
-    display: block;
-    font-size: 20px;
-    color: #D50000;
+  .btn.btn-success.filepicker {
+    padding: 20px 0 !important;
   }
 
-  @media (max-width: 425px) {
-    .warning-message {
-      font-size: 14px;
-    }
+  .text-instruction, .btn.btn-success.filepicker {
+    display: block !important;
+  }
+
+  .dropzone-text {
+    font-weight: lighter !important;
+    font-family: 'paragraph_regular' !important;
+    font-size: 1.5rem !important;
+  }
+
+  .text-right, .fa-fw, .text-instruction strong, .spacer-50 {
+    display: none;
+  }
+
+  .fa-asterisk {
+    display: none !important;
   }
   .feedback-holder {
     font-family: 'OpenSans';
@@ -167,11 +208,11 @@ class Cloudwok extends React.Component {
           {style}
         </style>
         <div className="cloudwok-embed" data-wokid={ cloudWokId }>
-          <strong className="warning-message">Confirmation number & amount must be visible</strong>
           <form className="cloudwok-upload">
-            <div className="cloudwok-dropzone"></div>
+            <div className="cloudwok-dropzone">
+              <div className="cloudwok-loading-screen">Loading, please wait...</div>
+            </div>
           </form>
-          <strong className="warning-message">Attention: We only support image file upload at this time <br /> (.jpg, jpeg, .img, .png, .gif, etc)</strong>
           <div className="cloudwok-upload-files"></div>
           <div className="feedback-holder"></div>
           <div className="cloudwok-upload-message"></div>

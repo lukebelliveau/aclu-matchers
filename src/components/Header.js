@@ -10,17 +10,39 @@ const style = StyleSheet.create({
     backgroundSize: '100%'
   },
   title: {
-    margin: '20px 0',
+    margin: '0.8rem 0',
+    fontSize: '1.5rem',
+    textAlign: 'left',
+    display: 'inline-block',
     '@media (max-width: 425px)': {
-      margin: 10,
-      fontSize: 30
+      margin: '0 0 1rem 0',
+      fontSize: '1.5rem'
      }
+  },
+  logo: {
+    height: '3rem',
+    display: 'inline-block',
+    marginRight: '1rem',
+    '@media (max-width: 425px)': {
+      display: 'block',
+      height: 'auto',
+      width: '90%',
+      margin: '0 auto',
+      marginTop: '1rem',
+      marginBottom: '0.5rem'
+    },
+  },
+  break: {
+      '@media (max-width: 425px)': {
+        display: 'inline-block',
+      }
   }
 });
 
 const Header = () => (
   <div className={css(style.header, style.bgBlue)}>
-    <h1 className={css(style.mb0, style.title)}>ACLU Donation Multiplier</h1>
+    <img className={css(style.logo)} alt='matchus logo' src='./logo.png' />
+    <h1 className={css(style.mb0, style.title)}><div className={ css(style.break) }>Match Your&nbsp;</div><div className={ css(style.break) }>ACLU Donations</div></h1>
     <TotalMatched />
   </div>
 );

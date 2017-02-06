@@ -39,6 +39,9 @@ const styles = {
     '@media (max-width: 425px)': {
       fontSize: 14,
      }
+  },
+  quote: {
+    borderColor: '#96989B'
   }
 }
 
@@ -48,7 +51,7 @@ const Statement = () => (
   <div className={css(style.wrapperStyle)}>
     <div className={css(style.body)}>
       <h2 className={css(style.h2)}>Why donate?</h2>
-      <blockquote>
+      <blockquote className={ css(style.quote) }>
         <p>
         Extreme vetting is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.
         </p>
