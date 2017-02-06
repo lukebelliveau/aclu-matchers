@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, css} from 'aphrodite';
-import {font, background, container} from '../styles/shared';
+import {font, background, container} from '../../styles/shared';
 
 const styles = {
   container,

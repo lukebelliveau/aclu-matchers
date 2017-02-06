@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import {StyleSheet, css} from 'aphrodite';
 
 import Header from './components/Header';
-import Instructions from './components/Instructions';
-import Cloudwok from './components/ACLUCloudwok';
+import ReceiptUpload from './components/receiptUpload/ReceiptUpload';
 import OtherCallsToAction from './components/otherCallsToAction/OtherCallsToAction';
 import TwitterWidget from './components/TwitterWidget';
 import Statement from './components/Statement';
@@ -20,8 +19,7 @@ class App extends Component {
     return (
       <div className={css(s.wrapper)}>
         <Header />
-        <Instructions />
-        <Cloudwok />
+        <ReceiptUpload />
         <OtherCallsToAction />
         <Statement />
         <TwitterWidget />

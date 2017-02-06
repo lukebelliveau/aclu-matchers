@@ -6,7 +6,7 @@ import GoogleAnalytics from 'react-ga';
 import App from './App';
 import './styles/index.css';
 
-import { startCloudwok } from './components/ACLUCloudwok'
+import { startCloudwok } from './components/receiptUpload/ACLUCloudwok'
 
 GoogleAnalytics.initialize('UA-91151405-1');
 
