@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     fontSize: '22px',
     paddingBottom: '20px',
     display: 'inline-block',
-    fontFamily: 'heading_regular',
+    fontFamily: 'paragraph_regular',
     width: '31%',
     margin: '1%',
     verticalAlign: 'top',

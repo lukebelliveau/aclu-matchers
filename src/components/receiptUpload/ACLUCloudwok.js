@@ -132,8 +132,7 @@ const style = `
   }
 
   .dropzone-text {
-    font-weight: lighter !important;
-    font-family: 'paragraph_regular' !important;
+    font-family: 'paragraph_light' !important;
     font-size: 1.5rem !important;
   }
 
@@ -169,6 +168,7 @@ const insertDropzoneText = () => {
     const dropzoneWarningLine1 = 'Image files only - no PDFs please.';
     const dropzoneWarningLine2 = 'Confirmation number & amount must be clearly visible.'
     const dropzoneWarning = document.createElement('div');
+    dropzoneWarning.className += ' dropzone-text';
     dropzoneWarning.innerHTML = `<div>${dropzoneWarningLine1}</div><div>${dropzoneWarningLine2}</div>`;
     dropzoneTitle.insertAdjacentElement('afterend', dropzoneWarning);
 };
