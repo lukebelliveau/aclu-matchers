@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, css} from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite';
 
-const styles = {
+const styles = StyleSheet.create({
   wrapperStyle: {
     padding: '50px',
     paddingTop: 0,
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       padding: '0px',
      }
   },
@@ -17,7 +17,7 @@ const styles = {
     margin: '0 auto',
     marginTop: 40,
     maxWidth: 1024,
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       padding: '15px',
       width: '90%'
      }
@@ -36,22 +36,20 @@ const styles = {
     display: 'block',
     marginTop: 30,
     fontSize: 18,
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       fontSize: 14,
      }
   },
   quote: {
-    borderColor: '#96989B'
+    borderLeft: '5px solid #96989B'
   }
-}
+});
 
-const style = StyleSheet.create(styles)
-
-const Statement = () => (
-  <div className={css(style.wrapperStyle)}>
-    <div className={css(style.body)}>
-      <h2 className={css(style.h2)}>Why donate?</h2>
-      <blockquote className={ css(style.quote) }>
+export default () => (
+  <div className={css(styles.wrapperStyle)}>
+    <div className={css(styles.body)}>
+      <h2 className={css(styles.h2)}>Why donate?</h2>
+      <blockquote className={css(styles.quote)}>
         <p>
         Extreme vetting is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.
         </p>
@@ -59,12 +57,10 @@ const Statement = () => (
           - Anthony D. Romero, Executive Director, American Civil Liberties Union
         </footer>
       </blockquote>
-      <strong className={css(style.strong)}>We wholeheartedly agree with this statement - and we're not alone.</strong>
-      <p className={css(style.p)}>
+      <strong className={css(styles.strong)}>We wholeheartedly agree with this statement - and we're not alone.</strong>
+      <p className={css(styles.p)}>
         People around the nation have offered to match our donations to the ACLU; all they need from us is a tweet with the donation receipt.  Among others, we have matched donations with Ajay Chopra, Sia, and Jesse Tyler.
       </p>
     </div>
   </div>
 );
-
-export default Statement;

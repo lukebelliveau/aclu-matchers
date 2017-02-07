@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import validateReceipt from '../validators/OCRValidator';
+import validateReceipt from '../../validators/OCRValidator';
 
 const success = {
   title: 'Thank you for multiplying!',
@@ -64,7 +64,7 @@ const enableSubmit = () => {
   $('.btn-start-upload').text(cloudWokConfig.form.button);
 };
 
-const insertValidationOnForm = () => {
+const insertOCRValidationOnForm = () => {
   $('form').on('change', async (event) => {
     disableSubmit();
     const valid = await validateReceipt(event.target.files[0]);
@@ -82,7 +82,6 @@ export const startCloudwok = () => {
       tag = document.getElementsByTagName("script")[0];
       script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
       tag.parentNode.insertBefore(script, tag);
-      if(process.env.NODE_ENV !== 'production') insertValidationOnForm();
     };
     window.addEventListener ? window.addEventListener("load", loader, false) :
       window.attachEvent("onload", loader);
@@ -120,7 +119,7 @@ const style = `
 
   .cloudwok-embed .dropzone .filepicker {
     background: transparent;
-    color: #0B0C0E;
+    color: #33373A;
     padding: 20px 10px;
     border: none;
     margin-top: 15px;
@@ -135,7 +134,7 @@ const style = `
     background: white !important;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 740px) {
     .cloudwok-embed .dropzone .filepicker {
       font-size: 1.5rem;
       margin-top: 1rem;
@@ -169,8 +168,7 @@ const style = `
   }
 
   .dropzone-text {
-    font-weight: lighter !important;
-    font-family: 'paragraph_regular' !important;
+    font-family: 'paragraph_light' !important;
     font-size: 1.5rem !important;
   }
 
@@ -199,7 +197,61 @@ const style = `
 
 const cloudWokId = process.env.NODE_ENV === 'production' ? 'r3M-' : 'GEKm';
 
+
 class Cloudwok extends React.Component {
+
+  componentDidMount(){
+
+    startCloudwok();
+    /*
+      CAUTION: This way, madness lies...
+      This waits until CloudWok is loaded, then adds the dropzone label AFTER the title (otherwise label comes first).
+      Let's please get rid of CloudWok ASAP.
+    */
+
+    const insertDropzoneText = () => {
+       const dropzoneTitle = document.getElementsByClassName('btn btn-success filepicker')[0];
+        const dropzoneWarningLine1 = 'Image files only - no PDFs please.';
+        const dropzoneWarningLine2 = 'Confirmation number & amount must be clearly visible.'
+        const dropzoneWarning = document.createElement('div');
+        dropzoneWarning.className += ' dropzone-text';
+        dropzoneWarning.innerHTML = `<div>${dropzoneWarningLine1}</div><div>${dropzoneWarningLine2}</div>`;
+        dropzoneTitle.insertAdjacentElement('afterend', dropzoneWarning);
+    };
+
+    const cloudwokSection = document.getElementsByClassName('cloudwok-embed')[0];
+
+    // more efficient but not supported in older browsers
+    if ( MutationObserver ) {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (!mutation.addedNodes) return;
+          for (const i in mutation.addedNodes) {
+            const node = mutation.addedNodes[i];
+            if (node.className === 'dropzone' ) {
+              insertDropzoneText();
+              if(process.env.NODE_ENV !== 'production') insertOCRValidationOnForm();
+              disconnectObserver();
+            }
+          }
+        });
+      });
+
+      const disconnectObserver = () => observer.disconnect();
+
+      observer.observe(cloudwokSection, {
+          childList: true,
+          subtree: true,
+          attributes: false,
+          characterData: false
+      });
+
+    } else {
+      cloudwokSection.addEventListener("DOMNodeInserted", (e) => {
+        if (e.target.className === 'dropzone') insertDropzoneText();
+      }, false);
+    }
+  }
 
   render() {
     return (

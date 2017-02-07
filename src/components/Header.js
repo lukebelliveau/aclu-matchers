@@ -1,8 +1,6 @@
 import React from 'react';
-import {StyleSheet, css} from 'aphrodite';
-import {whitespace} from '../styles/shared';
-import TotalMatched from './TotalMatched';
-
+import { StyleSheet, css } from 'aphrodite';
+import { whitespace } from '../styles/shared';
 
 const style = StyleSheet.create({
   mb0: whitespace.margins.mb0,
@@ -10,11 +8,12 @@ const style = StyleSheet.create({
     backgroundSize: '100%'
   },
   title: {
+    color: '#33373A',
     margin: '0.8rem 0',
     fontSize: '1.5rem',
     textAlign: 'left',
     display: 'inline-block',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       margin: '0 0 1rem 0',
       fontSize: '1.5rem'
      }
@@ -23,7 +22,7 @@ const style = StyleSheet.create({
     height: '3rem',
     display: 'inline-block',
     marginRight: '1rem',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       display: 'block',
       height: 'auto',
       width: '90%',
@@ -33,18 +32,18 @@ const style = StyleSheet.create({
     },
   },
   break: {
-      '@media (max-width: 425px)': {
+      '@media (max-width: 740px)': {
         display: 'inline-block',
       }
   }
 });
 
-const Header = () => (
+export default () => (
   <div className={css(style.header, style.bgBlue)}>
     <img className={css(style.logo)} alt='matchus logo' src='./logo.png' />
-    <h1 className={css(style.mb0, style.title)}><div className={ css(style.break) }>Match Your&nbsp;</div><div className={ css(style.break) }>ACLU Donations</div></h1>
-    <TotalMatched />
+    <h1 className={css(style.mb0, style.title)}>
+      <div className={css(style.break)}>Match Your&nbsp;</div>
+      <div className={css(style.break)}>ACLU Donations</div>
+    </h1>
   </div>
 );
-
-export default Header;
