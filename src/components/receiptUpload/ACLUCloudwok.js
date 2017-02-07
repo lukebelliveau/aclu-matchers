@@ -65,7 +65,7 @@ const enableSubmit = () => {
 };
 
 const insertOCRValidationOnForm = () => {
-  $('form').on('change', async (event) => {
+  $('form input[type=file]').on('change', async (event) => {
     disableSubmit();
     const valid = await validateReceipt(event.target.files[0]);
     enableSubmit();
