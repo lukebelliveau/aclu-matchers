@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   wrapperStyle: {
     padding: '50px',
     paddingTop: 0,
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       padding: '0px',
      }
   },
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     margin: '0 auto',
     marginTop: 40,
     maxWidth: 1024,
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       padding: '15px',
       width: '90%'
      }
@@ -36,12 +36,12 @@ const styles = StyleSheet.create({
     display: 'block',
     marginTop: 30,
     fontSize: 18,
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       fontSize: 14,
      }
   },
   quote: {
-    borderColor: '#96989B'
+    borderLeft: '5px solid #96989B'
   }
 });
 

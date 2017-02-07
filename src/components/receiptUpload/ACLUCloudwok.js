@@ -87,7 +87,7 @@ const style = `
 
   .cloudwok-embed .dropzone .filepicker {
     background: transparent;
-    color: #0B0C0E;
+    color: #33373A;
     padding: 20px 10px;
     border: none;
     margin-top: 15px;
@@ -102,7 +102,7 @@ const style = `
     background: white !important;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 740px) {
     .cloudwok-embed .dropzone .filepicker {
       font-size: 1.5rem;
       margin-top: 1rem;
@@ -132,8 +132,7 @@ const style = `
   }
 
   .dropzone-text {
-    font-weight: lighter !important;
-    font-family: 'paragraph_regular' !important;
+    font-family: 'paragraph_light' !important;
     font-size: 1.5rem !important;
   }
 
@@ -169,6 +168,7 @@ const insertDropzoneText = () => {
     const dropzoneWarningLine1 = 'Image files only - no PDFs please.';
     const dropzoneWarningLine2 = 'Confirmation number & amount must be clearly visible.'
     const dropzoneWarning = document.createElement('div');
+    dropzoneWarning.className += ' dropzone-text';
     dropzoneWarning.innerHTML = `<div>${dropzoneWarningLine1}</div><div>${dropzoneWarningLine2}</div>`;
     dropzoneTitle.insertAdjacentElement('afterend', dropzoneWarning);
 };

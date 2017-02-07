@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     buttonsWrapper: {
         marginTop: '2rem',
         marginBottom: '0rem',
-        '@media (min-width: 425px)': {
+        '@media (min-width: 740px)': {
             display: 'flex',
             justifyContent: 'center',
             marginBottom: '4rem',
@@ -34,7 +34,7 @@ export default () => (
         <div className={css(styles.callToAction)}>
             <div>You can make a big difference by encouraging others to use this site.</div>
             <div>Please help us spread this spark!</div>
-            <img className={css(styles.lightAMatch)} src='./lightamatch.png' />
+            <img className={css(styles.lightAMatch)} src='./lightamatch_bold.png' />
         </div>
     </div>
 );

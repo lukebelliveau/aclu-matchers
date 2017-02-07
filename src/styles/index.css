@@ -52,7 +52,7 @@ html {
   font-size: 16px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 740px) {
   html {
     font-size: 14px;
   }
@@ -63,7 +63,7 @@ body {
   margin: 0;
   font-family: "paragraph_regular", serif;
   line-height: 1.45;
-  color: #373e44;
+  color: #33373A;
 }
 
 p {
@@ -100,7 +100,6 @@ small,
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #373e44;
 }
 
 blockquote p {
@@ -110,7 +109,7 @@ blockquote p {
   text-align: left;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 740px) {
   blockquote p {
     font-size: 14px;
     line-height: 1.5em;

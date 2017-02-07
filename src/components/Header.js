@@ -8,11 +8,12 @@ const style = StyleSheet.create({
     backgroundSize: '100%'
   },
   title: {
+    color: '#33373A',
     margin: '0.8rem 0',
     fontSize: '1.5rem',
     textAlign: 'left',
     display: 'inline-block',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       margin: '0 0 1rem 0',
       fontSize: '1.5rem'
      }
@@ -21,7 +22,7 @@ const style = StyleSheet.create({
     height: '3rem',
     display: 'inline-block',
     marginRight: '1rem',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       display: 'block',
       height: 'auto',
       width: '90%',
@@ -31,7 +32,7 @@ const style = StyleSheet.create({
     },
   },
   break: {
-      '@media (max-width: 425px)': {
+      '@media (max-width: 740px)': {
         display: 'inline-block',
       }
   }
