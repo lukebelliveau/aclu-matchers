@@ -4,8 +4,9 @@ import TwitterWidget from './TwitterWidget';
 
 const styles = StyleSheet.create({
   footer: {
-    background: '#EAEAEA',
-    padding: '2rem 5rem',
+    maxWidth: '1024px',
+    padding: '2rem 50px',
+    margin: '0 auto',
     display: 'flex',
     '@media (max-width: 425px)': {
       flexDirection: 'column-reverse',
@@ -44,14 +45,17 @@ const styles = StyleSheet.create({
       flexBasis: '100%'
      }
   },
+  footerContainer: {
+    background: '#ebebeb'
+  },
   p: {
-    margin: '5px',
+    margin: '5px 0',
     fontSize: '14px'
   }
 });
 
 export default () => (
-  <div>
+  <div className={css(styles.footerContainer)}>
     <div className={css(styles.footer)}>
         <a className={css(styles.a, styles.footerDiv)} href="https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing" target="_blank">
           <img className={css(styles.logo)} alt='matchus logo' src='./logo_light.png' />
