@@ -135,3 +135,7 @@ number {
   display: inline-block;
   font-family: "heading_bold";
 }
+
+.twitter-feed div {
+  width: 100%;
+}

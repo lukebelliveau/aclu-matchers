@@ -10,8 +10,8 @@ const twitterFeed = {
   },
   options: {
     username: twitterHandle,
-    height: 700,
-    width: '70%'
+    height: 300,
+    width: '100%'
   }
 };
 
