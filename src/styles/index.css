@@ -52,7 +52,7 @@ html {
   font-size: 16px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 740px) {
   html {
     font-size: 14px;
   }
@@ -109,7 +109,7 @@ blockquote p {
   text-align: left;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 740px) {
   blockquote p {
     font-size: 14px;
     line-height: 1.5em;

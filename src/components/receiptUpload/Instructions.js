@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     width: '31%',
     margin: '1%',
     verticalAlign: 'top',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       width: '100%',
       fontSize: '14px',
       paddingTop: '15px',
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     margin: '0 auto',
     position: 'relative',
     marginBottom: '10px',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       height: '50px',
      }
   },
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   noPersonalInfo: {
     fontSize: '1.5rem',
     fontFamily: 'heading_regular',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
         marginTop: '3rem',
         marginBottom: '1.5rem',
         fontSize: '1rem',
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const isOnMobile = document.documentElement.clientWidth <= 425;
+const isOnMobile = document.documentElement.clientWidth <= 740;
 
 class Instructions extends React.Component {
 

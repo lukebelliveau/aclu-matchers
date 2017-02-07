@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     buttonsWrapper: {
         marginTop: '2rem',
         marginBottom: '0rem',
-        '@media (min-width: 425px)': {
+        '@media (min-width: 740px)': {
             display: 'flex',
             justifyContent: 'center',
             marginBottom: '4rem',

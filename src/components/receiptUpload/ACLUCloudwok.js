@@ -102,7 +102,7 @@ const style = `
     background: white !important;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 740px) {
     .cloudwok-embed .dropzone .filepicker {
       font-size: 1.5rem;
       margin-top: 1rem;

@@ -3,12 +3,12 @@ import { StyleSheet, css } from 'aphrodite';
 
 const styles = StyleSheet.create({
     buttonWrapper: {
-        '@media (max-width: 425px)': {
+        '@media (max-width: 740px)': {
             margin: '10px 15px',
             width: 'auto',
             display: 'block',
         },
-        '@media (min-width: 425px)': {         
+        '@media (min-width: 740px)': {         
             flex: 1,
             marginRight: '2rem',
             marginLeft: '2rem',
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         background: '#175F7A',
         fontSize: '22px',
         marginTop: '2rem',
-        '@media (max-width: 425px)': {
+        '@media (max-width: 740px)': {
             paddingTop: '1.8rem',
             height: '80px',
         }
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         color: '#33373A'
     },
     label: {
-        '@media (max-width: 425px)': {
+        '@media (max-width: 740px)': {
             fontSize: '1.2rem',
         }
     },
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
       margin: '0 auto',
       position: 'relative',
       marginTop: '0rem',
-      '@media (max-width: 425px)': {
+      '@media (max-width: 740px)': {
           height: '30px',
       }
     }

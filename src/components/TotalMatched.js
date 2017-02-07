@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     color: '#EAEAEA',
     background: '#33373A',
     padding: '2rem',
-    '@media (max-width: 425px)': {
+    '@media (max-width: 740px)': {
       padding: '1rem 2.5rem',
     },
   },
