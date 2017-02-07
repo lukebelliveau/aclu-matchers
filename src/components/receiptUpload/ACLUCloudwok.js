@@ -27,21 +27,7 @@ const cloudWokConfig = {
     "redirect": ""
   },
   "terms": {
-    "show": true,
-    "popup": false,
-    "text": {
-      "before": "Before you upload...",
-      "agree": "Please agree to the following Terms of Service:",
-      "title": "Terms of Service",
-      "main": `Your receipt will be uploaded to cloud storage and tweeted to donation matchers, following a review by our team. No personal information is required.
-               We are verifying receipts before they are posted, but please take care to remove all personal information from receipts before
-               submitting to ensure it is not shared with our team or the public internet. Thank you for participating!`
-    },
-    "checkbox": {
-      "text1": "I agree with the ",
-      "text2": "Terms of Service",
-      "invalid": "Cannot start uploading. Please click on the checkbox first to agree with the Terms of Service."
-    }
+    "show": false,
   }
 };
 
@@ -219,7 +205,6 @@ if ( MutationObserver ) {
               <div className="cloudwok-loading-screen">Loading, please wait...</div>
             </div>
           </form>
-          <div className="cloudwok-tos-checkbox"></div>
         </div>
       </div>
     )
