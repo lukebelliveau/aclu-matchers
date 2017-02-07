@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
   }
 });
 
-const amountMatched = '675,000';
-const timeEST = '7:00pm';
-const date = 'February 6, 2017';
+const amountMatched = '685,000';
+const timeEST = '11:00am';
+const date = 'February 7, 2017';
 
 export default () => (
   <div className={css(styles.wrapper)}>
