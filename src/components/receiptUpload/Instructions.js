@@ -27,6 +27,27 @@ const styles = StyleSheet.create({
       paddingBottom: '15px'
      }
   },
+  accordionToggle: {
+    background: '#F43D00',
+    color: 'white',
+    fontSize: '24px',
+    padding: '0.5em 0',
+    fontFamily: 'heading_regular',
+    cursor: 'pointer',
+    display: 'flex'
+  },
+  accordionText: {
+    flex: 1,
+    textAlign: 'left',
+    marginLeft: '2rem'
+  },
+  hamburger: {
+    flex: 1,
+    height: '30px',
+    width: '30px',
+    maxWidth: '30px',
+    marginRight: '2rem'
+  },
   icon: {
     height: '60px',
     display: 'block',
@@ -43,14 +64,6 @@ const styles = StyleSheet.create({
   strong: {
     marginTop: '10px',
     fontWeight: 500
-  },
-  accordionToggle: {
-    background: '#F43D00',
-    color: 'white',
-    fontSize: '24px',
-    padding: '0.5em 0',
-    fontFamily: 'heading_regular',
-    cursor: 'pointer',
   },
   noPersonalInfo: {
     fontSize: '1.5rem',
@@ -93,7 +106,10 @@ class Instructions extends React.Component {
   render() {
     return (
       <div>
-        { this.state.showAccordionToggle && <div className={css(styles.accordionToggle)} onClick={this.toggleMobile}>Tap for Instructions</div> }
+        { this.state.showAccordionToggle && ( <div className={css(styles.accordionToggle)} onClick={this.toggleMobile}>
+                                                  <div className={css(styles.accordionText)}>How it Works</div>
+                                                  <svg className={css(styles.hamburger)} viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z" fill="#fff"/></svg>
+                                              </div>)}
 
         { this.state.showHowItWorks && (
           <div className={css(styles.hero, styles.cover, styles.bgBlue)}>
