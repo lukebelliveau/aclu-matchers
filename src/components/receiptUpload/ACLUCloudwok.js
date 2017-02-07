@@ -230,7 +230,7 @@ class Cloudwok extends React.Component {
             const node = mutation.addedNodes[i];
             if (node.className === 'dropzone' ) {
               insertDropzoneText();
-              if(process.env.NODE_ENV !== 'production') insertOCRValidationOnForm();
+              insertOCRValidationOnForm();
               disconnectObserver();
             }
           }
@@ -250,7 +250,7 @@ class Cloudwok extends React.Component {
       cloudwokSection.addEventListener("DOMNodeInserted", (e) => {
         if (e.target.className === 'dropzone') {
           insertDropzoneText();
-          if(process.env.NODE_ENV !== 'production') insertOCRValidationOnForm();
+          insertOCRValidationOnForm();
         }
       }, false);
     }
