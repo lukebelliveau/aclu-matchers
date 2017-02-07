@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
 export default () => (
   <div>
     <div className={css(styles.footer)}>
-        <div className={css(styles.a, styles.footerDiv)}>
+        <a className={css(styles.a, styles.footerDiv)} href="https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing" target="_blank">
           <img className={css(styles.logo)} alt='matchus logo' src='./logo_light.png' />
           <div>
             <div className={css(styles.about)}>About | Terms of service</div>
@@ -61,7 +61,7 @@ export default () => (
             <p className={css(styles.p)}>All specifications are subject to change without notice.</p>
             <p className={css(styles.p)}>matchUS is not affiliated with the American Civil Liberties Union.</p>
           </div>
-        </div>
+        </a>
         <div className={'twitter-feed ' + css(styles.footerDiv)}>
           <TwitterWidget />
         </div>
