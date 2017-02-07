@@ -248,7 +248,10 @@ class Cloudwok extends React.Component {
 
     } else {
       cloudwokSection.addEventListener("DOMNodeInserted", (e) => {
-        if (e.target.className === 'dropzone') insertDropzoneText();
+        if (e.target.className === 'dropzone') {
+          insertDropzoneText();
+          if(process.env.NODE_ENV !== 'production') insertOCRValidationOnForm();
+        }
       }, false);
     }
   }
