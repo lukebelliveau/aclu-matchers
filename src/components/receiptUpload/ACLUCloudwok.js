@@ -53,20 +53,20 @@ const style = `
     position: relative;
     overflow: hidden;
     background: #EAEAEA;
-    padding: 1.5rem 0rem;
+    padding: 2.4rem 0;
   }
 
   .cloudwok-loading-screen {
-    padding-top: 4rem;
+    padding-top: 6.4rem;
     font-family: 'heading_regular', sans-serif !important;
-    font-size: 1.5em;
+    font-size: 2.4rem;
     height: 300px;
   }
 
   .cloudwok-embed .dropzone {
       background: #EAEAEA;
       height: 300px;
-      font-size: 1.5rem !important;
+      font-size: 2.4rem !important;
       color: #F43D00;
       position: relative;
     }
@@ -77,9 +77,9 @@ const style = `
     padding: 20px 10px;
     border: none;
     margin-top: 15px;
-    font-size: 3rem;
+    font-size: 4.8rem;
     font-weight: bold;
-    margin-top: 3.5rem;
+    margin-top: 5.6rem;
   }
 
   .dropzone {
@@ -90,14 +90,14 @@ const style = `
 
   @media (max-width: 740px) {
     .cloudwok-embed .dropzone .filepicker {
-      font-size: 1.5rem;
-      margin-top: 1rem;
+      font-size: 2.4rem;
+      margin-top: 1.6rem;
     }
     .cloudwok-embed .dropzone, .cloudwok-loading-screen {
       height: 250px;
     }
     .dropzone-text {
-      font-size: 1rem !important;
+      font-size: 1.6rem !important;
     }
   }
 
@@ -119,7 +119,7 @@ const style = `
 
   .dropzone-text {
     font-family: 'paragraph_light' !important;
-    font-size: 1.5rem !important;
+    font-size: 2.4rem !important;
   }
 
   .text-right, .fa-fw, .text-instruction strong, .spacer-50 {

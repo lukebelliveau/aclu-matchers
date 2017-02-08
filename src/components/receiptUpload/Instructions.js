@@ -50,7 +50,7 @@ const s = StyleSheet.create({
   accordionText: {
     flex: 1,
     textAlign: 'left',
-    marginLeft: '2rem'
+    marginLeft: '3.2rem'
   },
   hamburger: {
     flex: 1,
@@ -58,17 +58,17 @@ const s = StyleSheet.create({
     width: '30px',
     maxWidth: '30px',
     margin: 'auto 0',
-    marginRight: '2rem'
+    marginRight: '3.2rem'
   },
   icon: {
     height: '60px',
     display: 'block',
-    margin: '4rem auto',
+    margin: '6.4rem auto',
     position: 'relative',
     marginBottom: '10px',
     '@media (max-width: 740px)': {
       height: '50px',
-      margin: '2rem auto',
+      margin: '3.2rem auto',
      }
   },
   ul: {
@@ -80,12 +80,12 @@ const s = StyleSheet.create({
     fontWeight: 500
   },
   noPersonalInfo: {
-    fontSize: '1.5rem',
+    fontSize: '2.4rem',
     fontFamily: 'heading_regular',
     '@media (max-width: 740px)': {
-        marginTop: '3rem',
-        marginBottom: '1.5rem',
-        fontSize: '1rem',
+        marginTop: '4.8rem',
+        marginBottom: '2.4rem',
+        fontSize: '1.6rem',
     }
   },
 });

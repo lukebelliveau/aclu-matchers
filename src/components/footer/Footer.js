@@ -7,11 +7,11 @@ const s = StyleSheet.create({
   container,
   alignLeft,
   footer: {
-    padding: '2rem 50px',
+    padding: '3.2rem 50px',
     display: 'flex',
     '@media (max-width: 740px)': {
       flexDirection: 'column-reverse',
-      padding: '2rem',
+      padding: '3.2rem',
      }
   },
   a: Object.assign({}, noDecoration, alignLeft),
@@ -20,16 +20,16 @@ const s = StyleSheet.create({
   },
   about: {
     display: 'inline-block',
-    fontSize: '1.3rem',
-    marginRight: '0.5rem',
-    marginBottom: '1rem'
+    fontSize: '2rem',
+    marginRight: '.8rem',
+    marginBottom: '1.6rem'
   },
   logo: {
     display: 'inline-block',
     width: '60%',
     maxWidth: '350px',
     '@media (max-width: 740px)': {
-      margin: '2rem 0',
+      margin: '3.2rem 0',
      }
   },
   footerDiv: {
@@ -52,7 +52,7 @@ const s = StyleSheet.create({
     fontSize: '14px'
   },
   footerText: {
-    marginRight: '1.5rem'
+    marginRight: '2.4rem'
   }
 });
 
@@ -67,7 +67,7 @@ function removeHighlight(e){
 export default () => (
   <div className={css(s.footerContainer)}>
     <div className={css(s.footer, s.container)}>
-        <div className={css(s.left, s.footerDiv)}>
+        <div className={css(s.alignLeft, s.footerDiv)}>
           <img className={css(s.logo)} alt='matchus logo' src='./logo_light.png' />
           <div className={css(s.footerText)}>
             <div className={css(s.about)}>

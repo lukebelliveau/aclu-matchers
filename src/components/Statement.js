@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
   wrapperStyle: {
+    fontSize: '1.6rem',
     padding: '50px',
     paddingTop: 0,
     '@media (max-width: 740px)': {
@@ -46,10 +47,10 @@ const styles = StyleSheet.create({
 });
 
 export default () => (
-  <div className={css(styles.wrapperStyle)}>
-    <div className={css(styles.body)}>
-      <h2 className={css(styles.h2)}>Why donate?</h2>
-      <blockquote className={css(styles.quote)}>
+  <div className={css(s.wrapperStyle)}>
+    <div className={css(s.body)}>
+      <h2 className={css(s.h2)}>Why donate?</h2>
+      <blockquote className={css(s.quote)}>
         <p>
         Extreme vetting is just a euphemism for discrimination against Muslims. Identifying specific countries with Muslim majorities and carving out exceptions for minority religions flies in the face of the constitutional principle that bans the government from either favoring or discriminating against particular religions. Any effort to discriminate against Muslims and favor other religions runs afoul of the First Amendment.
         </p>
@@ -57,8 +58,8 @@ export default () => (
           - Anthony D. Romero, Executive Director, American Civil Liberties Union
         </footer>
       </blockquote>
-      <strong className={css(styles.strong)}>We wholeheartedly agree with this statement - and we're not alone.</strong>
-      <p className={css(styles.p)}>
+      <strong className={css(s.strong)}>We wholeheartedly agree with this statement - and we're not alone.</strong>
+      <p className={css(s.p)}>
         People around the nation have offered to match our donations to the ACLU; all they need from us is a tweet with the donation receipt.  Among others, we have matched donations with Ajay Chopra, Sia, and Jesse Tyler.
       </p>
     </div>

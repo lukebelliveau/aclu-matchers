@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
     buttonWrapper: {
         '@media (max-width: 740px)': {
             margin: '10px 15px',
@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
         },
         '@media (min-width: 740px)': {         
             flex: 1,
-            marginRight: '2rem',
-            marginLeft: '2rem',
+            marginRight: '3.2rem',
+            marginLeft: '3.2rem',
             maxWidth: '400px',        
         },
     },
@@ -24,31 +24,31 @@ const styles = StyleSheet.create({
         boxShadow: '0px 7px 10px 2px rgba(23,95,122,0.25)',
         textDecoration: 'none',
         borderRadius: '7px',
-        padding: '2rem 1rem 0rem',
+        padding: '3.2rem 1.6rem 0',
         background: '#175F7A',
         fontSize: '22px',
-        marginTop: '2rem',
+        marginTop: '3.2rem',
         '@media (max-width: 740px)': {
             paddingTop: '1.8rem',
             height: '80px',
         }
     },
     caption: {
-        fontSize: '1.5rem',
+        fontSize: '2.4rem',
         color: '#33373A'
     },
     label: {
         '@media (max-width: 740px)': {
-            fontSize: '1.2rem',
+            fontSize: '2rem',
         }
     }
 });
 
 export default () => (
-  <div className={css(styles.buttonWrapper)}>
-      <h2 className={css(styles.caption)}>Haven't donated yet?</h2>
-      <a className={css(styles.button)} href="https://action.aclu.org/secure/donate-to-aclu" target="_blank">
-          <div className={css(styles.label)}>Donate to the American Civil Liberties Union</div>
+  <div className={css(s.buttonWrapper)}>
+      <h2 className={css(s.caption)}>Haven't donated yet?</h2>
+      <a className={css(s.button)} href="https://action.aclu.org/secure/donate-to-aclu" target="_blank">
+          <div className={css(s.label)}>Donate to the American Civil Liberties Union</div>
       </a>
   </div>
 );

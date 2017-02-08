@@ -4,37 +4,38 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 import DonateToACLU from './DonateToACLU';
 import SpreadTheWord from './SpreadTheWord';
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
     buttonsWrapper: {
-        marginTop: '2rem',
-        marginBottom: '0rem',
+        marginTop: '3.2rem',
+        marginBottom: '0',
         '@media (min-width: 740px)': {
             display: 'flex',
             justifyContent: 'center',
-            marginBottom: '4rem',
+            marginBottom: '6.4rem',
         },
     },
     callToAction: {
+        fontSize: '1.6rem',
         margin: '0 auto',
-        marginTop: '2rem',
+        marginTop: '3.2rem',
         maxWidth: '90%',
     },
     lightAMatch: {
-        height: '1.5rem',
-        paddingTop: '0.5rem'
+        height: '2.4rem',
+        paddingTop: '.8rem'
     }
 });
 
 export default () => (
     <div>
-        <div className={css(styles.buttonsWrapper)}>
+        <div className={css(s.buttonsWrapper)}>
             <DonateToACLU />
             <SpreadTheWord />
         </div>
-        <div className={css(styles.callToAction)}>
+        <div className={css(s.callToAction)}>
             <div>You can make a big difference by encouraging others to use this site.</div>
             <div>Please help us spread this spark!</div>
-            <img className={css(styles.lightAMatch)} alt="Light a match" src='./lightamatch_bold.png' />
+            <img className={css(s.lightAMatch)} alt="Light a match" src='./lightamatch_bold.png' />
         </div>
     </div>
 );
