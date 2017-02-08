@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, css } from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite/no-important';
 import TwitterWidget from './TwitterWidget';
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
   footer: {
     maxWidth: '1024px',
     padding: '2rem 50px',
@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
   a: {
     textDecoration: 'none',
     textAlign: 'left',
+  },
+  footerLink: {
+    color: '#33373A',
   },
   about: {
     display: 'inline-block',
@@ -55,35 +58,41 @@ const styles = StyleSheet.create({
   }
 });
 
-const about = 'footer-about';
-const terms = 'footer-terms';
-const nonHoveredLinkStyle = {color: '#33373A'};
+function addHighlight(e) {
+  e.target.style.color = '#0B0C0E';
+}
 
-const highlightOnHover = (el) => () => {
-  document.getElementById(el).style.color = '#0B0C0E';
-};
-
-const removeHighlight = (el) => () => {
-  document.getElementById(el).style.color = '#33373A';
-};
+function removeHighlight(e){
+  e.target.style.color = '';
+}
 
 export default () => (
-  <div className={css(styles.footerContainer)}>
-    <div className={css(styles.footer)}>
-        <div className={css(styles.a, styles.footerDiv)}>
-          <img className={css(styles.logo)} alt='matchus logo' src='./logo_light.png' />
-          <div className={css(styles.footerText)}>
-            <div className={css(styles.about)}>
-              <a id={about} onMouseEnter={highlightOnHover(about)} onMouseLeave={removeHighlight(about)} style={nonHoveredLinkStyle} className={css(styles.a)} href='https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing' target="_blank">ABOUT</a> 
+  <div className={css(s.footerContainer)}>
+    <div className={css(s.footer)}>
+        <div className={css(s.a, s.footerDiv)}>
+          <img className={css(s.logo)} alt='matchus logo' src='./logo_light.png' />
+          <div className={css(s.footerText)}>
+            <div className={css(s.about)}>
+              <a onMouseEnter={addHighlight}
+                 onMouseLeave={removeHighlight} 
+                 className={css(s.a, s.footerLink)} 
+                 href='https://docs.google.com/document/d/1uQda1goIN5m1Rb5anVNlWgU7Ra-uBEZBIa1GaHqfRH4/edit?usp=sharing' target="_blank">
+                 ABOUT
+              </a> 
               &nbsp;|&nbsp;
-              <a id={terms} onMouseEnter={highlightOnHover(terms)} onMouseLeave={removeHighlight(terms)} style={nonHoveredLinkStyle}className={css(styles.a)} href='https://docs.google.com/document/d/18KrZy3fdWqxEWZ5AW-jzdwUj6tujxtQS9Q7USAIWHYA/edit?usp=sharing' target="_blank">TERMS OF SERVICE</a>
+              <a onMouseEnter={addHighlight}
+                 onMouseLeave={removeHighlight} 
+                 className={css(s.a, s.footerLink)} 
+                 href='https://docs.google.com/document/d/18KrZy3fdWqxEWZ5AW-jzdwUj6tujxtQS9Q7USAIWHYA/edit?usp=sharing' target="_blank">
+                 TERMS OF SERVICE
+              </a>
             </div>
-            <p className={css(styles.p)}>Copyright © 2017 matchUS. All right reserved.</p>
-            <p className={css(styles.p)}>All specifications are subject to change without notice.</p>
-            <p className={css(styles.p)}>matchUS is not affiliated with the American Civil Liberties Union.</p>
+            <p className={css(s.p)}>Copyright © 2017 matchUS. All right reserved.</p>
+            <p className={css(s.p)}>All specifications are subject to change without notice.</p>
+            <p className={css(s.p)}>matchUS is not affiliated with the American Civil Liberties Union.</p>
           </div>
         </div>
-        <div className={'twitter-feed ' + css(styles.footerDiv)}>
+        <div className={'twitter-feed ' + css(s.footerDiv)}>
           <TwitterWidget />
         </div>
     </div>

@@ -1,7 +1,5 @@
 import React from 'react';
 
-let disconnectObserver;
-
 const success = {
   title: 'Thank you for multiplying!',
   subtitle: 'Your donation has been multiplied!',
@@ -169,18 +167,16 @@ if ( MutationObserver ) {
     mutations.forEach((mutation) => {
       if (!mutation.addedNodes) return;
       for (const i in mutation.addedNodes) {
-        if(mutation.addedNodes.hasOwnProperty(i)) {
-          const node = mutation.addedNodes[i];
-          if (node.className === 'dropzone' ) {
-            insertDropzoneText();
-            disconnectObserver();
-          }          
+        const node = mutation.addedNodes[i];
+        if (node.className === 'dropzone' ) {
+          insertDropzoneText();
+          disconnectObserver();
         }
       }
     });
   });
 
-  disconnectObserver = () => observer.disconnect();
+  const disconnectObserver = () => observer.disconnect();
 
   observer.observe(cloudwokSection, {
       childList: true,

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, css } from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite/no-important';
 
 import Header from './components/Header';
 import TotalMatched from './components/TotalMatched'
