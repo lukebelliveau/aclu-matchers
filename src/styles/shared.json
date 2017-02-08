@@ -95,6 +95,9 @@
       },
       "right": {
         "textAlign": "right"
+      },
+      "center": {
+        "textAlign": "center"        
       }
     },
     "shadow": {

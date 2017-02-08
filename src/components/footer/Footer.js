@@ -33,9 +33,7 @@ const styles = StyleSheet.create({
   },
   footerDiv: {
     flexBasis: '50%',
-    display: 'inline-block',
     verticalAlign: 'top',
-    display: 'inline-flex',
     fontFamily: 'heading_regular',
     color: '#33373A',
     display: 'inline-flex',

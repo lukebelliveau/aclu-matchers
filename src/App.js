@@ -8,16 +8,16 @@ import OtherCallsToAction from './components/otherCallsToAction/OtherCallsToActi
 import Statement from './components/Statement';
 import Footer from './components/footer/Footer';
 
-const styles = StyleSheet.create({
-  wrapper: {
-    textAlign: 'center',
-  },
+import {text} from './styles/shared'
+
+const s = StyleSheet.create({
+  center: text.align.center,
 });
 
 class App extends Component {
   render() {
     return (
-      <div className={css(styles.wrapper)}>
+      <div className={css(s.center)}>
         <Header />
         <TotalMatched />
         <ReceiptUpload />
