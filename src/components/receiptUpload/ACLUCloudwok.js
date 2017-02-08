@@ -161,22 +161,26 @@ const insertDropzoneText = () => {
 
 const cloudwokSection = document.getElementsByClassName('cloudwok-embed')[0];
 
+let disconnectObserver;
+
 // more efficient but not supported in older browsers
 if ( MutationObserver ) {
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (!mutation.addedNodes) return;
       for (const i in mutation.addedNodes) {
-        const node = mutation.addedNodes[i];
-        if (node.className === 'dropzone' ) {
-          insertDropzoneText();
-          disconnectObserver();
+        if(mutation.addedNodes.hasOwnProperty(i)) {
+          const node = mutation.addedNodes[i];
+          if (node.className === 'dropzone' ) {
+            insertDropzoneText();
+            disconnectObserver();
+          }          
         }
       }
     });
   });
 
-  const disconnectObserver = () => observer.disconnect();
+  disconnectObserver = () => observer.disconnect();
 
   observer.observe(cloudwokSection, {
       childList: true,

@@ -53,8 +53,15 @@ export const larger = {fontSize: "1.4rem"}
 export const xlarge = {fontSize: "1.6rem"}
 export const xxlarge = {fontSize: "1.8rem"}
 
+// display
+export const block = {display: 'block'}
+export const inlineBlock = {display: 'inline-block'}
+export const inline = {display: 'inline'}
+export const flex = {display: 'flex'}
+
+// container
+export const margin0auto = {margin: "0 auto"}
+export const maxWidth1024 = {maxWidth: "1024px"}
+
 // composite styles
-export const container = {
-  "maxWidth": "1024px",
-  "margin": "0 auto"
-}
+export const container = Object.assign({}, margin0auto, maxWidth1024)

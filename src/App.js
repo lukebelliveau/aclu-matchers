@@ -11,13 +11,13 @@ import Footer from './components/footer/Footer';
 import {alignCenter} from './styles/shared'
 
 const s = StyleSheet.create({
-  alignCenter,
+  appContainer: Object.assign({}, alignCenter),
 });
 
 class App extends Component {
   render() {
     return (
-      <div className={css(s.alignCenter)}>
+      <div className={css(s.appContainer)}>
         <Header />
         <TotalMatched />
         <ReceiptUpload />

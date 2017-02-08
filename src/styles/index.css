@@ -89,32 +89,6 @@ small,
   font-size: 0.707em;
 }
 
-blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-}
-
-blockquote p {
-  margin: 0 0 10px;
-  font-size: 18px;
-  line-height: 1.7em;
-  text-align: left;
-}
-
-@media (max-width: 740px) {
-  blockquote p {
-    font-size: 14px;
-    line-height: 1.5em;
-  }
-}
-
-blockquote footer {
-  display: block;
-  font-size: 80%;
-  line-height: 1.42857143;
-  text-align: left;
-}
-
 p {
   line-height: 1.5em;
 }
