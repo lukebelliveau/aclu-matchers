@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
+import {block, darkGray, white, margin0auto, fontFamilyParagraphRegular} from '../../styles/shared';
 
 const s = StyleSheet.create({
     buttonWrapper: {
-        '@media (max-width: 740px)': {
+        '@media (max-width: 740px)': Object.assign({}, block, {
             margin: '10px 15px',
             width: 'auto',
-            display: 'block',
-        },
+        }),
         '@media (min-width: 740px)': {         
             flex: 1,
             marginRight: '3.2rem',
@@ -15,12 +15,8 @@ const s = StyleSheet.create({
             maxWidth: '400px',        
         },
     },
-    button: {
-        display: 'block',
-        fontFamily: 'paragraph_regular',
+    button: Object.assign({}, block, white, margin0auto, fontFamilyParagraphRegular, {
         height: '100px',
-        margin: '0 auto',
-        color: 'white',
         boxShadow: '0px 7px 10px 2px rgba(23,95,122,0.25)',
         textDecoration: 'none',
         borderRadius: '7px',
@@ -32,11 +28,10 @@ const s = StyleSheet.create({
             paddingTop: '1.8rem',
             height: '80px',
         }
-    },
-    caption: {
+    }),
+    caption: Object.assign({}, darkGray, {
         fontSize: '2.4rem',
-        color: '#33373A'
-    },
+    }),
     label: {
         '@media (max-width: 740px)': {
             fontSize: '2rem',

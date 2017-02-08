@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import TwitterWidget from './TwitterWidget';
-import {container, alignLeft, noDecoration} from '../../styles/shared';
+import {container, alignLeft, noDecoration, darkGray} from '../../styles/shared';
 
 const s = StyleSheet.create({
   container,
@@ -15,9 +15,7 @@ const s = StyleSheet.create({
      }
   },
   a: Object.assign({}, noDecoration, alignLeft),
-  footerLink: {
-    color: '#33373A',
-  },
+  footerLink: Object.assign({}, darkGray),
   about: {
     display: 'inline-block',
     fontSize: '2rem',
@@ -32,18 +30,17 @@ const s = StyleSheet.create({
       margin: '3.2rem 0',
      }
   },
-  footerDiv: {
+  footerDiv: Object.assign({}, darkGray, {
     flexBasis: '50%',
     verticalAlign: 'top',
     fontFamily: 'heading_regular',
-    color: '#33373A',
     display: 'inline-flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     '@media (max-width: 740px)': {
       flexBasis: '100%'
      }
-  },
+  }),
   footerContainer: {
     background: '#ebebeb'
   },

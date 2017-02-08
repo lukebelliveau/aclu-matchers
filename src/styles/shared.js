@@ -1,5 +1,6 @@
 // colours
 export const white = {color: "#fff"}
+export const darkGray = {color: "#33373A"}
 
 // margins
 export const m0 = {margin: 0}

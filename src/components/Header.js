@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { mb0, alignLeft, inlineBlock, block } from '../styles/shared';
+import { mb0, alignLeft, inlineBlock, block, darkGray, margin0auto } from '../styles/shared';
 
 const s = StyleSheet.create({
   mb0,
   header: {
     backgroundSize: '100%'
   },
-  title: Object.assign({}, alignLeft, inlineBlock, {
-    color: '#33373A',
+  title: Object.assign({}, alignLeft, inlineBlock, darkGray, {
     margin: '1.2rem 0',
     fontSize: '2.4rem',
     '@media (max-width: 740px)': {
@@ -19,16 +18,15 @@ const s = StyleSheet.create({
   logo: Object.assign({}, inlineBlock, {
     height: '4.8rem',
     marginRight: '1.6rem',
-    '@media (max-width: 740px)': Object.assign({}, block, {
+    '@media (max-width: 740px)': Object.assign({}, block, margin0auto, {
       height: 'auto',
       width: '90%',
-      margin: '0 auto',
       marginTop: '1.6rem',
       marginBottom: '.8rem'
     }),
   }),
   break: {
-      '@media (max-width: 740px)': Object.assign({}, inlineBlock),
+    '@media (max-width: 740px)': Object.assign({}, inlineBlock),
   }
 });
 

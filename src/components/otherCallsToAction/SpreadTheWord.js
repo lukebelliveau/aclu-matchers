@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
+import {darkGray} from '../../styles/shared';
 
 const s = StyleSheet.create({
     buttonWrapper: {
@@ -33,10 +34,9 @@ const s = StyleSheet.create({
             height: '80px',
         }
     },
-    caption: {
+    caption: Object.assign({}, darkGray, {
         fontSize: '2.4rem',
-        color: '#33373A'
-    },
+    }),
     label: {
         '@media (max-width: 740px)': {
             fontSize: '2rem',
