@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { whitespace } from '../styles/shared';
+import { mb0 } from '../styles/shared';
 
 const style = StyleSheet.create({
-  mb0: whitespace.margins.mb0,
+  mb0,
   header: {
     backgroundSize: '100%'
   },

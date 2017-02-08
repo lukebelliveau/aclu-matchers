@@ -1,106 +1,51 @@
 {
-  "colors": {
-    "white": {
-      "color": "#fff"
-    }
-  },
-  "whitespace": {
-    "margins": {
-      "m0":  {"margin": 0 },
-      "mt0": {"marginTop": 0 },
-      "mr0": {"marginRight": 0 },
-      "mb0": {"marginBottom": 0 },
-      "ml0": {"marginLeft": 0 }
-    },
-    "paddings": {
-      "p0":  {"padding": 0 },
-      "pt0": {"paddingTop": 0 },
-      "pr0": {"paddingRight": 0 },
-      "pb0": {"paddingBottom": 0 },
-      "pl0": {"paddingLeft": 0 },
-      "p8":  {"padding": "8px" },
-      "pt8": {"paddingTop": "8px" },
-      "pr8": {"paddingRight": "8px" },
-      "pb8": {"paddingBottom": "8px" },
-      "pl8": {"paddingLeft": "8px" }
-    }
-  },
-  "background": {
-    "size": {
-      "cover": {
-        "backgroundSize": "cover"
-      }
-    }
-  },
-  "text": {
-    "size": {
-      "smaller": {
-        "fontSize": ".6rem"
-      },
-      "small": {
-        "fontSize": ".8rem"
-      },
-      "medium": {
-        "fontSize": "1rem"
-      },
-      "large": {
-        "fontSize": "1.2rem"
-      },
-      "larger": {
-        "fontSize": "1.4rem"
-      },
-      "xlarge": {
-        "fontSize": "1.6rem"
-      },
-      "xxlarge": {
-        "fontSize": "1.8rem"
-      }
-    },
-    "align": {
-      "left": {
-        "textAlign": "left"
-      },
-      "right": {
-        "textAlign": "right"
-      },
-      "center": {
-        "textAlign": "center"        
-      }
-    },
-    "shadow": {
-      "one": {
-        "textShadow": "1px 1px 1px #000"
-      },
-      "two": {
-        "textShadow": "2px 2px 1px #000"
-      }
-    },
-    "decoration": {
-      "none": {
-        "textDecoration": "none"
-      }
-    }
-  },
-  "font": {
-    "weight": {
-      "bold": {
-        "fontWeight": "bold"
-      }
-    },
-    "style": {
-      "italic": {
-        "fontStyle": "italic"
-      }
-    },
-    "family": {
-      "serif": {
-        "fontFamily": "Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif"
-      },
-      "sansSerif": {
-        "fontFamily": "Calibri, Arial, sans-serif"
-      }
-    }
-  },
+  "white": {"color": "#fff"},
+
+  "m0":  {"margin": 0 },
+  "mt0": {"marginTop": 0 },
+  "mr0": {"marginRight": 0 },
+  "mb0": {"marginBottom": 0 },
+  "ml0": {"marginLeft": 0 },
+
+  "p0":  {"padding": 0 },
+  "pt0": {"paddingTop": 0 },
+  "pr0": {"paddingRight": 0 },
+  "pb0": {"paddingBottom": 0 },
+  "pl0": {"paddingLeft": 0 },
+  "p8":  {"padding": "8px" },
+  "pt8": {"paddingTop": "8px" },
+  "pr8": {"paddingRight": "8px" },
+  "pb8": {"paddingBottom": "8px" },
+  "pl8": {"paddingLeft": "8px" },
+
+  "backgroundCover": {"backgroundSize": "cover"},
+
+  "smaller": {"fontSize": ".6rem"},
+  "small": {"fontSize": ".8rem"},
+  "medium": {"fontSize": "1rem"},
+  "large": {"fontSize": "1.2rem"},
+  "larger": {"fontSize": "1.4rem"},
+  "xlarge": {"fontSize": "1.6rem"},
+  "xxlarge": {"fontSize": "1.8rem"},
+
+  "alignLeft": {"textAlign": "left"},
+  "alignRight": {"textAlign": "right"},
+  "alignCenter": {"textAlign": "center"},
+
+  "noDecoration": {"textDecoration": "none"},
+
+  "textShadow1": {"textShadow": "1px 1px 1px #000"},
+  "textShadow2": {"textShadow": "2px 2px 1px #000"},
+
+  "bold": {"fontWeight": "bold"},
+  "italic": {"fontStyle": "italic"},
+
+  "fontFamilyHeadingRegular": {"fontFamily": "heading_regular"},
+  "fontFamilyHeadingBold": {"fontFamily": "heading_bold"},
+  "fontFamilyParagraphRegular": {"fontFamily": "paragraph_regular"},
+  "fontFamilyParagraphBold": {"fontFamily": "paragraph_bold"},
+  "fontFamilyParagraphLight": {"fontFamily": "paragraph_light"},
+
   "container": {
     "maxWidth": "1024px",
     "margin": "0 auto"

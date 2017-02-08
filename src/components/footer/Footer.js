@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import TwitterWidget from './TwitterWidget';
-import {container, text} from '../../styles/shared';
+import {container, alignLeft, noDecoration} from '../../styles/shared';
 
 const s = StyleSheet.create({
   container,
-  left: text.align.left,
+  alignLeft,
   footer: {
     padding: '2rem 50px',
     display: 'flex',
@@ -14,7 +14,7 @@ const s = StyleSheet.create({
       padding: '2rem',
      }
   },
-  a: Object.assign({}, text.decoration.none, text.align.left),
+  a: Object.assign({}, noDecoration, alignLeft),
   footerLink: {
     color: '#33373A',
   },

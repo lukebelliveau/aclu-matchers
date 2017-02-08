@@ -8,16 +8,16 @@ import OtherCallsToAction from './components/otherCallsToAction/OtherCallsToActi
 import Statement from './components/Statement';
 import Footer from './components/footer/Footer';
 
-import {text} from './styles/shared'
+import {alignCenter} from './styles/shared'
 
 const s = StyleSheet.create({
-  center: text.align.center,
+  alignCenter,
 });
 
 class App extends Component {
   render() {
     return (
-      <div className={css(s.center)}>
+      <div className={css(s.alignCenter)}>
         <Header />
         <TotalMatched />
         <ReceiptUpload />
