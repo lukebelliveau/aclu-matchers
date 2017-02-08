@@ -39,7 +39,7 @@ const s = StyleSheet.create({
     },
     label: {
         '@media (max-width: 740px)': {
-            fontSize: '1.2rem',
+            fontSize: '2rem',
         }
     },
     icon: {
