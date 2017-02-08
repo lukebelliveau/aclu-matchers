@@ -58,10 +58,6 @@ body {
   color: #33373A;
 }
 
-p {
-  margin-bottom: 1.3em;
-}
-
 h1,
 h2,
 h3,
@@ -84,8 +80,7 @@ h3 {
   font-size: 1.414em;
 }
 
-small,
-.font_small {
+small {
   font-size: 0.707em;
 }
 
@@ -95,13 +90,4 @@ p {
 
 strong {
   font-family: "heading_bold";
-}
-
-number {
-  display: inline-block;
-  font-family: "heading_bold";
-}
-
-.twitter-feed div {
-  width: 100%;
 }
