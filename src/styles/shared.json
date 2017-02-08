@@ -2,39 +2,6 @@
   "colors": {
     "white": {
       "color": "#fff"
-    },
-    "darkRed": {
-      "color": "#941324"
-    },
-    "red": {
-      "color": "#DC2039"
-    },
-    "offWhite": {
-      "color": "#F5F6FA"
-    },
-    "blue": {
-      "color": "#2A53C1"
-    },
-    "darkBlue": {
-      "color": "#202A5D"
-    },
-    "bgWhite": {
-      "backgroundColor": "#fff"
-    },
-    "bgDarkRed": {
-      "backgroundColor": "#941324"
-    },
-    "bgRed": {
-      "backgroundColor": "#DC2039"
-    },
-    "bgoffWhite": {
-      "backgroundColor": "#F5F6FA"
-    },
-    "bgBlue": {
-      "backgroundColor": "#8ddbff"
-    },
-    "bgDarkBlue": {
-      "backgroundColor": "#202A5D"
     }
   },
   "whitespace": {
@@ -106,6 +73,11 @@
       },
       "two": {
         "textShadow": "2px 2px 1px #000"
+      }
+    },
+    "decoration": {
+      "none": {
+        "textDecoration": "none"
       }
     }
   },

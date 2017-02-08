@@ -33,14 +33,6 @@
 }
 
 @font-face {
-  font-family: "paragraph_thin";
-  font-style: normal;
-  font-weight: normal;
-
-  src: url("../fonts/RobotoSlab-Thin.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "paragraph_light";
   font-style: normal;
   font-weight: normal;

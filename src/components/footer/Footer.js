@@ -1,22 +1,20 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import TwitterWidget from './TwitterWidget';
+import {container, text} from '../../styles/shared';
 
 const s = StyleSheet.create({
+  container,
+  left: text.align.left,
   footer: {
-    maxWidth: '1024px',
     padding: '2rem 50px',
-    margin: '0 auto',
     display: 'flex',
     '@media (max-width: 740px)': {
       flexDirection: 'column-reverse',
       padding: '2rem',
      }
   },
-  a: {
-    textDecoration: 'none',
-    textAlign: 'left',
-  },
+  a: Object.assign({}, text.decoration.none, text.align.left),
   footerLink: {
     color: '#33373A',
   },
@@ -68,8 +66,8 @@ function removeHighlight(e){
 
 export default () => (
   <div className={css(s.footerContainer)}>
-    <div className={css(s.footer)}>
-        <div className={css(s.a, s.footerDiv)}>
+    <div className={css(s.footer, s.container)}>
+        <div className={css(s.left, s.footerDiv)}>
           <img className={css(s.logo)} alt='matchus logo' src='./logo_light.png' />
           <div className={css(s.footerText)}>
             <div className={css(s.about)}>

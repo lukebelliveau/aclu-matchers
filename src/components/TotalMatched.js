@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   dateTime: {
     fontSize: '0.9rem',
     margin: 10,
-    fontFamily: 'paragraph_thin'
+    fontFamily: 'paragraph_light',
   }
 });
 
