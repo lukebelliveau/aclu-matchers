@@ -10,7 +10,7 @@ const s = StyleSheet.create({
     '@media (max-width: 740px)': {
       padding: '1.6rem 4rem',
     },
-  },
+  }),
   amount: {
     fontSize: '4.4rem'
   },

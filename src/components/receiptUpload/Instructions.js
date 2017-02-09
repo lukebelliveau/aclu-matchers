@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { bold, backgroundCover, container, white, darkGray, alignLeft, margin0auto, relative, hide,
+import { bold, backgroundCover, container, white, darkGray, alignLeft, m0auto, relative, hide,
   inlineBlock, m0, p0, pt0, headingRegular, paragraphRegular, flex, block } from '../../styles/shared';
 
 const s = StyleSheet.create({
@@ -41,7 +41,7 @@ const s = StyleSheet.create({
     flex: 1,
     marginLeft: '3.2rem'
   }),
-  hamburger: Object.assign({}, margin0auto, {
+  hamburger: Object.assign({}, m0auto, {
     flex: 1,
     height: '30px',
     width: '30px',

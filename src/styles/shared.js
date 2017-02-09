@@ -76,8 +76,8 @@ export const b0 = {bottom: 0}
 export const l0 = {left: 0} 
 
 // container
-export const margin0auto = {margin: "0 auto"}
+export const m0auto = {margin: "0 auto"}
 export const maxWidth1024 = {maxWidth: "1024px"}
 
 // composite styles
-export const container = Object.assign({}, margin0auto, maxWidth1024)
+export const container = Object.assign({}, m0auto, maxWidth1024)
