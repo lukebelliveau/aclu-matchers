@@ -39,11 +39,11 @@ export const textShadow1 = {textShadow: "1px 1px 1px #000"}
 export const textShadow2 = {textShadow: "2px 2px 1px #000"}
 
 // fonts
-export const fontFamilyHeadingRegular = {fontFamily: "heading_regular"}
-export const fontFamilyHeadingBold = {fontFamily: "heading_bold"}
-export const fontFamilyParagraphRegular = {fontFamily: "paragraph_regular"}
-export const fontFamilyParagraphBold = {fontFamily: "paragraph_bold"}
-export const fontFamilyParagraphLight = {fontFamily: "paragraph_light"}
+export const headingRegular = {fontFamily: "heading_regular"}
+export const headingBold = {fontFamily: "heading_bold"}
+export const paragraphRegular = {fontFamily: "paragraph_regular"}
+export const paragraphBold = {fontFamily: "paragraph_bold"}
+export const paragraphLight = {fontFamily: "paragraph_light"}
 
 // font sizes
 export const smaller = {fontSize: ".6rem"}
@@ -55,10 +55,22 @@ export const xlarge = {fontSize: "1.6rem"}
 export const xxlarge = {fontSize: "1.8rem"}
 
 // display
+export const hide = {display: 'none'}
 export const block = {display: 'block'}
 export const inlineBlock = {display: 'inline-block'}
 export const inline = {display: 'inline'}
 export const flex = {display: 'flex'}
+
+// positioning
+export const relative = {position: 'relative'}
+export const absolute = {position: 'absolute'}
+export const fixed = {position: 'fixed'}
+export const vtop = {verticalAlign: 'top'}
+export const vbottom = {verticalAlign: 'bottom'}
+export const t0 = {top: 0} 
+export const r0 = {right: 0} 
+export const b0 = {bottom: 0} 
+export const l0 = {left: 0} 
 
 // container
 export const margin0auto = {margin: "0 auto"}

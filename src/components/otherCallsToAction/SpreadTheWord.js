@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import {darkGray} from '../../styles/shared';
+import {darkGray, paragraphRegular, margin0auto, white, mt0, block} from '../../styles/shared';
 
 const s = StyleSheet.create({
     buttonWrapper: {
@@ -16,12 +16,9 @@ const s = StyleSheet.create({
             maxWidth: '400px',        
         },
     },
-    button: {
+    button: Object.assign({}, paragraphRegular, margin0auto, white, {
         display: 'block',
-        fontFamily: 'paragraph_regular',
         height: '100px',
-        margin: '0 auto',
-        color: 'white',
         boxShadow: '0px 7px 10px 2px rgba(23,95,122,0.25)',
         textDecoration: 'none',
         borderRadius: '7px',
@@ -33,7 +30,7 @@ const s = StyleSheet.create({
             paddingTop: '1.8rem',
             height: '80px',
         }
-    },
+    }),
     caption: Object.assign({}, darkGray, {
         fontSize: '2.4rem',
     }),
@@ -42,16 +39,13 @@ const s = StyleSheet.create({
             fontSize: '2rem',
         }
     },
-    icon: {
+    icon: Object.assign({}, mt0, margin0auto, block, {
       height: '40px',
-      display: 'block',
-      margin: '0 auto',
       position: 'relative',
-      marginTop: '0rem',
       '@media (max-width: 740px)': {
           height: '30px',
       }
-    }
+    })
 });
 
 const twitterMessage = 'https://matchus.us/aclu-matchers/ just helped my donation catch fire. Drag, drop and multiply your contribution, too! #lightamatch #aclumatch';

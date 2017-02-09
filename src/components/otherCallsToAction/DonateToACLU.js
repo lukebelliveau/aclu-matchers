@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import {block, darkGray, white, margin0auto, fontFamilyParagraphRegular} from '../../styles/shared';
+import {block, darkGray, white, margin0auto, paragraphRegular} from '../../styles/shared';
 
 const s = StyleSheet.create({
     buttonWrapper: {
@@ -15,7 +15,7 @@ const s = StyleSheet.create({
             maxWidth: '400px',        
         },
     },
-    button: Object.assign({}, block, white, margin0auto, fontFamilyParagraphRegular, {
+    button: Object.assign({}, block, white, margin0auto, paragraphRegular, {
         height: '100px',
         boxShadow: '0px 7px 10px 2px rgba(23,95,122,0.25)',
         textDecoration: 'none',

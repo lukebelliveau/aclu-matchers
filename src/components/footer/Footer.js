@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import TwitterWidget from './TwitterWidget';
-import {container, alignLeft, noDecoration, darkGray} from '../../styles/shared';
+import {container, alignLeft, noDecoration, darkGray, headingRegular} from '../../styles/shared';
 
 const s = StyleSheet.create({
   container,
@@ -30,10 +30,9 @@ const s = StyleSheet.create({
       margin: '3.2rem 0',
      }
   },
-  footerDiv: Object.assign({}, darkGray, {
+  footerDiv: Object.assign({}, darkGray, headingRegular, {
     flexBasis: '50%',
     verticalAlign: 'top',
-    fontFamily: 'heading_regular',
     display: 'inline-flex',
     flexDirection: 'column',
     justifyContent: 'space-between',

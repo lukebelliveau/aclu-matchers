@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { bold, backgroundCover, container, white, darkGray, inlineBlock, m0 } from '../../styles/shared';
+import { bold, backgroundCover, container, white, darkGray, 
+  inlineBlock, m0, headingRegular, paragraphRegular, flex } from '../../styles/shared';
 
 const s = StyleSheet.create({
   container,
@@ -21,10 +22,9 @@ const s = StyleSheet.create({
     height: '100%',
     width: '100%',
   },
-  li: Object.assign({}, darkGray, inlineBlock, m0, {
+  li: Object.assign({}, darkGray, inlineBlock, m0, paragraphRegular, {
     fontSize: '22px',
     paddingBottom: '20px',
-    fontFamily: 'paragraph_regular',
     width: '25%',
     verticalAlign: 'top',
     '@media (max-width: 740px)': {
@@ -34,15 +34,13 @@ const s = StyleSheet.create({
       paddingBottom: '15px'
      }
   }),
-  accordionToggle: {
+  accordionToggle: Object.assign({}, headingRegular, flex, {
     background: '#F43D00',
     color: 'white',
     fontSize: '24px',
     padding: '0.5em 0',
-    fontFamily: 'heading_regular',
     cursor: 'pointer',
-    display: 'flex'
-  },
+  }),
   accordionText: {
     flex: 1,
     textAlign: 'left',
@@ -75,15 +73,14 @@ const s = StyleSheet.create({
     marginTop: '10px',
     fontWeight: 500
   },
-  noPersonalInfo: {
+  noPersonalInfo: Object.assign({}, headingRegular, {
     fontSize: '2.4rem',
-    fontFamily: 'heading_regular',
     '@media (max-width: 740px)': {
         marginTop: '4.8rem',
         marginBottom: '2.4rem',
         fontSize: '1.6rem',
     }
-  },
+  }),
 });
 
 const isOnMobile = document.documentElement.clientWidth <= 740;

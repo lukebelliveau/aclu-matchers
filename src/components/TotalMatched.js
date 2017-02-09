@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
+import {paragraphLight} from '../styles/shared';
 
 const s = StyleSheet.create({
   wrapper: {
@@ -14,11 +15,10 @@ const s = StyleSheet.create({
   amount: {
     fontSize: '4.4rem'
   },
-  dateTime: {
+  dateTime: Object.assign({}, paragraphLight, {
     fontSize: '1.4rem',
     margin: 10,
-    fontFamily: 'paragraph_light',
-  }
+  }),
 });
 
 const amountMatched = '688,000';
