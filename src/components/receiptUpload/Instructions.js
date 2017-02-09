@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { bold, backgroundCover, container, white, darkGray, alignLeft, m0auto, wauto, hauto, w100, vtop,
+import { bold, backgroundCover, container, white, darkGray, alignLeft, m0auto, w100, h100, vtop,
   relative, hide, inlineBlock, m0, p0, pt0, headingRegular, paragraphRegular, flex, block } from '../../styles/shared';
 
 const s = StyleSheet.create({
@@ -16,7 +16,7 @@ const s = StyleSheet.create({
     height: '250px',
     '@media (max-width: 740px)': Object.assign({}, hide),
   }),
-  chevron: Object.assign({}, wauto, hauto),
+  chevron: Object.assign({}, w100, h100),
   li: Object.assign({}, darkGray, inlineBlock, m0, paragraphRegular, vtop, {
     fontSize: '22px',
     paddingBottom: '20px',
