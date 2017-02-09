@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { bold, backgroundCover, container, white, darkGray, alignLeft, m0auto, relative, hide,
-  inlineBlock, m0, p0, pt0, headingRegular, paragraphRegular, flex, block } from '../../styles/shared';
+import { bold, backgroundCover, container, white, darkGray, alignLeft, m0auto, wauto, hauto, w100, vtop,
+  relative, hide, inlineBlock, m0, p0, pt0, headingRegular, paragraphRegular, flex, block } from '../../styles/shared';
 
 const s = StyleSheet.create({
   container,
@@ -16,17 +16,12 @@ const s = StyleSheet.create({
     height: '250px',
     '@media (max-width: 740px)': Object.assign({}, hide),
   }),
-  chevron: {
-    height: '100%',
-    width: '100%',
-  },
-  li: Object.assign({}, darkGray, inlineBlock, m0, paragraphRegular, {
+  chevron: Object.assign({}, wauto, hauto),
+  li: Object.assign({}, darkGray, inlineBlock, m0, paragraphRegular, vtop, {
     fontSize: '22px',
     paddingBottom: '20px',
     width: '25%',
-    verticalAlign: 'top',
-    '@media (max-width: 740px)': Object.assign({}, pt0, {
-      width: '100%',
+    '@media (max-width: 740px)': Object.assign({}, pt0, w100, {
       fontSize: '14px',
       paddingBottom: '15px'
      }),

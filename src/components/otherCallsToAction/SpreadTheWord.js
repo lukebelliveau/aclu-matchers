@@ -1,12 +1,11 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import {darkGray, paragraphRegular, m0auto, white, mt0, block, noDecoration, relative} from '../../styles/shared';
+import {darkGray, paragraphRegular, m0auto, white, mt0, block, noDecoration, relative, wauto} from '../../styles/shared';
 
 const s = StyleSheet.create({
     buttonWrapper: {
-        '@media (max-width: 740px)': Object.assign({}, block, {
+        '@media (max-width: 740px)': Object.assign({}, block, wauto, {
             margin: '10px 15px',
-            width: 'auto',
         }),
         '@media (min-width: 740px)': {         
             flex: 1,

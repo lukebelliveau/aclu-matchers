@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { mb0, alignLeft, inlineBlock, block, darkGray, m0auto } from '../styles/shared';
+import { mb0, alignLeft, inlineBlock, block, darkGray, m0auto, hauto } from '../styles/shared';
 
 const s = StyleSheet.create({
   mb0,
@@ -18,8 +18,7 @@ const s = StyleSheet.create({
   logo: Object.assign({}, inlineBlock, {
     height: '4.8rem',
     marginRight: '1.6rem',
-    '@media (max-width: 740px)': Object.assign({}, block, m0auto, {
-      height: 'auto',
+    '@media (max-width: 740px)': Object.assign({}, block, m0auto, hauto, {
       width: '90%',
       marginTop: '1.6rem',
       marginBottom: '.8rem'

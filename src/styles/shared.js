@@ -24,6 +24,12 @@ export const pr8 = {paddingRight: "8px"}
 export const pb8 = {paddingBottom: "8px"}
 export const pl8 = {paddingLeft: "8px"}
 
+// widths and heights
+export const wauto = {width: "auto"}
+export const hauto = {height: "auto"}
+export const w100 = {width: "100%"}
+export const h100 = {height: "100%"}
+
 // background properties
 export const backgroundCover = {backgroundSize: "cover"}
 
