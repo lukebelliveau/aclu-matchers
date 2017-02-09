@@ -1,11 +1,10 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import {paragraphLight} from '../styles/shared';
+import {paragraphLight, bgDarkGray} from '../styles/shared';
 
 const s = StyleSheet.create({
-  wrapper: {
+  wrapper: Object.assign({}, bgDarkGray, {
     color: '#EAEAEA',
-    background: '#33373A',
     fontSize: '1.6rem',
     padding: '3.2rem',
     '@media (max-width: 740px)': {

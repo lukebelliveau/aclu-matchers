@@ -1,4 +1,5 @@
 import React from 'react';
+import {darkGray} from '../../styles/shared';
 
 const success = {
   title: 'Thank you for multiplying!',
@@ -73,7 +74,7 @@ const style = `
 
   .cloudwok-embed .dropzone .filepicker {
     background: transparent;
-    color: #33373A;
+    color: ${darkGray.color};
     padding: 20px 10px;
     border: none;
     margin-top: 15px;

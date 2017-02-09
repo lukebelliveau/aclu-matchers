@@ -2,6 +2,9 @@
 export const white = {color: "#fff"}
 export const darkGray = {color: "#33373A"}
 
+// background colours
+export const bgWhite = {backgroundColor: "#fff"}
+export const bgDarkGray = {backgroundColor: "#33373A"}
 // margins
 export const m0 = {margin: 0}
 export const mt0 = {marginTop: 0}
@@ -32,9 +35,9 @@ export const alignCenter = {textAlign: "center"}
 // text styles
 export const bold = {fontWeight: "bold"}
 export const italic = {fontStyle: "italic"}
-export const noDecoration = {textDecoration: "none"}
 
-// text shadows
+// text effect
+export const noDecoration = {textDecoration: "none"}
 export const textShadow1 = {textShadow: "1px 1px 1px #000"}
 export const textShadow2 = {textShadow: "2px 2px 1px #000"}
 

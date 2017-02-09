@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { bold, backgroundCover, container, white, darkGray, 
-  inlineBlock, m0, headingRegular, paragraphRegular, flex } from '../../styles/shared';
+import { bold, backgroundCover, container, white, darkGray, alignLeft, margin0auto, relative, hide,
+  inlineBlock, m0, p0, pt0, headingRegular, paragraphRegular, flex, block } from '../../styles/shared';
 
 const s = StyleSheet.create({
   container,
@@ -14,9 +14,7 @@ const s = StyleSheet.create({
   chevronLi: Object.assign({}, inlineBlock, {
     width: '5%',
     height: '250px',
-    '@media (max-width: 740px)': {
-      display: 'none'
-    }
+    '@media (max-width: 740px)': Object.assign({}, hide),
   }),
   chevron: {
     height: '100%',
@@ -27,48 +25,41 @@ const s = StyleSheet.create({
     paddingBottom: '20px',
     width: '25%',
     verticalAlign: 'top',
-    '@media (max-width: 740px)': {
+    '@media (max-width: 740px)': Object.assign({}, pt0, {
       width: '100%',
       fontSize: '14px',
-      paddingTop: '0px',
       paddingBottom: '15px'
-     }
+     }),
   }),
-  accordionToggle: Object.assign({}, headingRegular, flex, {
+  accordionToggle: Object.assign({}, headingRegular, flex, white, {
     background: '#F43D00',
-    color: 'white',
     fontSize: '24px',
     padding: '0.5em 0',
     cursor: 'pointer',
   }),
-  accordionText: {
+  accordionText: Object.assign({}, alignLeft, {
     flex: 1,
-    textAlign: 'left',
     marginLeft: '3.2rem'
-  },
-  hamburger: {
+  }),
+  hamburger: Object.assign({}, margin0auto, {
     flex: 1,
     height: '30px',
     width: '30px',
     maxWidth: '30px',
-    margin: 'auto 0',
     marginRight: '3.2rem'
-  },
-  icon: {
+  }),
+  icon: Object.assign({}, block, relative, {
     height: '60px',
-    display: 'block',
     margin: '6.4rem auto',
-    position: 'relative',
     marginBottom: '10px',
     '@media (max-width: 740px)': {
       height: '50px',
       margin: '3.2rem auto',
      }
-  },
-  ul: {
-    padding: 0,
+  }),
+  ul: Object.assign({}, p0, {
     listStyleType: 'none'
-  },
+  }),
   strong: {
     marginTop: '10px',
     fontWeight: 500

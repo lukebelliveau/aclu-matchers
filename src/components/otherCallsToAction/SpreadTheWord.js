@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import {darkGray, paragraphRegular, margin0auto, white, mt0, block} from '../../styles/shared';
+import {darkGray, paragraphRegular, margin0auto, white, mt0, block, noDecoration, relative} from '../../styles/shared';
 
 const s = StyleSheet.create({
     buttonWrapper: {
-        '@media (max-width: 740px)': {
+        '@media (max-width: 740px)': Object.assign({}, block, {
             margin: '10px 15px',
             width: 'auto',
-            display: 'block',
-        },
+        }),
         '@media (min-width: 740px)': {         
             flex: 1,
             marginRight: '3.2rem',
@@ -16,11 +15,9 @@ const s = StyleSheet.create({
             maxWidth: '400px',        
         },
     },
-    button: Object.assign({}, paragraphRegular, margin0auto, white, {
-        display: 'block',
+    button: Object.assign({}, paragraphRegular, margin0auto, white, block, noDecoration, {
         height: '100px',
         boxShadow: '0px 7px 10px 2px rgba(23,95,122,0.25)',
-        textDecoration: 'none',
         borderRadius: '7px',
         padding: '3.2rem 1.6rem 0',
         background: '#175F7A',
@@ -39,9 +36,8 @@ const s = StyleSheet.create({
             fontSize: '2rem',
         }
     },
-    icon: Object.assign({}, mt0, margin0auto, block, {
+    icon: Object.assign({}, mt0, margin0auto, block, relative, {
       height: '40px',
-      position: 'relative',
       '@media (max-width: 740px)': {
           height: '30px',
       }

@@ -1,38 +1,34 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import TwitterWidget from './TwitterWidget';
-import {container, alignLeft, noDecoration, darkGray, headingRegular} from '../../styles/shared';
+import {container, alignLeft, noDecoration, darkGray, headingRegular, flex, inlineBlock, vtop} from '../../styles/shared';
 
 const s = StyleSheet.create({
   container,
   alignLeft,
-  footer: {
+  footer: Object.assign({}, flex, {
     padding: '3.2rem 50px',
-    display: 'flex',
     '@media (max-width: 740px)': {
       flexDirection: 'column-reverse',
       padding: '3.2rem',
      }
-  },
+  }),
   a: Object.assign({}, noDecoration, alignLeft),
   footerLink: Object.assign({}, darkGray),
-  about: {
-    display: 'inline-block',
+  about: Object.assign({}, inlineBlock, {
     fontSize: '2rem',
     marginRight: '.8rem',
     marginBottom: '1.6rem'
-  },
-  logo: {
-    display: 'inline-block',
+  }),
+  logo: Object.assign({}, inlineBlock, {
     width: '60%',
     maxWidth: '350px',
     '@media (max-width: 740px)': {
       margin: '3.2rem 0',
      }
-  },
-  footerDiv: Object.assign({}, darkGray, headingRegular, {
+  }),
+  footerDiv: Object.assign({}, darkGray, headingRegular, vtop, {
     flexBasis: '50%',
-    verticalAlign: 'top',
     display: 'inline-flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
